@@ -17,7 +17,7 @@ att.Model = "models/weapons/arccw/atts/hunter.mdl"
 
 att.AdditionalSights = {
     {
-        Pos = Vector(-0.02, 12, -1.015),
+        Pos = Vector(0.01, 12, -1.08),
         Ang = Angle(0, 0, 0),
         Magnification = 1.3,
         ScrollFunc = ArcCW.SCROLL_ZOOM,
@@ -32,7 +32,7 @@ att.ScopeGlint = true
 att.Holosight = true
 att.HolosightReticle = Material("hud/scopes/duplex.png")
 att.HolosightNoFlare = true
-att.HolosightSize = 14
+att.HolosightSize = 12
 att.HolosightBone = "holosight"
 att.HolosightPiece = "models/weapons/arccw/atts/hunter_hsp.mdl"
 att.Colorable = true

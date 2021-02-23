@@ -62,7 +62,7 @@ SWEP.ShellModel = "models/shells/shell_9mm.mdl"
 SWEP.ShellScale = 2
 SWEP.ShellPitch = 90
 
-SWEP.Delay = 60 / 500 -- 60 / RPM.
+SWEP.Delay = 60 / 300 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
 SWEP.Firemodes = {
     {

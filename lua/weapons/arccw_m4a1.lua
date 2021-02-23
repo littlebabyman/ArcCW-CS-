@@ -136,6 +136,19 @@ SWEP.AttachmentElements = {
         VMBodygroups = {{ind = 2, bg = 2}},
         WMBodygroups = {{ind = 1, bg = 2}},
     },
+    ["mount"] = {
+        VMElements = {
+            {
+                Model = "models/weapons/arccw/atts/mount_rail.mdl",
+                Bone = "v_weapon.m4_Parent",
+                Scale = Vector(1.5, 1.4, 2.5),
+                Offset = {
+                    pos = Vector(0.8, -5.65, -1.9),
+                    ang = Angle(-90 - 1.46949, 0, -85 + 3.64274),
+                }
+            }
+        },
+    },
     ["fcg_semi"] = {
         TrueNam3Change = "AR-15",
         NameChange = "Gryphon Patriot",
@@ -157,12 +170,12 @@ SWEP.Attachments = {
         },
         SlideAmount = { -- how far this attachment can slide in both directions.
             -- overrides Offset.
-            vmin = Vector(0.8, -5.715, -4),
-            vmax = Vector(0.8, -5.715, -0.5),
+            vmin = Vector(0.8, -6, -4),
+            vmax = Vector(0.8, -6, -0.5),
             wmin = Vector(5.36, 0.739, -5.401),
             wmax = Vector(5.36, 0.739, -5.401),
         },
-        InstalledEles = {"noch"},
+        InstalledEles = {"noch","mount"},
         -- CorrectivePos = Vector(-0.017, 0, -0.4),
         CorrectivePos = Vector(0.02, 0, 0),
         CorrectiveAng = Angle(-3, 0, 0)

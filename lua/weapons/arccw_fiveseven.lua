@@ -32,7 +32,7 @@ SWEP.WorldModel = "models/weapons/w_pist_fiveseven.mdl"
 SWEP.ViewModelFOV = 60
 
 SWEP.Damage = 25
-SWEP.DamageMin = 15 -- damage done at maximum range
+SWEP.DamageMin = 20 -- damage done at maximum range
 SWEP.Range = 50 -- in METRES
 SWEP.Penetration = 5
 SWEP.DamageType = DMG_BULLET
@@ -51,7 +51,7 @@ SWEP.RecoilSide = 0.2
 SWEP.VisualRecoilMult = 1
 SWEP.RecoilRise = 2
 
-SWEP.Delay = 60 / 900 -- 60 / RPM.
+SWEP.Delay = 60 / 600 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
 SWEP.Firemodes = {
     {

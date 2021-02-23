@@ -17,7 +17,7 @@ att.Model = "models/weapons/arccw/atts/magnus.mdl"
 
 att.AdditionalSights = {
     {
-        Pos = Vector(0, 12, -1.429),
+        Pos = Vector(0, 11.5, -1.48),
         Ang = Angle(0, 0, 0),
         Magnification = 1.3,
         ScrollFunc = ArcCW.SCROLL_ZOOM,

@@ -4,11 +4,11 @@ SWEP.Category = "ArcCW - CS+" -- edit this if you like
 SWEP.AdminOnly = false
 
 SWEP.PrintName = "Mk. 201"
-SWEP.TrueNam3 = "MAC-11"
+SWEP.TrueNam3 = "MAC-10"
 SWEP.Trivia_Class = "Machine Pistol"
 SWEP.Trivia_Desc = "An often handcrafted submachine gun. Known for its incredibly low price at the cost of almost all else. It shoots, and that's about the best thing going for it."
 SWEP.Trivia_Manufacturer = "Gryphon Arms"
-SWEP.Trivia_Calibre = ".380 ACP"
+SWEP.Trivia_Calibre = ".45 ACP"
 SWEP.Trivia_Mechanism = "Straight Blowback"
 SWEP.Trivia_Country = "USA"
 SWEP.Trivia_Year = 1972
@@ -46,7 +46,7 @@ SWEP.Recoil = 0.5
 SWEP.RecoilSide = 0.15
 SWEP.RecoilRise = 1
 
-SWEP.Delay = 60 / 875 -- 60 / RPM.
+SWEP.Delay = 60 / 800 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
 SWEP.Firemodes = {
     {
@@ -80,7 +80,7 @@ SWEP.DistantShootSound = "weapons/arccw/mac10/mac10-1-distant.wav"
 
 SWEP.MuzzleEffect = "muzzleflash_smg"
 SWEP.ShellModel = "models/shells/shell_9mm.mdl"
-SWEP.ShellScale = 1.5
+SWEP.ShellScale = 2
 
 SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on
 SWEP.CaseEffectAttachment = 2 -- which attachment to put the case effect on

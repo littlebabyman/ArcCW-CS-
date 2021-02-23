@@ -40,8 +40,10 @@ SWEP.Primary.ClipSize = 8 -- DefaultClip is automatically set.
 SWEP.ExtendedClipSize = 12
 SWEP.ReducedClipSize = 4
 
-SWEP.Recoil = 4
-SWEP.RecoilSide = 2
+SWEP.Recoil = 3
+SWEP.RecoilSide = 1
+SWEP.RecoilRise = 3
+SWEP.RecoilPunch = 2
 
 SWEP.Delay = 60 / 600 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
@@ -239,6 +241,7 @@ SWEP.Animations = {
     ["fire"] = {
         Source = "shoot",
         Time = 1,
+        MinProgress = 0.2,
     },
     ["cycle"] = {
         Source = "cycle",

@@ -47,7 +47,7 @@ SWEP.Recoil = 0.1
 SWEP.RecoilSide = 0.1
 SWEP.VisualRecoilMult = 1
 
-SWEP.Delay = 60 / 650 -- 60 / RPM.
+SWEP.Delay = 60 / 670 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
 SWEP.Firemodes = {
     {
@@ -118,7 +118,7 @@ SWEP.HoldtypeSights = "rpg"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_SMG1
 
-SWEP.ActivePos = Vector(0, 4, -2)
+SWEP.ActivePos = Vector(0, 4, -1)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
 SWEP.HolsterPos = Vector(3.5, 2, 0)
@@ -218,13 +218,13 @@ SWEP.Animations = {
     },
     ["draw"] = {
         Source = "draw",
+        Time = 0.75,
         SoundTable = {{s = "weapons/arccw/ak47/ak47_draw.wav", t = 0}},
-        FrameRate = 40,
     },
     ["ready"] = {
         Source = "ready",
+        Time = 1.5,
         SoundTable = {{s = "weapons/arccw/ak47/ak47_draw.wav", t = 0}},
-        FrameRate = 40,
     },
     ["fire"] = {
         Source = {"fire"},
@@ -239,13 +239,11 @@ SWEP.Animations = {
     ["reload_empty"] = {
         Source = "reload_empty",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_SMG1,
-        FrameRate = 40,
-        Checkpoints = {10, 84}
+        Time = 3.5 * 1.2
     },
     ["reload"] = {
         Source = "reload",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_SMG1,
-        FrameRate = 40,
-        Checkpoints = {10, 84}
+        Time = 3.5
     },
 }

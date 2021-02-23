@@ -79,5 +79,3 @@ end
 att.Mult_SightTime = 1.25
 att.Mult_SpeedMult = 0.8
 att.Mult_SightedSpeedMult = 0.85
-
-att.Ignore = true
