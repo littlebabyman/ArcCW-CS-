@@ -1,5 +1,5 @@
 att.PrintName = "Muzzle Booster"
-att.Icon = Material("entities/acwatt_muzz_booster.png")
+att.Icon = Material("entities/acwatt_muzz_booster.png", "mips smooth")
 att.Description = "Muzzle device which boosts exhaust gases in order to increase fire rate. Doing so increases felt recoil."
 att.Desc_Pros = {
 }
@@ -8,7 +8,7 @@ att.Desc_Cons = {
 att.AutoStats = true
 att.Slot = {"muzzle"}
 
-att.SortOrder = 50
+att.SortOrder = 65
 
 att.Model = "models/weapons/arccw/atts/muzz_booster.mdl"
 

@@ -1,5 +1,5 @@
 att.PrintName = "Holographic (HOLO)"
-att.Icon = Material("entities/acwatt_optic_holo.png")
+att.Icon = Material("entities/acwatt_optic_holo.png", "mips smooth")
 att.Description = "Boxy holographic sight designed for rifles."
 
 att.SortOrder = 0.5

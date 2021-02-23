@@ -4,9 +4,9 @@ SWEP.Category = "ArcCW - CS+" -- edit this if you like
 SWEP.AdminOnly = false
 
 SWEP.PrintName = "BFG"
-SWEP.TrueName = "M107"
+SWEP.TrueNam3 = "M107"
 SWEP.Trivia_Class = "Antimateriel Rifle"
-SWEP.Trivia_Desc = "High caliber semi automatic rifle designed to take out light armored vehicles and military equipment. BFG stands for 'Big Fifty Gun'. Deals great damage at all ranges. Extremely heavy and cumbersome."
+SWEP.Trivia_Desc = "High caliber semi automatic rifle designed to take out light armored vehicles and military equipment. BFG stands for 'Big Fucking Gun'. Deals great damage at all ranges. Extremely heavy and cumbersome."
 SWEP.Trivia_Manufacturer = "Gryphon Arms"
 SWEP.Trivia_Calibre = ".50 BMG"
 SWEP.Trivia_Mechanism = "Recoil-Operated"
@@ -15,8 +15,8 @@ SWEP.Trivia_Year = 1989
 
 SWEP.Slot = 2
 
-if GetConVar("arccw_truenames"):GetBool() then
-    SWEP.PrintName = SWEP.TrueName
+if false then
+    SWEP.PrintName = SWEP.TrueNam3
     SWEP.Trivia_Manufacturer = "Barrett Firearms Manufacturing"
 end
 
@@ -176,16 +176,6 @@ SWEP.Attachments = {
         },
     },
     {
-        PrintName = "Grip",
-        Slot = "grip",
-        DefaultAttName = "Standard Grip"
-    },
-    {
-        PrintName = "Stock",
-        Slot = "stock",
-        DefaultAttName = "Standard Stock"
-    },
-    {
         PrintName = "Fire Group",
         Slot = "fcg",
         DefaultAttName = "Standard FCG"
@@ -201,6 +191,7 @@ SWEP.Attachments = {
     {
         PrintName = "Charm",
         Slot = "charm",
+        Hidden = true,
         FreeSlot = true,
         Bone = "Weapon_Main", -- relevant bone any attachments will be mostly referring to
         Offset = {

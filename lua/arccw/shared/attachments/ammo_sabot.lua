@@ -1,5 +1,5 @@
 att.PrintName = "Sabot Slug"
-att.Icon = Material("entities/acwatt_ammo_sabot.png")
+att.Icon = Material("entities/acwatt_ammo_sabot.png", "mips smooth")
 att.Description = "Shell containing a subcaliber projectile with discarding sabot. This enables superior muzzle velocity on the armor-piercing projectile, allowing it to deal more damage at range and penetrate a lot of armor. However, it is not as powerful as a full-caliber slug round."
 att.Desc_Pros = {
 }

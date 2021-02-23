@@ -4,7 +4,7 @@ SWEP.Category = "ArcCW - CS+" -- edit this if you like
 SWEP.AdminOnly = false
 
 SWEP.PrintName = "AS-1217"
-SWEP.TrueName = "M1014"
+SWEP.TrueNam3 = "M1014"
 SWEP.Trivia_Class = "Shotgun"
 SWEP.Trivia_Desc = "12 gauge automatic tube-fed shotgun. Excellent fire rate, but takes a long time to reload."
 SWEP.Trivia_Manufacturer = "Gryphon Arms"
@@ -15,8 +15,8 @@ SWEP.Trivia_Year = 1994
 
 SWEP.Slot = 2
 
-if GetConVar("arccw_truenames"):GetBool() then
-    SWEP.PrintName = SWEP.TrueName
+if false then
+    SWEP.PrintName = SWEP.TrueNam3
     SWEP.Trivia_Manufacturer = "Fabbrica d'Armi Pietro Beretta"
     SWEP.Trivia_Country = "Italy"
 end
@@ -137,7 +137,7 @@ SWEP.Attachments = {
     {
         PrintName = "Optic", -- print name
         DefaultAttName = "Iron Sights",
-        Slot = {"optic", "optic_lp"}, -- what kind of attachments can fit here, can be string or table
+        Slot = {"optic_lp", "optic", "optic_sniper"}, -- what kind of attachments can fit here, can be string or table
         Bone = "v_weapon.xm1014_Parent", -- relevant bone any attachments will be mostly referring to
         Offset = {
             vpos = Vector(0.03, -5.655, -4.597), -- offset that the attachment will be relative to the bone
@@ -149,23 +149,9 @@ SWEP.Attachments = {
         CorrectiveAng = Angle(0, 0, 0)
     },
     {
-        PrintName = "Backup Optic", -- print name
-        Slot = "backup", -- what kind of attachments can fit here, can be string or table
-        Bone = "v_weapon.xm1014_Parent", -- relevant bone any attachments will be mostly referring to
-        Offset = {
-            vpos = Vector(0.03, -5, -15), -- offset that the attachment will be relative to the bone
-            vang = Angle(-90, 0, -90),
-            wpos = Vector(8.36, 0.939, -5.201),
-            wang = Angle(-9.738, 0, 180)
-        },
-        CorrectivePos = Vector(0, 0, 0),
-        CorrectiveAng = Angle(0, 0, 0),
-        KeepBaseIrons = true
-    },
-    {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
-        Slot = "muzzle_shotgun",
+        Slot = {"muzzle_shotgun", "barrel"},
         Bone = "v_weapon.xm1014_Parent",
         Offset = {
             vpos = Vector(0.071, -4.511, -26.901),
@@ -197,16 +183,6 @@ SWEP.Attachments = {
         },
     },
     {
-        PrintName = "Grip",
-        Slot = "grip",
-        DefaultAttName = "Standard Grip"
-    },
-    {
-        PrintName = "Stock",
-        Slot = "stock",
-        DefaultAttName = "Standard Stock"
-    },
-    {
         PrintName = "Fire Group",
         Slot = "fcg",
         DefaultAttName = "Standard FCG"
@@ -222,6 +198,7 @@ SWEP.Attachments = {
     {
         PrintName = "Charm",
         Slot = "charm",
+        Hidden = true,
         FreeSlot = true,
         Bone = "v_weapon.xm1014_Parent",
         Offset = {

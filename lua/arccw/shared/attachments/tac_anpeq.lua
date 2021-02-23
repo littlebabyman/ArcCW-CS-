@@ -1,5 +1,5 @@
 att.PrintName = "Red Laser"
-att.Icon = Material("entities/acwatt_tac_anpeq.png")
+att.Icon = Material("entities/acwatt_tac_anpeq.png", "mips smooth")
 att.Description = "Powerful red laser aiming module. Laser assists with aiming from the hip. Far more effective than other laser colors."
 att.Desc_Pros = {
 }

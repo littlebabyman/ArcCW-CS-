@@ -1,5 +1,5 @@
 att.PrintName = "American Action Hero"
-att.Icon = Material("entities/acwatt_perk_extendedmags.png")
+att.Icon = Material("entities/acwatt_perk_extendedmags.png", "mips smooth")
 att.Description = "High-capacity magazines allow for more time before needing to reload, but slow down reloading and add weight."
 att.Desc_Pros = {
 }

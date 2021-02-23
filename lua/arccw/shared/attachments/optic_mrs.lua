@@ -1,5 +1,5 @@
 att.PrintName = "MRS (HOLO)"
-att.Icon = Material("entities/acwatt_optic_mrs.png")
+att.Icon = Material("entities/acwatt_optic_mrs.png", "mips smooth")
 att.Description = "Holographic sight with circle-cross reticle. Wide lens and open sight reticle make this sight optimal for close-range combat."
 
 att.SortOrder = 0.5

@@ -1,5 +1,5 @@
 att.PrintName = "Make It Count"
-att.Icon = Material("entities/acwatt_perk_owyn.png")
+att.Icon = Material("entities/acwatt_perk_owyn.png", "mips smooth")
 att.Description = "The last bullet in your magazine does up to double bonus damage based on capacity."
 att.Desc_Pros = {
     "pro.perk_owyn"

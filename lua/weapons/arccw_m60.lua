@@ -3,7 +3,7 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - CS+" -- edit this if you like
 SWEP.AdminOnly = false
 SWEP.PrintName = "Avenger MG-06"
-SWEP.TrueName = "M60"
+SWEP.TrueNam3 = "M60"
 SWEP.Trivia_Class = "Machine Gun"
 SWEP.Trivia_Desc = "General purpose machine gun firing full length cartridges. Nicknamed \"The Pig\" for its bulky shape, it is nevertheless a capable beast, and a favorite among action heroes."
 SWEP.Trivia_Manufacturer = "Gryphon Arms"
@@ -14,8 +14,8 @@ SWEP.Trivia_Year = 1957
 
 SWEP.Slot = 2
 
-if GetConVar("arccw_truenames"):GetBool() then
-    SWEP.PrintName = SWEP.TrueName
+if false then
+    SWEP.PrintName = SWEP.TrueNam3
     SWEP.Trivia_Manufacturer = "Saco Defense"
 end
 
@@ -168,7 +168,7 @@ SWEP.Attachments = {
     {
         PrintName = "Optic", -- print name
         DefaultAttName = "Iron Sights",
-        Slot = {"optic_lp", "optic"}, -- what kind of attachments can fit here, can be string or table
+        Slot = {"optic_lp", "optic", "optic_sniper"}, -- what kind of attachments can fit here, can be string or table
         Bone = "M60.Cover", -- relevant bone any attachments will be mostly referring to
         Offset = {
             vpos = Vector(0, 4, 0.8), -- offset that the attachment will be relative to the bone
@@ -215,16 +215,6 @@ SWEP.Attachments = {
         },
     },
     {
-        PrintName = "Grip",
-        Slot = "grip",
-        DefaultAttName = "Standard Grip"
-    },
-    {
-        PrintName = "Stock",
-        Slot = "stock",
-        DefaultAttName = "Standard Stock"
-    },
-    {
         PrintName = "Fire Group",
         Slot = "fcg",
         DefaultAttName = "Standard FCG"
@@ -240,6 +230,7 @@ SWEP.Attachments = {
     {
         PrintName = "Charm",
         Slot = "charm",
+        Hidden = true,
         FreeSlot = true,
         Bone = "M60.Body", -- relevant bone any attachments will be mostly referring to
         Offset = {

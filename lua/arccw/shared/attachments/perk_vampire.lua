@@ -1,5 +1,5 @@
 att.PrintName = "Health Recycling"
-att.Icon = Material("entities/acwatt_perk_vampire.png")
+att.Icon = Material("entities/acwatt_perk_vampire.png", "mips smooth")
 att.Description = "Successful hits heal shooter, at the cost of dealing significantly less damage."
 att.Ignore = true
 att.Desc_Pros = {

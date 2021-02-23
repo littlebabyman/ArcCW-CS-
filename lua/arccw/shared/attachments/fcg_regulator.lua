@@ -1,5 +1,5 @@
 att.PrintName = "Regulator"
-att.Icon = Material("entities/acwatt_fcg_regulator.png")
+att.Icon = Material("entities/acwatt_fcg_regulator.png", "mips smooth")
 att.Description = "Fire control device that allows the selection of varying fire rates."
 att.Desc_Pros = {
     "pro.regulator",

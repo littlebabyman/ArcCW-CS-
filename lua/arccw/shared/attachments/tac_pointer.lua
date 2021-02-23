@@ -1,5 +1,5 @@
 att.PrintName = "Blue Laser"
-att.Icon = Material("entities/acwatt_tac_pointer.png")
+att.Icon = Material("entities/acwatt_tac_pointer.png", "mips smooth")
 att.Description = "Blue-colored laser pointer. Bright blue dot improves accuracy while moving."
 att.Desc_Pros = {
 }

@@ -4,7 +4,7 @@ SWEP.Category = "ArcCW - CS+" -- edit this if you like
 SWEP.AdminOnly = false
 
 SWEP.PrintName = "HS-338"
-SWEP.TrueName = "AWM"
+SWEP.TrueNam3 = "AWM"
 SWEP.Trivia_Class = "Sniper Rifle"
 SWEP.Trivia_Desc = "A high-caliber sniper rifle designed for cold-weather police and military units. Heavy rounds pack an extreme punch and are designed for maximum precision."
 SWEP.Trivia_Manufacturer = "Nordland"
@@ -15,8 +15,8 @@ SWEP.Trivia_Year = 1995
 
 SWEP.Slot = 2
 
-if GetConVar("arccw_truenames"):GetBool() then
-    SWEP.PrintName = SWEP.TrueName
+if false then
+    SWEP.PrintName = SWEP.TrueNam3
     SWEP.Trivia_Manufacturer = "Accuracy International"
     SWEP.Trivia_Country = "United Kingdom"
 end
@@ -156,20 +156,6 @@ SWEP.Attachments = {
         CorrectiveAng = Angle(0, 0, 0)
     },
     {
-        PrintName = "Backup Optic", -- print name
-        Slot = "backup", -- what kind of attachments can fit here, can be string or table
-        Bone = "v_weapon.awm_Parent", -- relevant bone any attachments will be mostly referring to
-        Offset = {
-            vpos = Vector(0.035, -4, -10),
-            vang = Angle(-90, 0, -90),
-            wpos = Vector(8, 0.899, -6.401),
-            wang = Angle(-10.52, 0, 180)
-        },
-        CorrectivePos = Vector(0, 0, 0),
-        CorrectiveAng = Angle(0, 0, 0),
-        KeepBaseIrons = true,
-    },
-    {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
         Slot = "muzzle",
@@ -209,16 +195,6 @@ SWEP.Attachments = {
         },
     },
     {
-        PrintName = "Grip",
-        Slot = "grip",
-        DefaultAttName = "Standard Grip"
-    },
-    {
-        PrintName = "Stock",
-        Slot = "stock",
-        DefaultAttName = "Standard Stock"
-    },
-    {
         PrintName = "Ammo Type",
         Slot = "ammo_bullet"
     },
@@ -229,6 +205,7 @@ SWEP.Attachments = {
     {
         PrintName = "Charm",
         Slot = "charm",
+        Hidden = true,
         FreeSlot = true,
         Bone = "v_weapon.awm_Parent", -- relevant bone any attachments will be mostly referring to
         Offset = {

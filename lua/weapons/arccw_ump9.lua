@@ -4,7 +4,7 @@ SWEP.Category = "ArcCW - CS+" -- edit this if you like
 SWEP.AdminOnly = false
 
 SWEP.PrintName = "MP-K1"
-SWEP.TrueName = "UMP-9"
+SWEP.TrueNam3 = "UMP-9"
 SWEP.Trivia_Class = "Submachine Gun"
 SWEP.Trivia_Desc = "Ubiquitous 9mm SMG. Created as a response to the need for a faster-firing and more reliable submachine gun than existing options at the time."
 SWEP.Trivia_Manufacturer = "Auschen Waffenfabrik"
@@ -15,8 +15,8 @@ SWEP.Trivia_Year = 1968
 
 SWEP.Slot = 2
 
-if GetConVar("arccw_truenames"):GetBool() then
-    SWEP.PrintName = SWEP.TrueName
+if false then
+    SWEP.PrintName = SWEP.TrueNam3
     SWEP.Trivia_Manufacturer = "Heckler & Koch"
     SWEP.Trivia_Country = "Germany"
 end
@@ -161,7 +161,7 @@ SWEP.Attachments = {
     {
         PrintName = "Optic", -- print name
         DefaultAttName = "Iron Sights",
-        Slot = {"optic", "optic_lp"}, -- what kind of attachments can fit here, can be string or table
+        Slot = {"optic_lp", "optic", "optic_sniper"}, -- what kind of attachments can fit here, can be string or table
         Bone = "v_weapon.ump45_Parent", -- relevant bone any attachments will be mostly referring to
         Offset = {
             vpos = Vector(0.373, -8.193, -1.633), -- offset that the attachment will be relative to the bone
@@ -214,16 +214,6 @@ SWEP.Attachments = {
         },
     },
     {
-        PrintName = "Grip",
-        Slot = "grip",
-        DefaultAttName = "Standard Grip"
-    },
-    {
-        PrintName = "Stock",
-        Slot = "stock",
-        DefaultAttName = "Standard Stock"
-    },
-    {
         PrintName = "Fire Group",
         Slot = "fcg",
         DefaultAttName = "Standard FCG"
@@ -239,6 +229,7 @@ SWEP.Attachments = {
     {
         PrintName = "Charm",
         Slot = "charm",
+        Hidden = true,
         FreeSlot = true,
         Bone = "v_weapon.ump45_Parent",
         Offset = {

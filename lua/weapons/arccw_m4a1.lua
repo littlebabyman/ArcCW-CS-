@@ -4,7 +4,7 @@ SWEP.Category = "ArcCW - CS+" -- edit this if you like
 SWEP.AdminOnly = false
 
 SWEP.PrintName = "Mk. 4"
-SWEP.TrueName = "M4A1"
+SWEP.TrueNam3 = "M4A1"
 SWEP.Trivia_Class = "Assault Carbine"
 SWEP.Trivia_Desc = "Shortened carbine-length version of the M16 rifle, designed for use in situations where a shorter or lighter weapon is required. After the turn of the millennium, many armies began adopting carbines as their main infantry weapons."
 SWEP.Trivia_Manufacturer = "Gryphon Arms"
@@ -15,8 +15,8 @@ SWEP.Trivia_Year = 1994
 
 SWEP.Slot = 2
 
-if GetConVar("arccw_truenames"):GetBool() then
-    SWEP.PrintName = SWEP.TrueName
+if false then
+    SWEP.PrintName = SWEP.TrueNam3
     SWEP.Trivia_Manufacturer = "Armalite"
 end
 
@@ -137,7 +137,7 @@ SWEP.AttachmentElements = {
         WMBodygroups = {{ind = 1, bg = 2}},
     },
     ["fcg_semi"] = {
-        TrueNameChange = "AR-15",
+        TrueNam3Change = "AR-15",
         NameChange = "Gryphon Patriot",
     }
 }
@@ -148,7 +148,7 @@ SWEP.Attachments = {
     {
         PrintName = "Optic", -- print name
         DefaultAttName = "Iron Sights",
-        Slot = "optic", -- what kind of attachments can fit here, can be string or table
+        Slot = {"optic_lp", "optic", "optic_sniper"}, -- what kind of attachments can fit here, can be string or table
         Bone = "v_weapon.m4_Parent", -- relevant bone any attachments will be mostly referring to
         Offset = {
             vpos = Vector(0.75, -5.715, -1.609), -- offset that the attachment will be relative to the bone
@@ -166,21 +166,6 @@ SWEP.Attachments = {
         -- CorrectivePos = Vector(-0.017, 0, -0.4),
         CorrectivePos = Vector(0.02, 0, 0),
         CorrectiveAng = Angle(-3, 0, 0)
-    },
-    {
-        PrintName = "Backup Optic", -- print name
-        Slot = "backup", -- what kind of attachments can fit here, can be string or table
-        Bone = "v_weapon.m4_Parent", -- relevant bone any attachments will be mostly referring to
-        Offset = {
-            vpos = Vector(0.5, -6, -10), -- offset that the attachment will be relative to the bone
-            wpos = Vector(5.36, 0.739, -5.401),
-            vang = Angle(-90 - 1.46949, 0, -85 + 3.64274),
-            wang = Angle(-9.738, 0, 180)
-        },
-        -- CorrectivePos = Vector(-0.017, 0, -0.4),
-        CorrectivePos = Vector(0, 0, 0),
-        CorrectiveAng = Angle(-3, 0, 0),
-        KeepBaseIrons = true,
     },
     {
         PrintName = "Muzzle",
@@ -223,16 +208,6 @@ SWEP.Attachments = {
         },
     },
     {
-        PrintName = "Grip",
-        Slot = "grip",
-        DefaultAttName = "Standard Grip"
-    },
-    {
-        PrintName = "Stock",
-        Slot = "stock",
-        DefaultAttName = "Standard Stock"
-    },
-    {
         PrintName = "Fire Group",
         Slot = "fcg",
         DefaultAttName = "Standard FCG"
@@ -248,6 +223,7 @@ SWEP.Attachments = {
     {
         PrintName = "Charm",
         Slot = "charm",
+        Hidden = true,
         FreeSlot = true,
         Bone = "v_weapon.m4_Parent",
         Offset = {

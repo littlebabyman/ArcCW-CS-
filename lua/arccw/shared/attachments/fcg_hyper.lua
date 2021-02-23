@@ -1,5 +1,5 @@
 att.PrintName = "Hyper-Burst"
-att.Icon = Material("entities/acwatt_fcg_hyper.png")
+att.Icon = Material("entities/acwatt_fcg_hyper.png", "mips smooth")
 att.Description = "Firemode conversion allowing for a rapid two-round 'hyper burst' mode that fires both bullets in extremely rapid succession. Extra mechanical complexity increases weight and reduces effective precision."
 att.Desc_Pros = {
     "pro.hyper",
@@ -14,8 +14,6 @@ att.Slot = "fcg"
 att.Override_Firemodes = {
     {
         Mode = -2,
-        Mult_RPM = 3,
-        Mult_AccuracyMOA = 1.5,
         RunawayBurst = true,
         PostBurstDelay = 0.25,
         Override_ShotRecoilTable = {
@@ -27,5 +25,7 @@ att.Override_Firemodes = {
     }
 }
 
-att.Mult_Recoil = 1.25
+att.Mult_Recoil = 2
 att.Mult_SightTime = 1.2
+att.Mult_RPM = 3
+att.Mult_AccuracyMOA = 1.5

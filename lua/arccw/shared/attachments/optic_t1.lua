@@ -1,5 +1,5 @@
 att.PrintName = "T-1 (LP)"
-att.Icon = Material("entities/acwatt_optic_t1.png")
+att.Icon = Material("entities/acwatt_optic_t1.png", "mips smooth")
 att.Description = "Mid-profile red dot sight with magnification properties."
 
 att.SortOrder = -0.5

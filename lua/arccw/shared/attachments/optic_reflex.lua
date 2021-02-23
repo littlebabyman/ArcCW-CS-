@@ -1,5 +1,5 @@
 att.PrintName = "Reflex (RDS)"
-att.Icon = Material("entities/acwatt_optic_reflex.png")
+att.Icon = Material("entities/acwatt_optic_reflex.png", "mips smooth")
 att.Description = "Lightweight reflex sight for rifles. Small frame allows for high ergonomics."
 
 att.SortOrder = 0

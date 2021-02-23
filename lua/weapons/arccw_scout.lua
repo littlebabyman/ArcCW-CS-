@@ -4,7 +4,7 @@ SWEP.Category = "ArcCW - CS+" -- edit this if you like
 SWEP.AdminOnly = false
 
 SWEP.PrintName = "PSRS"
-SWEP.TrueName = "Scout"
+SWEP.TrueNam3 = "Scout"
 SWEP.Trivia_Class = "Sniper Rifle"
 SWEP.Trivia_Desc = "The Precision Sharpshooter Rifle System is a high-spec bolt-action rifle, tailored to the needs of Police snipers. It is also marketed to civilian competition shooters."
 SWEP.Trivia_Manufacturer = "First Strike Tactical"
@@ -15,8 +15,8 @@ SWEP.Trivia_Year = 1991
 
 SWEP.Slot = 2
 
-if GetConVar("arccw_truenames"):GetBool() then
-    SWEP.PrintName = SWEP.TrueName
+if false then
+    SWEP.PrintName = SWEP.TrueNam3
     SWEP.Trivia_Manufacturer = "Steyr Mannlicher"
     SWEP.Trivia_Country = "Austria"
 end
@@ -186,16 +186,6 @@ SWEP.Attachments = {
         },
     },
     {
-        PrintName = "Grip",
-        Slot = "grip",
-        DefaultAttName = "Standard Grip"
-    },
-    {
-        PrintName = "Stock",
-        Slot = "stock",
-        DefaultAttName = "Standard Stock"
-    },
-    {
         PrintName = "Ammo Type",
         Slot = "ammo_bullet"
     },
@@ -206,6 +196,7 @@ SWEP.Attachments = {
     {
         PrintName = "Charm",
         Slot = "charm",
+        Hidden = true,
         FreeSlot = true,
         Bone = "v_weapon.scout_Parent", -- relevant bone any attachments will be mostly referring to
         Offset = {

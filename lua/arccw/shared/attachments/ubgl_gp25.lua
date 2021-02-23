@@ -1,5 +1,5 @@
 att.PrintName = "GP25 (HEAT)"
-att.Icon = Material("entities/acwatt_ubgl_gp25.png")
+att.Icon = Material("entities/acwatt_ubgl_gp25.png", "mips smooth")
 att.Description = "Russian underbarrel launcher with anti-tank rocket rounds. Rockets travel straight and deal heavy direct damage with light splash damage."
 att.Desc_Pros = {
     "pro.ubgl",

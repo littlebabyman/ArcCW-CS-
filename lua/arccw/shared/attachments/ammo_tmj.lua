@@ -1,5 +1,5 @@
 att.PrintName = "Total Metal Jacket"
-att.Icon = Material("entities/acwatt_ammo_tmj.png")
+att.Icon = Material("entities/acwatt_ammo_tmj.png", "mips smooth")
 att.Description = "Bullets with a total copper coating which keep energy better at long range, improving damage at distance but overpenetrating targets which are too close."
 att.Desc_Pros = {
 }

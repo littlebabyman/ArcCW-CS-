@@ -4,7 +4,7 @@ SWEP.Category = "ArcCW - CS+" -- edit this if you like
 SWEP.AdminOnly = false
 
 SWEP.PrintName = "Century Eagle"
-SWEP.TrueName = "Desert Eagle .50"
+SWEP.TrueNam3 = "Desert Eagle .50"
 SWEP.Trivia_Class = "Pistol"
 SWEP.Trivia_Desc = ".50 Calibre heavy automatic pistol, designed for self-defense against large wild animals such as grizzly bears. A rotating-bolt gas-operated design makes it able to handle the huge round, resembling an assault rifle more than a handgun."
 SWEP.Trivia_Manufacturer = "Gryphon Arms"
@@ -15,8 +15,8 @@ SWEP.Trivia_Year = 1991
 
 SWEP.Slot = 1
 
-if GetConVar("arccw_truenames"):GetBool() then
-    SWEP.PrintName = SWEP.TrueName
+if false then
+    SWEP.PrintName = SWEP.TrueNam3
     SWEP.Trivia_Manufacturer = "Israeli Military Industries"
 end
 
@@ -153,7 +153,7 @@ SWEP.Attachments = {
     {
         PrintName = "Optic", -- print name
         DefaultAttName = "Iron Sights",
-        Slot = {"optic_lp", "optic"}, -- what kind of attachments can fit here, can be string or table
+        Slot = {"optic_lp", "optic", "optic_sniper"}, -- what kind of attachments can fit here, can be string or table
         Bone = "v_weapon.Deagle_Parent", -- relevant bone any attachments will be mostly referring to
         Offset = {
             vpos = Vector(0.032, -4.529, -3.604), -- offset that the attachment will be relative to the bone
@@ -211,17 +211,6 @@ SWEP.Attachments = {
         },
     },
     {
-        PrintName = "Grip",
-        Slot = "grip",
-        DefaultAttName = "Standard Grip"
-    },
-    {
-        PrintName = "Stock",
-        Slot = "stock",
-        DefaultAttName = "No Stock",
-        InstalledEles = {"stock"},
-    },
-    {
         PrintName = "Fire Group",
         Slot = "fcg",
         DefaultAttName = "Standard FCG"
@@ -237,6 +226,7 @@ SWEP.Attachments = {
     {
         PrintName = "Charm",
         Slot = "charm",
+        Hidden = true,
         FreeSlot = true,
         Bone = "v_weapon.Deagle_Parent", -- relevant bone any attachments will be mostly referring to
         Offset = {

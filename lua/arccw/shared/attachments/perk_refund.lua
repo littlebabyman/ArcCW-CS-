@@ -1,5 +1,5 @@
 att.PrintName = "Never Stop Shooting"
-att.Icon = Material("entities/acwatt_perk_refund.png")
+att.Icon = Material("entities/acwatt_perk_refund.png", "mips smooth")
 att.Description = "Shots which successfully hit have a 50% chance to be refunded to your reserve ammo."
 att.Desc_Pros = {
     "pro.perk_refund"

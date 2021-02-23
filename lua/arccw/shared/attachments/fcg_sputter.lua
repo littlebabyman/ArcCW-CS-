@@ -1,5 +1,5 @@
 att.PrintName = "Sputter"
-att.Icon = Material("entities/acwatt_fcg_sputter.png")
+att.Icon = Material("entities/acwatt_fcg_sputter.png", "mips smooth")
 att.Description = "Firemode conversion designed to circumvent early machine gun regulations by making the gun fire continuously until empty."
 att.Desc_Pros = {
     "pro.sputter",

@@ -1,5 +1,5 @@
 att.PrintName = "Angled Foregrip"
-att.Icon = Material("entities/acwatt_foregrip_angled.png")
+att.Icon = Material("entities/acwatt_foregrip_angled.png", "mips smooth")
 att.Description = "Angled foregrip which enables superior agility, at the cost of recoil control due to a harder-to-grip surface."
 
 att.SortOrder = 1

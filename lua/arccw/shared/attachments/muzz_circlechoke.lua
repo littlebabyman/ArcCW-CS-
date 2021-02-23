@@ -1,5 +1,5 @@
 att.PrintName = "Concentric Choke"
-att.Icon = Material("entities/acwatt_muzz_circlechoke.png")
+att.Icon = Material("entities/acwatt_muzz_circlechoke.png", "mips smooth")
 att.Description = "Shotgun choke producing a circular pattern which is hollow in the middle."
 att.Desc_Pros = {
     "pro.muzz_circlechoke",
@@ -24,3 +24,5 @@ att.Hook_ShotgunSpreadOffset = function(wep, data)
 
     return data
 end
+
+att.Ignore = true

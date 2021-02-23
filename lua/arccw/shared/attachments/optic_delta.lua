@@ -1,5 +1,5 @@
 att.PrintName = "Delta (LP)"
-att.Icon = Material("entities/acwatt_optic_delta.png")
+att.Icon = Material("entities/acwatt_optic_delta.png", "mips smooth")
 att.Description = "Low-profile red dot sight for pistols, with dot reticle."
 
 att.SortOrder = -0.5

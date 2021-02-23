@@ -1,5 +1,5 @@
 att.PrintName = "Hunter (2-5x)"
-att.Icon = Material("entities/acwatt_optic_hunter.png")
+att.Icon = Material("entities/acwatt_optic_hunter.png", "mips smooth")
 att.Description = "Adjustable medium-long range sniper optic."
 
 att.SortOrder = 5
@@ -17,9 +17,9 @@ att.Model = "models/weapons/arccw/atts/hunter.mdl"
 
 att.AdditionalSights = {
     {
-        Pos = Vector(0, 15, -1.055),
+        Pos = Vector(-0.02, 12, -1.015),
         Ang = Angle(0, 0, 0),
-        Magnification = 1.8,
+        Magnification = 1.3,
         ScrollFunc = ArcCW.SCROLL_ZOOM,
         ZoomLevels = 6,
         ZoomSound = "weapons/arccw/fiveseven/fiveseven_slideback.wav",

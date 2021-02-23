@@ -1,5 +1,5 @@
 att.PrintName = "Match Ammo"
-att.Icon = Material("entities/acwatt_ammo_match.png")
+att.Icon = Material("entities/acwatt_ammo_match.png", "mips smooth")
 att.Description = "High-quality competition-grade ammunition. Consistent power loads allow for greater accuracy. Custom-tooled bullets cut rifling more smoothly and keep energy for longer. Such bullets cannot be used in bulk."
 att.Desc_Pros = {
 }

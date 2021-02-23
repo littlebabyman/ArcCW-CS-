@@ -1,7 +1,7 @@
 att.Ignore = true
 
 att.PrintName = "Bandit Style"
-att.Icon = Material("entities/acwatt_gangstyle.png")
+att.Icon = Material("entities/acwatt_gangstyle.png", "mips smooth")
 att.Description = "A sideways shooting style that allows for the muzzle climb of a pistol to sweep a room, coined for its use in the warlord era of China."
 att.Desc_Pros = {
     "+ Sideways recoil",

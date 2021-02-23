@@ -1,5 +1,5 @@
 att.PrintName = "RPG-7 High Explosive"
-att.Icon = Material("entities/acwatt_ammo_rpg7_he.png")
+att.Icon = Material("entities/acwatt_ammo_rpg7_he.png", "mips smooth")
 att.Description = "Load high explosive rockets that have a greater splash radius but no HEAT jet, reducing impact damage."
 att.Desc_Pros = {
     "pro.rpg.splash"

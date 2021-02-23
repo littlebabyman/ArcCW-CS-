@@ -1,5 +1,5 @@
-att.PrintName = "Vampire (FLIR)"
-att.Icon = Material("entities/acwatt_optic_vampire.png")
+att.PrintName = "Vampire (1.1-3xIR)"
+att.Icon = Material("entities/acwatt_optic_vampire.png", "mips smooth")
 att.Description = "Heavy infrared thermal vision scope. Capable of highlighting targets in white. Complex electronics require bulky chassis."
 
 att.SortOrder = 50
@@ -18,9 +18,10 @@ att.Model = "models/weapons/arccw/atts/vampire.mdl"
 
 att.AdditionalSights = {
     {
-        Pos = Vector(0, 14, -1.55),
+        Pos = Vector(0, 11, -1.55),
         Ang = Angle(0, 0, 0),
-        Magnification = 1.75,
+        Magnification = 1.4,
+        ScopeMagnification = 1.75,
         ScrollFunc = ArcCW.SCROLL_ZOOM,
         ZoomLevels = 4,
         ZoomSound = "weapons/arccw/fiveseven/fiveseven_slideback.wav",
@@ -34,7 +35,7 @@ att.ScopeGlint = true
 att.Holosight = true
 att.HolosightReticle = Material("hud/scopes/thermal.png", "smooth")
 att.HolosightNoFlare = true
-att.HolosightSize = 16
+att.HolosightSize = 14  
 att.HolosightBone = "holosight"
 att.HolosightPiece = "models/weapons/arccw/atts/vampire_hsp.mdl"
 

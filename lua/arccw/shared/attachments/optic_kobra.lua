@@ -1,5 +1,5 @@
 att.PrintName = "Kobra (HOLO)"
-att.Icon = Material("entities/acwatt_optic_kobra.png")
+att.Icon = Material("entities/acwatt_optic_kobra.png", "mips smooth")
 att.Description = "Russian holographic sight with three-prong reticle."
 
 att.SortOrder = 0.5

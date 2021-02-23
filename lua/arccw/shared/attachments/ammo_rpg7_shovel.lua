@@ -1,5 +1,5 @@
 att.PrintName = "RPG-7 Shovel Tip"
-att.Icon = Material("entities/acwatt_ammo_shovel.png")
+att.Icon = Material("entities/acwatt_ammo_shovel.png", "mips smooth")
 att.Description = "A far cry from those regular rockets"
 att.Ignore = true
 att.Desc_Pros = {

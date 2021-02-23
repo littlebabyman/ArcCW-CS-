@@ -4,7 +4,7 @@ SWEP.Category = "ArcCW - CS+" -- edit this if you like
 SWEP.AdminOnly = false
 
 SWEP.PrintName = "ROLAND SS-X"
-SWEP.TrueName = "SG550-1"
+SWEP.TrueNam3 = "SG550-1"
 SWEP.Trivia_Class = "DMR"
 SWEP.Trivia_Desc = "Swiss police marksman rifle in 5.56. Designed for use at closer ranges than most sniper rifles."
 SWEP.Trivia_Manufacturer = "ROLAND SIS"
@@ -15,8 +15,8 @@ SWEP.Trivia_Year = 1992
 
 SWEP.Slot = 2
 
-if GetConVar("arccw_truenames"):GetBool() then
-    SWEP.PrintName = SWEP.TrueName
+if false then
+    SWEP.PrintName = SWEP.TrueNam3
     SWEP.Trivia_Manufacturer = "Swiss Arms AG"
 end
 
@@ -157,18 +157,6 @@ SWEP.Attachments = {
         Installed = "optic_magnus"
     },
     {
-        PrintName = "Backup Optic", -- print name
-        Slot = "backup", -- what kind of attachments can fit here, can be string or table
-        Bone = "v_weapon.sg550_Parent", -- relevant bone any attachments will be mostly referring to
-        Offset = {
-            vpos = Vector(0.1, -6.3, -14),
-            vang = Angle(-90, 0, -90),
-            wpos = Vector(5, 0.899, -5),
-            wang = Angle(-10.393, 0, 180)
-        },
-        ExcludeFlags = {"hugesight"}
-    },
-    {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
         Slot = "muzzle",
@@ -210,16 +198,6 @@ SWEP.Attachments = {
         },
     },
     {
-        PrintName = "Grip",
-        Slot = "grip",
-        DefaultAttName = "Standard Grip"
-    },
-    {
-        PrintName = "Stock",
-        Slot = "stock",
-        DefaultAttName = "Standard Stock"
-    },
-    {
         PrintName = "Fire Group",
         Slot = "fcg",
         DefaultAttName = "Standard FCG"
@@ -235,6 +213,7 @@ SWEP.Attachments = {
     {
         PrintName = "Charm",
         Slot = "charm",
+        Hidden = true,
         FreeSlot = true,
         Bone = "v_weapon.sg550_Parent", -- relevant bone any attachments will be mostly referring to
         Offset = {

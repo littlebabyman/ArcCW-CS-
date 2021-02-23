@@ -1,5 +1,5 @@
 att.PrintName = "Deer Slug"
-att.Icon = Material("entities/acwatt_ammo_slug.png")
+att.Icon = Material("entities/acwatt_ammo_slug.png", "mips smooth")
 att.Description = "Shell containing a single heavy lead slug. More accurate, and more effective at range, but at the cost of being only a single projectile."
 att.Desc_Pros = {
 }

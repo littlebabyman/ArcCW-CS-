@@ -1,5 +1,5 @@
 att.PrintName = "Semi"
-att.Icon = Material("entities/acwatt_fcg_semi.png")
+att.Icon = Material("entities/acwatt_fcg_semi.png", "mips smooth")
 att.Description = "Firemode conversion which allows only semi-auto fire."
 att.Desc_Pros = {
 }

@@ -1,5 +1,5 @@
 att.PrintName = "Integral Ring (HOLO)"
-att.Icon = Material("entities/acwatt_optic_p90_ring.png")
+att.Icon = Material("entities/acwatt_optic_p90_ring.png", "mips smooth")
 att.Description = "Integrated scope designed specifically for a single weapon. Superior ergonomics compared to modular scopes."
 
 att.SortOrder = 100

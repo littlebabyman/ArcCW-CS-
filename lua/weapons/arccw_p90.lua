@@ -4,7 +4,7 @@ SWEP.Category = "ArcCW - CS+" -- edit this if you like
 SWEP.AdminOnly = false
 
 SWEP.PrintName = "PDW-57"
-SWEP.TrueName = "P90"
+SWEP.TrueNam3 = "P90"
 SWEP.Trivia_Class = "Personal Defense Weapon"
 SWEP.Trivia_Desc = "5.7mm PDW developed to arm rear-line soldiers in need of a more effective weapon to combat enemy paratroopers wearing body armor. Offers high fire rate with excellent damage characteristics retained at long range."
 SWEP.Trivia_Manufacturer = "Auschen Waffenfabrik"
@@ -15,8 +15,8 @@ SWEP.Trivia_Year = 1989
 
 SWEP.Slot = 2
 
-if GetConVar("arccw_truenames"):GetBool() then
-    SWEP.PrintName = SWEP.TrueName
+if false then
+    SWEP.PrintName = SWEP.TrueNam3
     SWEP.Trivia_Manufacturer = "FN Herstal"
     SWEP.Trivia_Calibre = "5.7x28mm FN"
     SWEP.Trivia_Country = "Belgium"
@@ -28,9 +28,9 @@ SWEP.ViewModel = "models/weapons/arccw/c_pdw57.mdl"
 SWEP.WorldModel = "models/weapons/arccw/w_pdw57.mdl"
 SWEP.ViewModelFOV = 60
 
-SWEP.Damage = 21
-SWEP.DamageMin = 18 -- damage done at maximum range
-SWEP.Range = 100 -- in METRES
+SWEP.Damage = 19
+SWEP.DamageMin = 17 -- damage done at maximum range
+SWEP.Range = 50 -- in METRES
 SWEP.Penetration = 6
 SWEP.DamageType = DMG_BULLET
 SWEP.ShootEntity = nil -- entity to fire, if any
@@ -45,11 +45,12 @@ SWEP.RevolverReload = false -- cases all eject on reload
 
 SWEP.OpenBolt = false -- gun fires at the end of 
 
-SWEP.Recoil = 0.25
+SWEP.Recoil = 0.34
 SWEP.RecoilSide = 0.2
 SWEP.VisualRecoilMult = 1.75
+SWEP.RecoilRise = 3
 
-SWEP.Delay = 60 / 900 -- 60 / RPM.
+SWEP.Delay = 60 / 1100 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
 SWEP.Firemodes = {
     {
@@ -116,7 +117,7 @@ SWEP.HoldtypeSights = "rpg"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_SMG1
 
-SWEP.ActivePos = Vector(-2, -4, 0)
+SWEP.ActivePos = Vector(-2, -2, 1)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
 SWEP.HolsterPos = Vector(0.532, -6, 0)
@@ -155,7 +156,7 @@ SWEP.AttachmentElements = {
         WMBodygroups = {},
     },
     ["fcg_semi"] = {
-        TrueNameChange = "PS90",
+        TrueNam3Change = "PS90",
         NameChange = "M57 Carbine",
         VMBodygroups = {
             {ind = 6, bg = 1},
@@ -175,8 +176,8 @@ SWEP.Attachments = {
     {
         PrintName = "Optic", -- print name
         DefaultAttName = "Iron Sights",
-        Slot = {"optic", "optic_lp"}, -- what kind of attachments can fit here, can be string or table
-        MergeSlots = {10},
+        Slot = {"optic_lp", "optic", "optic_sniper"}, -- what kind of attachments can fit here, can be string or table
+        MergeSlots = {8},
         Bone = "v_weapon.p90_Parent", -- relevant bone any attachments will be mostly referring to
         Offset = {
             vpos = Vector(0.076, -7.319, -4.369), -- offset that the attachment will be relative to the bone
@@ -223,16 +224,6 @@ SWEP.Attachments = {
         },
     },
     {
-        PrintName = "Grip",
-        Slot = "grip",
-        DefaultAttName = "Standard Grip"
-    },
-    {
-        PrintName = "Stock",
-        Slot = "stock",
-        DefaultAttName = "Standard Stock"
-    },
-    {
         PrintName = "Fire Group",
         Slot = "fcg",
         DefaultAttName = "Standard FCG"
@@ -261,6 +252,7 @@ SWEP.Attachments = {
     {
         PrintName = "Charm",
         Slot = "charm",
+        Hidden = true,
         FreeSlot = true,
         Bone = "v_weapon.p90_Parent",
         Offset = {

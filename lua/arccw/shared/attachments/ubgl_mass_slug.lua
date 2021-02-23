@@ -1,5 +1,5 @@
 att.PrintName = "MASS-12 (SLUG)"
-att.Icon = Material("entities/acwatt_ubgl_mass.png")
+att.Icon = Material("entities/acwatt_ubgl_mass.png", "mips smooth")
 att.Description = "Magazine-fed bolt-action 12 gauge underbarrel shotgun using slug rounds. Poor accuracy."
 att.Desc_Pros = {
     "pro.ubsg",
@@ -123,3 +123,5 @@ end
 att.Mult_SightTime = 1.25
 att.Mult_SpeedMult = 0.8
 att.Mult_SightedSpeedMult = 0.85
+
+att.Ignore = true

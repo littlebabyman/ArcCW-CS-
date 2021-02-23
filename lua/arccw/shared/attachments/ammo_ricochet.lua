@@ -1,5 +1,5 @@
 att.PrintName = "Cornerfragger"
-att.Icon = Material("entities/acwatt_ammo_ricochet.png")
+att.Icon = Material("entities/acwatt_ammo_ricochet.png", "mips smooth")
 att.Description = "Bullets ricochet off surfaces once, and gain increased damage when doing so. Specialized bullet head reduces damage and makes penetration impossible. More of a revolver technique."
 att.Desc_Pros = {
     "pro.ammo_ricochet"

@@ -1,5 +1,5 @@
 att.PrintName = "Diver"
-att.Icon = Material("entities/acwatt_perk_underwater.png")
+att.Icon = Material("entities/acwatt_perk_underwater.png", "mips smooth")
 att.Description = "Allows gun to shoot underwater."
 att.Desc_Pros = {
 }

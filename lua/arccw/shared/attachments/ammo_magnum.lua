@@ -1,5 +1,5 @@
 att.PrintName = "Magnum Buckshot"
-att.Icon = Material("entities/acwatt_ammo_magnum.png")
+att.Icon = Material("entities/acwatt_ammo_magnum.png", "mips smooth")
 att.Description = "Powerful overloaded rounds deal extra damage at close range, but at the cost of increased recoil, spread, and long-range damage."
 att.Desc_Pros = {
 }

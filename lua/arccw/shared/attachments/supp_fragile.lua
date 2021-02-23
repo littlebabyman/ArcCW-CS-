@@ -1,6 +1,6 @@
 att.PrintName = "Fragile Suppressor"
 att.Ignore = true
-att.Icon = Material("entities/acwatt_supp_heavy.png")
+att.Icon = Material("entities/acwatt_supp_heavy.png", "mips smooth")
 att.Description = "Improvised suppressor with good sound dampening, which is very light, but breaks when used."
 att.Desc_Pros = {
 }

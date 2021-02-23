@@ -1,5 +1,5 @@
 att.PrintName = "MASS-12 (BUCK)"
-att.Icon = Material("entities/acwatt_ubgl_mass.png")
+att.Icon = Material("entities/acwatt_ubgl_mass.png", "mips smooth")
 att.Description = "Magazine-fed bolt-action 12 gauge underbarrel shotgun."
 att.Desc_Pros = {
     "pro.ubsg",

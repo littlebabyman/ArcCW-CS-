@@ -1,5 +1,5 @@
 att.PrintName = "Precision Irons"
-att.Icon = Material("entities/acwatt_optic_irons_alt.png")
+att.Icon = Material("entities/acwatt_optic_irons_alt.png", "mips smooth")
 att.Description = "Alternate iron sight set up for greater precision but with a reduced field of view."
 
 att.SortOrder = 100

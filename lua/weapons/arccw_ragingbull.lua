@@ -4,7 +4,7 @@ SWEP.Category = "ArcCW - CS+" -- edit this if you like
 SWEP.AdminOnly = false
 
 SWEP.PrintName = "Fury Magnum"
-SWEP.TrueName = "Raging Bull"
+SWEP.TrueNam3 = "Raging Bull"
 SWEP.Trivia_Class = "Revolver"
 SWEP.Trivia_Desc = "Popular, reliable double-action revolver, able to switch to single-action for improved precision. While semi-automatics may hold more rounds and be no less reliable, a cylinder full of magnum rounds is still an intimidating sight. Did you fire six shots, or only five?"
 SWEP.Trivia_Manufacturer = "Gryphon Arms"
@@ -15,8 +15,8 @@ SWEP.Trivia_Year = 1997
 
 SWEP.Slot = 1
 
-if GetConVar("arccw_truenames"):GetBool() then
-    SWEP.PrintName = SWEP.TrueName
+if false then
+    SWEP.PrintName = SWEP.TrueNam3
     SWEP.Trivia_Manufacturer = "Taurus International"
     SWEP.Trivia_Country = "Brazil"
 end
@@ -179,7 +179,7 @@ SWEP.Attachments = {
     {
         PrintName = "Optic",
         DefaultAttName = "Iron Sights",
-        Slot = {"optic_lp", "optic"},
+        Slot = {"optic_lp", "optic", "optic_sniper"},
         Bone = "Body",
         Offset = {
             vpos = Vector(0.032, -4.029, -3.604),
@@ -230,17 +230,6 @@ SWEP.Attachments = {
         }
     },
     {
-        PrintName = "Grip",
-        Slot = "grip",
-        DefaultAttName = "Standard Grip"
-    },
-    {
-        PrintName = "Stock",
-        Slot = "stock",
-        DefaultAttName = "No Stock",
-        InstalledEles = {"stock"},
-    },
-    {
         PrintName = "Ammo Type",
         Slot = "ammo_bullet",
     },
@@ -251,6 +240,7 @@ SWEP.Attachments = {
     {
         PrintName = "Charm",
         Slot = "charm",
+        Hidden = true,
         FreeSlot = true,
         Bone = "Body",
         Offset = {

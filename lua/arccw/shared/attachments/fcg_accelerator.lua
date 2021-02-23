@@ -1,5 +1,5 @@
 att.PrintName = "Accelerator"
-att.Icon = Material("entities/acwatt_fcg_accelerator.png")
+att.Icon = Material("entities/acwatt_fcg_accelerator.png", "mips smooth")
 att.Description = "Firemode conversion that increases fire rate the longer you shoot, up to 7 shots. Includes 14-round burst."
 att.Desc_Pros = {
     "pro.fcg_accelerator",

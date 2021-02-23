@@ -1,5 +1,5 @@
 att.PrintName = "Duckbill Choke"
-att.Icon = Material("entities/acwatt_muzz_duckbill.png")
+att.Icon = Material("entities/acwatt_muzz_duckbill.png", "mips smooth")
 att.Description = "Shotgun choke which produces a wide horizontal dispersion pattern. Potentially good for crowd control."
 att.Desc_Pros = {
     "pro.muzz_duckbill",
@@ -22,3 +22,5 @@ att.Hook_ShotgunSpreadOffset = function(wep, data)
 
     return data
 end
+
+att.Ignore = true

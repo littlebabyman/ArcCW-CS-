@@ -1,5 +1,5 @@
 att.PrintName = "Magnus (3-6x)"
-att.Icon = Material("entities/acwatt_optic_magnus.png")
+att.Icon = Material("entities/acwatt_optic_magnus.png", "mips smooth")
 att.Description = "Sniper rifle optic with the ability to be adjusted between long and medium range magnification options."
 
 att.SortOrder = 6
@@ -17,9 +17,9 @@ att.Model = "models/weapons/arccw/atts/magnus.mdl"
 
 att.AdditionalSights = {
     {
-        Pos = Vector(0, 15, -1.489),
+        Pos = Vector(0, 12, -1.429),
         Ang = Angle(0, 0, 0),
-        Magnification = 1.8,
+        Magnification = 1.3,
         ScrollFunc = ArcCW.SCROLL_ZOOM,
         ZoomLevels = 6,
         ZoomSound = "weapons/arccw/fiveseven/fiveseven_slideback.wav",

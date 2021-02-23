@@ -4,7 +4,7 @@ SWEP.Category = "ArcCW - CS+" -- edit this if you like
 SWEP.AdminOnly = false
 
 SWEP.PrintName = "NXS"
-SWEP.TrueName = "Five-seveN"
+SWEP.TrueNam3 = "Five-seveN"
 SWEP.Trivia_Class = "Pistol"
 SWEP.Trivia_Desc = "5.7mm self loading pistol, designed as a handgun counterpart to the "
 SWEP.Trivia_Manufacturer = "Auschen Waffenfabrik"
@@ -15,8 +15,8 @@ SWEP.Trivia_Year = 1989
 
 SWEP.Slot = 1
 
-if GetConVar("arccw_truenames"):GetBool() then
-    SWEP.PrintName = SWEP.TrueName
+if false then
+    SWEP.PrintName = SWEP.TrueNam3
     SWEP.Trivia_Manufacturer = "FN Herstal"
     SWEP.Trivia_Calibre = "5.7x28mm FN"
     SWEP.Trivia_Country = "Belgium"
@@ -196,17 +196,6 @@ SWEP.Attachments = {
         },
     },
     {
-        PrintName = "Grip",
-        Slot = "grip",
-        DefaultAttName = "Standard Grip"
-    },
-    {
-        PrintName = "Stock",
-        Slot = "stock",
-        DefaultAttName = "No Stock",
-        InstalledEles = {"stock"},
-    },
-    {
         PrintName = "Fire Group",
         Slot = "fcg",
         DefaultAttName = "Standard FCG"
@@ -222,6 +211,7 @@ SWEP.Attachments = {
     {
         PrintName = "Charm",
         Slot = "charm",
+        Hidden = true,
         FreeSlot = true,
         Bone = "v_weapon.FIVESEVEN_PARENT", -- relevant bone any attachments will be mostly referring to
         Offset = {

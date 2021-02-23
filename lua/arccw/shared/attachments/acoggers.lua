@@ -1,5 +1,5 @@
 att.PrintName = "ACOGGERS (2.5-3x)"
-att.Icon = Material("entities/acwatt_acoggers.png")
+att.Icon = Material("entities/acwatt_acoggers.png", "mips smooth")
 att.Description = "Some sort of magnified optic with a person's face on it. He is making a peculiar gesture."
 att.Ignore = true
 

@@ -4,7 +4,7 @@ SWEP.Category = "ArcCW - CS+" -- edit this if you like
 SWEP.AdminOnly = false
 
 SWEP.PrintName = "Target 2/22"
-SWEP.TrueName = "Mk. 2"
+SWEP.TrueNam3 = "Mk. 2"
 SWEP.Trivia_Class = "Pistol"
 SWEP.Trivia_Desc = "A small caliber plinking weapon. Its cartridge is hardly lethal, but sports high precision and minimal recoil."
 SWEP.Trivia_Manufacturer = "ArmStrike USA"
@@ -15,8 +15,8 @@ SWEP.Trivia_Year = 2004
 
 SWEP.Slot = 1
 
-if GetConVar("arccw_truenames"):GetBool() then
-    SWEP.PrintName = SWEP.TrueName
+if false then
+    SWEP.PrintName = SWEP.TrueNam3
     SWEP.Trivia_Manufacturer = "Sturm, Ruger & Company"
 end
 
@@ -200,17 +200,6 @@ SWEP.Attachments = {
         },
     },
     {
-        PrintName = "Grip",
-        Slot = "grip",
-        DefaultAttName = "Standard Grip"
-    },
-    {
-        PrintName = "Stock",
-        Slot = "stock",
-        DefaultAttName = "No Stock",
-        InstalledEles = {"stock"},
-    },
-    {
         PrintName = "Fire Group",
         Slot = "fcg",
         DefaultAttName = "Standard FCG"
@@ -226,6 +215,7 @@ SWEP.Attachments = {
     {
         PrintName = "Charm",
         Slot = "charm",
+        Hidden = true,
         FreeSlot = true,
         Bone = "smdimport",
         Offset = {

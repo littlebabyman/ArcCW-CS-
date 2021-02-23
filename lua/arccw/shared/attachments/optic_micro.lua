@@ -1,5 +1,5 @@
 att.PrintName = "Micro (2x)"
-att.Icon = Material("entities/acwatt_optic_micro.png")
+att.Icon = Material("entities/acwatt_optic_micro.png", "mips smooth")
 att.Description = "Miniature optic intended for low-magnification applications and close combat. Very lightweight."
 
 att.SortOrder = 2
@@ -17,16 +17,17 @@ att.Model = "models/weapons/arccw/atts/micro.mdl"
 
 att.AdditionalSights = {
     {
-        Pos = Vector(0, 10, -1.489),
+        Pos = Vector(-0.03, 4, -1.449),
         Ang = Angle(0, 0, 0),
-        Magnification = 2,
+        Magnification = 1.3,
+        ScopeMagnification = 2
     }
 }
 
 att.Holosight = true
-att.HolosightReticle = Material("hud/scopes/circle.png", "smooth")
+att.HolosightReticle = Material("hud/scopes/circle.png", "mips smooth")
 att.HolosightNoFlare = true
-att.HolosightSize = 10
+att.HolosightSize = 11
 att.HolosightBone = "holosight"
 att.HolosightPiece = "models/weapons/arccw/atts/micro_hsp.mdl"
 

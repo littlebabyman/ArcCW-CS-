@@ -1,5 +1,5 @@
 att.PrintName = "Automatic"
-att.Icon = Material("entities/acwatt_fcg_auto.png")
+att.Icon = Material("entities/acwatt_fcg_auto.png", "mips smooth")
 att.Description = "Firemode conversion allowing for full-auto and semi-auto fire modes."
 att.Desc_Pros = {
     "pro.auto",

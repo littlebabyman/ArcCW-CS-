@@ -1,5 +1,5 @@
 att.PrintName = "Cross Choke"
-att.Icon = Material("entities/acwatt_muzz_crosschoke.png")
+att.Icon = Material("entities/acwatt_muzz_crosschoke.png", "mips smooth")
 att.Description = "Shotgun choke producing a cross-shaped pattern."
 att.Desc_Pros = {
     "pro.muzz_crosschoke",
@@ -26,3 +26,5 @@ att.Hook_ShotgunSpreadOffset = function(wep, data)
 
     return data
 end
+
+att.Ignore = true

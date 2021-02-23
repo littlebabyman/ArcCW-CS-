@@ -1,5 +1,5 @@
 att.PrintName = "Farview (4-9x)"
-att.Icon = Material("entities/acwatt_optic_farview.png")
+att.Icon = Material("entities/acwatt_optic_farview.png", "mips smooth")
 att.Description = "High-magnification sniper rifle scope for long range combat."
 
 att.SortOrder = 9
@@ -19,11 +19,11 @@ att.Model = "models/weapons/arccw/atts/farview.mdl"
 
 att.AdditionalSights = {
     {
-        Pos = Vector(0, 18, -1.5),
+        Pos = Vector(0, 15, -1.5),
         Ang = Angle(0, 0, 0),
-        Magnification = 1.8,
+        Magnification = 1.3,
         ScrollFunc = ArcCW.SCROLL_ZOOM,
-        ZoomLevels = 12,
+        ZoomLevels = 6,
         ZoomSound = "weapons/arccw/fiveseven/fiveseven_slideback.wav",
         IgnoreExtra = true
     }
@@ -39,12 +39,12 @@ att.HolosightBone = "holosight"
 att.HolosightPiece = "models/weapons/arccw/atts/farview_hsp.mdl"
 att.Colorable = true
 
-att.HolosightMagnification = 3
+att.HolosightMagnification = 4
 att.HolosightBlackbox = true
 
 att.HolosightConstDist = 64
 
-att.HolosightMagnificationMin = 3
+att.HolosightMagnificationMin = 4
 att.HolosightMagnificationMax = 9
 
 att.Mult_SightTime = 1.35

@@ -1,5 +1,5 @@
 att.PrintName = "Canted Delta (RDS)"
-att.Icon = Material("entities/acwatt_optic_delta.png")
+att.Icon = Material("entities/acwatt_optic_delta.png", "mips smooth")
 att.Description = "Backup red dot sight on 45 degree mount for use in combination with magnified optics."
 att.InvAtt = "optic_delta"
 
@@ -33,3 +33,5 @@ att.HolosightBone = "holosight"
 att.Mult_SightTime = 1.1
 
 att.Colorable = true
+
+att.Ignore = true

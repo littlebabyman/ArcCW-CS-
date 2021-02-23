@@ -1,5 +1,5 @@
 att.PrintName = "Burst"
-att.Icon = Material("entities/acwatt_fcg_burst.png")
+att.Icon = Material("entities/acwatt_fcg_burst.png", "mips smooth")
 att.Description = "Firemode conversion allowing for 3-round burst and semi-auto fire modes."
 att.Desc_Pros = {
     "pro.burst"

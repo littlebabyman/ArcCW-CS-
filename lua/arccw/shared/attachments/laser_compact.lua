@@ -1,5 +1,5 @@
 att.PrintName = "Compact Laser"
-att.Icon = Material("entities/acwatt_laser_compact.png")
+att.Icon = Material("entities/acwatt_laser_compact.png", "mips smooth")
 att.Description = "Small lightweight laser for pistols. Red beam assists with aiming from the hip. Not as powerful as a bright laser."
 att.Desc_Pros = {
 }

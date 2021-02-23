@@ -1,5 +1,5 @@
-att.PrintName = "HAMR (2.7x)"
-att.Icon = Material("entities/acwatt_optic_hamr.png")
+att.PrintName = "HAMR (1.5-2.7x)"
+att.Icon = Material("entities/acwatt_optic_hamr.png", "mips smooth")
 att.Description = "Zoom scope with integrated red dot sight. Slightly heavier than similar scopes."
 
 att.SortOrder = 2.7
@@ -20,17 +20,21 @@ att.Model = "models/weapons/arccw/atts/hamr.mdl"
 
 att.AdditionalSights = {
     {
-        Pos = Vector(0, 20, -1.525),
+        Pos = Vector(0, 10, -1.525),
         Ang = Angle(0, 0, 0),
-        Magnification = 2,
+        Magnification = 1.3,
         ScopeMagnification = 2.7,
+        ScrollFunc = ArcCW.SCROLL_ZOOM,
+        ZoomLevels = 3,
         HolosightBone = "scope",
         HolosightData = {
             Holosight = true,
             HolosightMagnification = 2.7,
+            HolosightMagnificationMin = 1.5,
+            HolosightMagnificationMax = 2.7,
             HolosightReticle = Material("hud/scopes/hamr.png"),
             HolosightNoFlare = true,
-            HolosightSize = 8,
+            HolosightSize = 12,
             HolosightBlackbox = true,
             Colorable = true,
             HolosightPiece = "models/weapons/arccw/atts/hamr_hsp.mdl"
@@ -38,9 +42,9 @@ att.AdditionalSights = {
         IgnoreExtra = true
     },
     {
-        Pos = Vector(0, 10, -3.05),
+        Pos = Vector(0, 6, -3.05),
         Ang = Angle(0, 0, 0),
-        Magnification = 1.5,
+        Magnification = 1.2,
         HolosightBone = "holosight",
         HolosightData = {
             Holosight = true,

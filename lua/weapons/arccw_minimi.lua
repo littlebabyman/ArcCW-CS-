@@ -4,7 +4,7 @@ SWEP.Category = "ArcCW - CS+" -- edit this if you like
 SWEP.AdminOnly = false
 
 SWEP.PrintName = "M2000-G"
-SWEP.TrueName = "Minimi Para"
+SWEP.TrueNam3 = "Minimi Para"
 SWEP.Trivia_Class = "Machine Gun"
 SWEP.Trivia_Desc = "Air-cooled, belt-fed fully automatic squad assault weapon. Capable of laying down sustained suppressive fire. Depleting a belt fully negates the need to remove it before inserting a new one, meaning that reloading when the weapon is totally empty is actually faster."
 SWEP.Trivia_Manufacturer = "Gryphon Arms"
@@ -15,8 +15,8 @@ SWEP.Trivia_Year = 1984
 
 SWEP.Slot = 2
 
-if GetConVar("arccw_truenames"):GetBool() then
-    SWEP.PrintName = SWEP.TrueName
+if false then
+    SWEP.PrintName = SWEP.TrueNam3
     SWEP.Trivia_Manufacturer = "FN Herstal"
     SWEP.Trivia_Country = "Belgium"
 end
@@ -164,7 +164,7 @@ SWEP.Attachments = {
     {
         PrintName = "Optic", -- print name
         DefaultAttName = "Iron Sights",
-        Slot = {"optic_lp", "optic"}, -- what kind of attachments can fit here, can be string or table
+        Slot = {"optic_lp", "optic", "optic_sniper"}, -- what kind of attachments can fit here, can be string or table
         Bone = "v_weapon.receiver", -- relevant bone any attachments will be mostly referring to
         Offset = {
             vpos = Vector(-7.421, 0.07, -0.223), -- offset that the attachment will be relative to the bone
@@ -174,18 +174,6 @@ SWEP.Attachments = {
         },
         InstalledEles = {"nors"},
         CorrectiveAng = Angle(0, 0, 0)
-    },
-    {
-        PrintName = "Backup Optic", -- print name
-        Slot = "backup", -- what kind of attachments can fit here, can be string or table
-        Bone = "v_weapon.m249", -- relevant bone any attachments will be mostly referring to
-        Offset = {
-            vpos = Vector(0.115, -2.5, 16),
-            vang = Angle(90, 0, -90),
-            wpos = Vector(29, 0.825, -10.6),
-            wang = Angle(-9.738, -1, 180)
-        },
-        KeepBaseIrons = true,
     },
     {
         PrintName = "Muzzle",
@@ -222,11 +210,6 @@ SWEP.Attachments = {
         },
     },
     {
-        PrintName = "Grip",
-        Slot = "grip",
-        DefaultAttName = "Standard Grip"
-    },
-    {
         PrintName = "Fire Group",
         Slot = "fcg",
         DefaultAttName = "Standard FCG"
@@ -242,6 +225,7 @@ SWEP.Attachments = {
     {
         PrintName = "Charm",
         Slot = "charm",
+        Hidden = true,
         FreeSlot = true,
         Bone = "v_weapon.m249",
         Offset = {

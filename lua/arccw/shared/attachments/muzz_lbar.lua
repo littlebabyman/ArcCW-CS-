@@ -1,5 +1,5 @@
 att.PrintName = "Light Barrel"
-att.Icon = Material("entities/acwatt_muzz_lbar.png")
+att.Icon = Material("entities/acwatt_muzz_lbar.png", "mips smooth")
 att.Description = "Lightweight barrel with reduced weight with reduced precision compared to stock barrels."
 att.Desc_Pros = {
 }
@@ -19,3 +19,5 @@ att.Mult_Recoil = 1.15
 att.Mult_SightTime = 0.75
 att.Mult_SightedSpeedMult = 1.4
 att.Mult_SpeedMult = 1.15
+
+att.Ignore = true

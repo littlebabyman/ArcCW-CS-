@@ -4,7 +4,7 @@ SWEP.Category = "ArcCW - CS+" -- edit this if you like
 SWEP.AdminOnly = false
 
 SWEP.PrintName = "MP-S2"
-SWEP.TrueName = "UMP-45"
+SWEP.TrueNam3 = "UMP-45"
 SWEP.Trivia_Class = "Submachine Gun"
 SWEP.Trivia_Desc = ".45 calibre version of the MP-K1. Packs a greater punch at short range, but has a worse fire rate."
 SWEP.Trivia_Manufacturer = "Auschen Waffenfabrik"
@@ -15,8 +15,8 @@ SWEP.Trivia_Year = 1977
 
 SWEP.Slot = 2
 
-if GetConVar("arccw_truenames"):GetBool() then
-    SWEP.PrintName = SWEP.TrueName
+if false then
+    SWEP.PrintName = SWEP.TrueNam3
     string.Replace(SWEP.Trivia_Desc, "MP-K1", "UMP-9")
     SWEP.Trivia_Manufacturer = "Heckler & Koch"
     SWEP.Trivia_Country = "Germany"

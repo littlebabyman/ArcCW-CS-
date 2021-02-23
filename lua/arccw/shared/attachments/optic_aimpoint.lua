@@ -1,5 +1,5 @@
 att.PrintName = "Aimpoint (RDS)"
-att.Icon = Material("entities/acwatt_optic_aimpoint.png")
+att.Icon = Material("entities/acwatt_optic_aimpoint.png", "mips smooth")
 att.Description = "Tube-based red dot sight for rifles."
 
 att.SortOrder = 0

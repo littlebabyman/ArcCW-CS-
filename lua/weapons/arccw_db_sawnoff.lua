@@ -4,7 +4,7 @@ SWEP.Category = "ArcCW - CS+" -- edit this if you like
 SWEP.AdminOnly = false
 
 SWEP.PrintName = "Partner Sawn-Off"
-SWEP.TrueName = "Sawn-Off"
+SWEP.TrueNam3 = "Sawn-Off"
 SWEP.Trivia_Class = "Shotgun"
 SWEP.Trivia_Desc = "Sawn-off version of the Partner, improving agility at the cost of spread and range."
 SWEP.Trivia_Manufacturer = "Gryphon Arms"
@@ -15,8 +15,8 @@ SWEP.Trivia_Year = 1972
 
 SWEP.Slot = 1
 
-if GetConVar("arccw_truenames"):GetBool() then
-    SWEP.PrintName = SWEP.TrueName
+if false then
+    SWEP.PrintName = SWEP.TrueNam3
     SWEP.Trivia_Manufacturer = "Remington Arms"
 end
 
@@ -174,7 +174,7 @@ SWEP.Attachments = {
     {
         PrintName = "Optic", -- print name
         DefaultAttName = "Iron Sights",
-        Slot = {"optic_lp", "optic"}, -- what kind of attachments can fit here, can be string or table
+        Slot = {"optic_lp", "optic", "optic_sniper"}, -- what kind of attachments can fit here, can be string or table
         Bone = "Weapon_Thing", -- relevant bone any attachments will be mostly referring to
         Offset = {
             vpos = Vector(0, -2.5, -1), -- offset that the attachment will be relative to the bone
@@ -211,11 +211,6 @@ SWEP.Attachments = {
         },
     },
     {
-        PrintName = "Grip",
-        Slot = "grip",
-        DefaultAttName = "Standard Grip"
-    },
-    {
         PrintName = "Ammo Type",
         Slot = "ammo_shotgun"
     },
@@ -226,6 +221,7 @@ SWEP.Attachments = {
     {
         PrintName = "Charm",
         Slot = "charm",
+        Hidden = true,
         FreeSlot = true,
         Bone = "Weapon_Main", -- relevant bone any attachments will be mostly referring to
         Offset = {

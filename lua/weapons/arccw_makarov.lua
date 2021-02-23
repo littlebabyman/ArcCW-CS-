@@ -4,7 +4,7 @@ SWEP.Category = "ArcCW - CS+" -- edit this if you like
 SWEP.AdminOnly = false
 
 SWEP.PrintName = "PM(t) Klassika"
-SWEP.TrueName = "Makarov"
+SWEP.TrueNam3 = "Makarov"
 SWEP.Trivia_Class = "Pistol"
 SWEP.Trivia_Desc = "Soviet self-loading pistol. Incredibly widespread in Ex-Soviet areas. Distributed to military officers and police units. Low damage, but low recoil and fast to reload."
 SWEP.Trivia_Manufacturer = "Kremen Oruzhiye"
@@ -15,8 +15,8 @@ SWEP.Trivia_Year = 1951
 
 SWEP.Slot = 1
 
-if GetConVar("arccw_truenames"):GetBool() then
-    SWEP.PrintName = SWEP.TrueName
+if false then
+    SWEP.PrintName = SWEP.TrueNam3
     SWEP.Trivia_Manufacturer = "Izhevsk Mechanical Plant"
 end
 
@@ -194,17 +194,6 @@ SWEP.Attachments = {
         },
     },
     {
-        PrintName = "Grip",
-        Slot = "grip",
-        DefaultAttName = "Standard Grip"
-    },
-    {
-        PrintName = "Stock",
-        Slot = "stock",
-        DefaultAttName = "No Stock",
-        InstalledEles = {"stock"},
-    },
-    {
         PrintName = "Fire Group",
         Slot = "fcg",
         DefaultAttName = "Standard FCG"
@@ -220,6 +209,7 @@ SWEP.Attachments = {
     {
         PrintName = "Charm",
         Slot = "charm",
+        Hidden = true,
         FreeSlot = true,
         Bone = "Weapon_Bolt", -- relevant bone any attachments will be mostly referring to
         Offset = {

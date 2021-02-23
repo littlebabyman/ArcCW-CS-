@@ -4,7 +4,7 @@ SWEP.Category = "ArcCW - CS+" -- edit this if you like
 SWEP.AdminOnly = false
 
 SWEP.PrintName = "Para-556"
-SWEP.TrueName = "AUG A2"
+SWEP.TrueNam3 = "AUG A2"
 SWEP.Trivia_Class = "Assault Rifle"
 SWEP.Trivia_Desc = "Bullpup assault rifle, whose design puts the mechanism behind the grip, allowing for a longer barrel without extending the effective length of the weapon. Good magazine capacity, poor recoil characteristics."
 SWEP.Trivia_Manufacturer = "Auschen Waffenfabrik"
@@ -15,8 +15,8 @@ SWEP.Trivia_Year = 1978
 
 SWEP.Slot = 2
 
-if GetConVar("arccw_truenames"):GetBool() then
-    SWEP.PrintName = SWEP.TrueName
+if false then
+    SWEP.PrintName = SWEP.TrueNam3
     SWEP.Trivia_Manufacturer = "Steyr Mannlicher"
 end
 
@@ -145,7 +145,7 @@ SWEP.AttachmentElements = {
         WMBodygroups = {},
     },
     ["optic_aug_scope"] = {
-        TrueNameChange = "AUG A1"
+        TrueNam3Change = "AUG A1"
     }
 }
 
@@ -155,8 +155,8 @@ SWEP.Attachments = {
     {
         PrintName = "Optic", -- print name
         DefaultAttName = "Iron Sights",
-        Slot = {"optic_lp", "optic"}, -- what kind of attachments can fit here, can be string or table
-        MergeSlots = {10},
+        Slot = {"optic_lp", "optic", "optic_sniper"}, -- what kind of attachments can fit here, can be string or table
+        MergeSlots = {8},
         Bone = "v_weapon.aug_Parent", -- relevant bone any attachments will be mostly referring to
         Offset = {
             vpos = Vector(0.8, -5.103, -2.08), -- offset that the attachment will be relative to the bone
@@ -202,16 +202,6 @@ SWEP.Attachments = {
         },
     },
     {
-        PrintName = "Grip",
-        Slot = "grip",
-        DefaultAttName = "Standard Grip"
-    },
-    {
-        PrintName = "Stock",
-        Slot = "stock",
-        DefaultAttName = "Standard Stock"
-    },
-    {
         PrintName = "Fire Group",
         Slot = "fcg",
         DefaultAttName = "Standard FCG"
@@ -240,6 +230,7 @@ SWEP.Attachments = {
     {
         PrintName = "Charm",
         Slot = "charm",
+        Hidden = true,
         FreeSlot = true,
         Bone = "v_weapon.aug_Parent", -- relevant bone any attachments will be mostly referring to
         Offset = {

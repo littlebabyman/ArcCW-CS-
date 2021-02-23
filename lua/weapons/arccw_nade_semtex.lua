@@ -1,6 +1,6 @@
 SWEP.Base = "arccw_base_nade"
 SWEP.Spawnable = true -- this obviously has to be set to true
-SWEP.Category = "ArcCW - Other" -- edit this if you like
+SWEP.Category = "ArcCW - CS+ Other" -- edit this if you like
 SWEP.AdminOnly = false
 
 SWEP.PrintName = "Semtex"

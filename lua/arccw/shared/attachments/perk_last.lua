@@ -1,5 +1,5 @@
 att.PrintName = "Memento Mori"
-att.Icon = Material("entities/acwatt_perk_last.png")
+att.Icon = Material("entities/acwatt_perk_last.png", "mips smooth")
 att.Description = "Significant damage multiplier at the cost of being able to fire only one round at a time, extremely slow reloading, and damage at range. It's got to be personal."
 att.Desc_Pros = {
 }
@@ -13,9 +13,9 @@ att.NotForNPC = true
 
 att.Override_ChamberSize = 0
 
-att.Mult_Damage = 2.5
-att.Mult_DamageMin = 0.1
-att.Mult_Range = 0.5
+att.Mult_Damage = 3
+att.Mult_DamageMin = 0.5
+att.Mult_Range = 0.75
 
 att.Mult_ReloadTime = 1.5
 

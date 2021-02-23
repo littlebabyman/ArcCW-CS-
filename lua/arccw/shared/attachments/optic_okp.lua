@@ -1,5 +1,5 @@
 att.PrintName = "OKP-7 (HOLO)"
-att.Icon = Material("entities/acwatt_optic_okp.png")
+att.Icon = Material("entities/acwatt_optic_okp.png", "mips smooth")
 att.Description = "Russian holographic sight with chevron reticle."
 
 att.SortOrder = 0.5

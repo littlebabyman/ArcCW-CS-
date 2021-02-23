@@ -1,5 +1,5 @@
 att.PrintName = "GP25 (FLASH)"
-att.Icon = Material("entities/acwatt_ubgl_gp25.png")
+att.Icon = Material("entities/acwatt_ubgl_gp25.png", "mips smooth")
 att.Description = "Russian underbarrel launcher with flashbang rounds. Flashbangs temporarily blind targets and deal a small amount of explosive damage."
 att.Desc_Pros = {
     "pro.ubgl",
@@ -79,3 +79,5 @@ end
 att.Mult_SightTime = 1.25
 att.Mult_SpeedMult = 0.8
 att.Mult_SightedSpeedMult = 0.85
+
+att.Ignore = true

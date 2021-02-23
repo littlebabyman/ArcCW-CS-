@@ -1,5 +1,5 @@
 att.PrintName = "Docter (LP)"
-att.Icon = Material("entities/acwatt_optic_docter.png")
+att.Icon = Material("entities/acwatt_optic_docter.png", "mips smooth")
 att.Description = "Low-profile pistol sight with triangular sight."
 
 att.SortOrder = -0.5

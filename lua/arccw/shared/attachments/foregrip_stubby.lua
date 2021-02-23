@@ -1,5 +1,5 @@
 att.PrintName = "Stubby Foregrip"
-att.Icon = Material("entities/acwatt_foregrip_stubby.png")
+att.Icon = Material("entities/acwatt_foregrip_stubby.png", "mips smooth")
 att.Description = "Short foregrip which provides good stability while moving as well as helping stabilize recoil."
 
 att.SortOrder = 1
