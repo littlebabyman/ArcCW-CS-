@@ -62,7 +62,7 @@ SWEP.ShellModel = "models/shells/shell_9mm.mdl"
 SWEP.ShellScale = 2
 SWEP.ShellPitch = 90
 
-SWEP.Delay = 60 / 300 -- 60 / RPM.
+SWEP.Delay = 60 / 250 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
 SWEP.Firemodes = {
     {
@@ -277,22 +277,22 @@ SWEP.Animations = {
     },
     ["fire"] = {
         Source = {"shoot1", "shoot2"},
-        Time = 0.5,
+        Time = 0.7,
         ShellEjectAt = 0,
     },
     ["fire_empty"] = {
         Source = "shoot_last",
-        Time = 0.5,
+        Time = 0.8,
         ShellEjectAt = 0,
     },
     ["fire_iron"] = {
         Source = "shoot_iron",
-        Time = 0.5,
+        Time = 0.7,
         ShellEjectAt = 0,
     },
     ["fire_iron_empty"] = {
         Source = "shoot_iron_last",
-        Time = 0.5,
+        Time = 0.8,
         ShellEjectAt = 0,
     },
     ["reload"] = {

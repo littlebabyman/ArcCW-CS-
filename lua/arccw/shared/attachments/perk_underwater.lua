@@ -1,6 +1,6 @@
 att.PrintName = "Diver"
 att.Icon = Material("entities/acwatt_perk_underwater.png", "mips smooth")
-att.Description = "Allows gun to shoot underwater."
+att.Description = "Modifications allow the firearm to shoot underwater and transfer recoil to its surroundings."
 att.Desc_Pros = {
     "No recoil underwater",
 }
@@ -11,9 +11,9 @@ att.Slot = cspf.."perk"
 
 att.Override_CanFireUnderwater = true
 
-att.Hook_Compatible = function(wep)
+--[[att.Hook_Compatible = function(wep)
     if wep.CanFireUnderwater then return false end
-end
+end]]
 
 att.Hook_ModifyRecoil = function(wep, rec)
     if wep:GetOwner():WaterLevel() >= 2 then

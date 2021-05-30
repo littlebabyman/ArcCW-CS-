@@ -282,22 +282,22 @@ SWEP.Animations = {
     },
     ["fire"] = {
         Source = {"shoot1", "shoot2"},
-        Time = 0.5,
+        Time = 0.7,
         ShellEjectAt = 0,
     },
     ["fire_empty"] = {
         Source = "shoot_last",
-        Time = 0.5,
+        Time = 0.8,
         ShellEjectAt = 0,
     },
     ["fire_iron"] = {
         Source = "shoot_iron",
-        Time = 0.5,
+        Time = 0.7,
         ShellEjectAt = 0,
     },
     ["fire_iron_empty"] = {
         Source = "shoot_iron_last",
-        Time = 0.5,
+        Time = 0.8,
         ShellEjectAt = 0,
     },
     ["reload"] = {

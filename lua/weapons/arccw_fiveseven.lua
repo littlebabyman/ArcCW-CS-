@@ -51,7 +51,7 @@ SWEP.RecoilSide = 0.2
 SWEP.VisualRecoilMult = 1
 SWEP.RecoilRise = 2
 
-SWEP.Delay = 60 / 600 -- 60 / RPM.
+SWEP.Delay = 60 / 400 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
 SWEP.Firemodes = {
     {
@@ -260,22 +260,22 @@ SWEP.Animations = {
     },
     ["fire"] = {
         Source = {"shoot_1", "shoot_2"},
-        Time = 0.4,
+        Time = 0.7,
         ShellEjectAt = 0,
     },
     ["fire_empty"] = {
         Source = "shoot_empty",
-        Time = 0.4,
+        Time = 0.7,
         ShellEjectAt = 0,
     },
     ["fire_iron"] = {
         Source = "shoot_iron",
-        Time = 0.4,
+        Time = 0.7,
         ShellEjectAt = 0,
     },
     ["fire_iron_empty"] = {
         Source = "shoot_iron_empty",
-        Time = 0.4,
+        Time = 0.7,
         ShellEjectAt = 0,
     },
     ["reload"] = {
