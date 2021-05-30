@@ -155,7 +155,7 @@ SWEP.Attachments = {
     {
         PrintName = "Optic", -- print name
         DefaultAttName = "Iron Sights",
-        Slot = "optic_lp", -- what kind of attachments can fit here, can be string or table
+        Slot = cspf.."optic_lp", -- what kind of attachments can fit here, can be string or table
         Bone = "v_weapon.Glock_Slide", -- relevant bone any attachments will be mostly referring to
         Offset = {
             vpos = Vector(0.24, -0.375, -0.163), -- offset that the attachment will be relative to the bone
@@ -167,7 +167,7 @@ SWEP.Attachments = {
     {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
-        Slot = "muzzle",
+        Slot = cspf.."muzzle",
         Bone = "v_weapon.Glock_Parent",
         Offset = {
             vpos = Vector(-4.441, -4.436, 0.759),
@@ -178,7 +178,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Underbarrel",
-        Slot = {"foregrip_pistol", "style_pistol"},
+        Slot = {cspf.."foregrip_pistol", cspf.."style_pistol"},
         Bone = "v_weapon.Glock_Parent",
         Offset = {
             vpos = Vector(-1.801, -2.306, 0.531),
@@ -189,7 +189,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Tactical",
-        Slot = "tac_pistol",
+        Slot = cspf.."tac_pistol",
         Bone = "v_weapon.Glock_Parent",
         Offset = {
             vang = Angle(180 - 3, 16, -100),
@@ -205,20 +205,20 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Fire Group",
-        Slot = "fcg",
+        Slot = cspf.."fcg",
         DefaultAttName = "Standard FCG"
     },
     {
         PrintName = "Ammo Type",
-        Slot = "ammo_bullet"
+        Slot = cspf.."ammo_bullet"
     },
     {
         PrintName = "Perk",
-        Slot = "perk"
+        Slot = cspf.."perk"
     },
     {
         PrintName = "Charm",
-        Slot = "charm",
+        Slot = cspf.."charm",
         Hidden = true,
         FreeSlot = true,
         Bone = "v_weapon.Glock_Slide", -- relevant bone any attachments will be mostly referring to

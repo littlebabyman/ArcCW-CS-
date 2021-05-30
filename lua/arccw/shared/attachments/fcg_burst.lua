@@ -8,7 +8,7 @@ att.Desc_Cons = {
     "con.burstdelay"
 }
 att.AutoStats = true
-att.Slot = "fcg"
+att.Slot = cspf.."fcg"
 
 att.Override_Firemodes = {
     {

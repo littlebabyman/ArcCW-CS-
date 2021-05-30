@@ -6,7 +6,7 @@ att.Desc_Pros = {
 }
 att.Desc_Cons = {
 }
-att.Slot = "perk"
+att.Slot = cspf.."perk"
 
 att.Hook_BulletHit = function(wep, data)
     if CLIENT then return end

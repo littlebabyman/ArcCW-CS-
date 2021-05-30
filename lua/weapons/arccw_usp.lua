@@ -150,7 +150,7 @@ SWEP.Attachments = {
     {
         PrintName = "Optic", -- print name
         DefaultAttName = "Iron Sights",
-        Slot = "optic_lp", -- what kind of attachments can fit here, can be string or table
+        Slot = cspf.."optic_lp", -- what kind of attachments can fit here, can be string or table
         Bone = "v_weapon.USP_Slide", -- relevant bone any attachments will be mostly referring to
         Offset = {
             vpos = Vector(-0.13, -0.7, 0.5), -- offset that the attachment will be relative to the bone
@@ -162,7 +162,7 @@ SWEP.Attachments = {
     {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
-        Slot = "muzzle",
+        Slot = cspf.."muzzle",
         Bone = "v_weapon.USP_Parent",
         Offset = {
             vpos = Vector(-0.140, -3.761, -5.370),
@@ -173,7 +173,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Underbarrel",
-        Slot = {"foregrip_pistol", "style_pistol"},
+        Slot = {cspf.."foregrip_pistol", cspf.."style_pistol"},
         Bone = "v_weapon.USP_Parent",
         Offset = {
             vpos = Vector(-0.257, -1.994, -2.113),
@@ -184,7 +184,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Tactical",
-        Slot = "tac_pistol",
+        Slot = cspf.."tac_pistol",
         Bone = "v_weapon.USP_Parent",
         Offset = {
             vpos = Vector(-0.095, -2.546, -3.918), -- offset that the attachment will be relative to the bone
@@ -195,20 +195,20 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Fire Group",
-        Slot = "fcg",
+        Slot = cspf.."fcg",
         DefaultAttName = "Standard FCG"
     },
     {
         PrintName = "Ammo Type",
-        Slot = "ammo_bullet"
+        Slot = cspf.."ammo_bullet"
     },
     {
         PrintName = "Perk",
-        Slot = "perk"
+        Slot = cspf.."perk"
     },
     {
         PrintName = "Charm",
-        Slot = "charm",
+        Slot = cspf.."charm",
         Hidden = true,
         FreeSlot = true,
         Bone = "v_weapon.USP_Slide", -- relevant bone any attachments will be mostly referring to

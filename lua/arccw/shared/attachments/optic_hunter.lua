@@ -11,7 +11,7 @@ att.Desc_Pros = {
 att.Desc_Cons = {
 }
 att.AutoStats = true
-att.Slot = "optic_sniper"
+att.Slot = cspf.."optic_sniper"
 
 att.Model = "models/weapons/arccw/atts/hunter.mdl"
 

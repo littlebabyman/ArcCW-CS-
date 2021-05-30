@@ -7,7 +7,7 @@ att.Desc_Pros = {
 att.Desc_Cons = {
     "con.fcg_accelerator",
 }
-att.Slot = "fcg"
+att.Slot = cspf.."fcg"
 
 att.Override_Firemodes = {
     {

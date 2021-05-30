@@ -8,7 +8,7 @@ att.Desc_Cons = {
     "con.muzz_circlechoke"
 }
 att.AutoStats = false
-att.Slot = {"choke", "muzzle_shotgun"}
+att.Slot = {cspf.."choke", cspf.."muzzle_shotgun"}
 
 att.SortOrder = 20
 

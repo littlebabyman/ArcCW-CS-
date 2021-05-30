@@ -9,7 +9,7 @@ att.Desc_Pros = {
 att.Desc_Cons = {
 }
 att.AutoStats = true
-att.Slot = "bipod"
+att.Slot = cspf.."bipod"
 
 att.LHIK = true
 att.LHIK_Animation = true

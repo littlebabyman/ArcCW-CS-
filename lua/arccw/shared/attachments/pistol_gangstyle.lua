@@ -10,7 +10,7 @@ att.Desc_Cons = {
     "- Recoil control",
     "- Recoil stability"
 }
-att.Slot = "style_pistol"
+att.Slot = cspf.."style_pistol"
 att.Free = true
 
 att.LHIK = true

@@ -6,7 +6,7 @@ att.Desc_Pros = {
 att.Desc_Cons = {
 }
 att.AutoStats = true
-att.Slot = "ammo_bullet"
+att.Slot = cspf.."ammo_bullet"
 
 att.Mult_DamageMin = 1.15
 att.Mult_SightTime = 0.9

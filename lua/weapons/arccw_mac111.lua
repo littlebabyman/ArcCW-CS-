@@ -3,12 +3,12 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - CS+" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "Mk. 201"
-SWEP.TrueNam3 = "MAC-10"
+SWEP.PrintName = "Mk. 211"
+SWEP.TrueNam3 = "MAC-11"
 SWEP.Trivia_Class = "Machine Pistol"
-SWEP.Trivia_Desc = "An often handcrafted submachine gun. Known for its incredibly low price at the cost of almost all else. It shoots, and that's about the best thing going for it."
+SWEP.Trivia_Desc = "Smaller, lighter version of the Mk. 201 shooting a smaller round."
 SWEP.Trivia_Manufacturer = "Gryphon Arms"
-SWEP.Trivia_Calibre = ".45 ACP"
+SWEP.Trivia_Calibre = ".380 ACP"
 SWEP.Trivia_Mechanism = "Straight Blowback"
 SWEP.Trivia_Country = "USA"
 SWEP.Trivia_Year = 1972
@@ -20,16 +20,16 @@ if false then
     SWEP.Trivia_Manufacturer = "Military Armament Corporation"
 end
 
-
+SWEP.DefaultBodygroups = "0200000"
 SWEP.UseHands = true
 
 SWEP.ViewModel = "models/weapons/arccw/c_mk201.mdl"
 SWEP.WorldModel = "models/weapons/arccw/w_mk201.mdl"
 SWEP.ViewModelFOV = 60
 
-SWEP.Damage = 24
-SWEP.DamageMin = 16 -- damage done at maximum range
-SWEP.Range = 30 -- in METRES
+SWEP.Damage = 20
+SWEP.DamageMin = 17 -- damage done at maximum range
+SWEP.Range = 20 -- in METRES
 SWEP.Penetration = 3
 SWEP.DamageType = DMG_BULLET
 SWEP.ShootEntity = nil -- entity to fire, if any
@@ -38,15 +38,15 @@ SWEP.MuzzleVelocity = 275 -- projectile or phys bullet muzzle velocity
 
 SWEP.CanFireUnderwater = false
 SWEP.ChamberSize = 0 -- how many rounds can be chambered.
-SWEP.Primary.ClipSize = 32 -- DefaultClip is automatically set.
-SWEP.ExtendedClipSize = 50
-SWEP.ReducedClipSize = 16
+SWEP.Primary.ClipSize = 16 -- DefaultClip is automatically set.
+SWEP.ExtendedClipSize = 32
+SWEP.ReducedClipSize = 10
 
 SWEP.Recoil = 0.5
 SWEP.RecoilSide = 0.15
 SWEP.RecoilRise = 1
 
-SWEP.Delay = 60 / 800 -- 60 / RPM.
+SWEP.Delay = 60 / 1200 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
 SWEP.Firemodes = {
     {
@@ -63,15 +63,15 @@ SWEP.Firemodes = {
 SWEP.NPCWeaponType = "weapon_smg1"
 SWEP.NPCWeight = 120
 
-SWEP.AccuracyMOA = 30 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
-SWEP.HipDispersion = 250 -- inaccuracy added by hip firing.
-SWEP.MoveDispersion = 250
+SWEP.AccuracyMOA = 40 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
+SWEP.HipDispersion = 150 -- inaccuracy added by hip firing.
+SWEP.MoveDispersion = 150
 
 SWEP.Primary.Ammo = "pistol" -- what ammo type the gun uses
 SWEP.MagID = "mk201" -- the magazine pool this gun draws from
 
-SWEP.ShootVol = 115 -- volume of shoot sound
-SWEP.ShootPitch = 100 -- pitch of shoot sound
+SWEP.ShootVol = 110 -- volume of shoot sound
+SWEP.ShootPitch = 120 -- pitch of shoot sound
 
 SWEP.FirstShootSound = "weapons/arccw/mac10/mac10_01.wav"
 SWEP.ShootSound = "weapons/arccw/mac10/mac10_02.wav"
@@ -80,15 +80,15 @@ SWEP.DistantShootSound = "weapons/arccw/mac10/mac10-1-distant.wav"
 
 SWEP.MuzzleEffect = "muzzleflash_smg"
 SWEP.ShellModel = "models/shells/shell_9mm.mdl"
-SWEP.ShellScale = 2
+SWEP.ShellScale = 1.25
 
 SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on
 SWEP.CaseEffectAttachment = 2 -- which attachment to put the case effect on
 
-SWEP.SightTime = 0.2
+SWEP.SightTime = 0.175
 
 SWEP.SpeedMult = 1
-SWEP.SightedSpeedMult = 0.75
+SWEP.SightedSpeedMult = 0.85
 
 SWEP.BarrelLength = 24
 
@@ -126,12 +126,8 @@ SWEP.BarrelOffsetHip = Vector(2, 0, -2)
 
 SWEP.AttachmentElements = {
     ["extendedmag"] = {
-        VMBodygroups = {{ind = 1, bg = 1}},
-        WMBodygroups = {{ind = 1, bg = 1}},
-    },
-    ["reducedmag"] = {
-        VMBodygroups = {{ind = 1, bg = 2}},
-        WMBodygroups = {{ind = 1, bg = 2}},
+        VMBodygroups = {{ind = 1, bg = 0}},
+        WMBodygroups = {{ind = 1, bg = 0}},
     },
     ["nors"] = {
         VMBodygroups = {{ind = 2, bg = 1}},
@@ -150,7 +146,7 @@ SWEP.AttachmentElements = {
             {
                 Model = "models/weapons/arccw/atts/mount_ak.mdl",
                 Bone = "v_weapon.mac10_Parent",
-                Scale = Vector(1, 1.25, 1),
+                Scale = Vector(1, 1, 1),
                 Offset = {
                     pos = Vector(-0.1, -6.3, 3.7),
                     ang = Angle(-90, 0, -90)
@@ -314,20 +310,16 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload_part",
-        Time = 2.5,
+        Time = 2.5*0.7,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
-        Checkpoints = {36, 57, 77},
-        FrameRate = 40,
         LHIK = true,
         LHIKIn = 0.5,
         LHIKOut = 0.5,
     },
     ["reload_empty"] = {
         Source = "reload",
-        Time = 3,
+        Time = 3*0.7,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
-        Checkpoints = {36, 57, 77, 88},
-        FrameRate = 40,
         LHIK = true,
         LHIKIn = 0.5,
         LHIKOut = 0.25,

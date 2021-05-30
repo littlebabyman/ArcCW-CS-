@@ -7,7 +7,7 @@ att.Desc_Cons = {
     "con.perk_last",
 }
 att.AutoStats = true
-att.Slot = "perk"
+att.Slot = cspf.."perk"
 
 att.NotForNPC = true
 

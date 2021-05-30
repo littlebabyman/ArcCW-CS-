@@ -179,7 +179,7 @@ SWEP.Attachments = {
     {
         PrintName = "Optic",
         DefaultAttName = "Iron Sights",
-        Slot = {"optic_lp", "optic", "optic_sniper"},
+        Slot = {cspf.."optic_lp", cspf.."optic", cspf.."optic_sniper"},
         Bone = "Body",
         Offset = {
             vpos = Vector(0.032, -4.029, -3.604),
@@ -198,7 +198,7 @@ SWEP.Attachments = {
     {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
-        Slot = "muzzle",
+        Slot = cspf.."muzzle",
         Bone = "Body",
         Offset = {
             vpos = Vector(0, -1.4, -9.5),
@@ -209,7 +209,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Underbarrel",
-        Slot = {"foregrip", "style_pistol"},
+        Slot = {cspf.."foregrip", cspf.."style_pistol"},
         Bone = "Body",
         Offset = {
             vpos = Vector(0, -0.5, -6),
@@ -220,7 +220,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Tactical",
-        Slot = "tac_pistol",
+        Slot = cspf.."tac_pistol",
         Bone = "Body",
         Offset = {
             vpos = Vector(0, -0.5, -10.5),
@@ -231,7 +231,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Ammo Type",
-        Slot = "ammo_bullet",
+        Slot = cspf.."ammo_bullet",
     },
     {
         PrintName = "Perk",
@@ -239,7 +239,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Charm",
-        Slot = "charm",
+        Slot = cspf.."charm",
         Hidden = true,
         FreeSlot = true,
         Bone = "Body",

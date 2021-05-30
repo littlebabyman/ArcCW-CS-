@@ -7,7 +7,7 @@ att.Desc_Cons = {
     "con.beam"
 }
 att.AutoStats = true
-att.Slot = {"tac_pistol", "tac"}
+att.Slot = {cspf.."tac_pistol", cspf.."tac"}
 
 att.Model = "models/weapons/arccw/atts/laser_compact.mdl"
 

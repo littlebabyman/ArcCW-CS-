@@ -8,7 +8,7 @@ att.Desc_Cons = {
     "- Direct Hit Only",
 }
 att.AutoStats = true
-att.Slot = "ammo_rpg7_rocket"
+att.Slot = cspf.."ammo_rpg7_rocket"
 
 att.Mult_SightTime = 0.9
 att.Mult_SpeedMult = 1.15

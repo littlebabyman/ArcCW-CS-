@@ -9,7 +9,7 @@ att.Desc_Cons = {
     "con.fragile"
 }
 att.AutoStats = true
-att.Slot = "muzzle"
+att.Slot = cspf.."muzzle"
 
 att.Model = "models/weapons/arccw/atts/supp_heavy.mdl"
 

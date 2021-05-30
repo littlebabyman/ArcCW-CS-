@@ -10,7 +10,7 @@ att.Desc_Neutrals = {
     "info.toggleubgl"
 }
 att.AutoStats = true
-att.Slot = "ubgl"
+att.Slot = cspf.."ubgl"
 
 att.InvAtt = "ubgl_mass"
 

@@ -8,7 +8,7 @@ att.Desc_Cons = {
     "con.rpg.splash",
 }
 att.AutoStats = true
-att.Slot = "ammo_rpg7_rocket"
+att.Slot = cspf.."ammo_rpg7_rocket"
 
 att.Mult_SightTime = 1.25
 att.Mult_SpeedMult = 0.8

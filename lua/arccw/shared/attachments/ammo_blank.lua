@@ -8,7 +8,7 @@ att.Desc_Cons = {
     "con.ammo_blank",
 }
 att.AutoStats = true
-att.Slot = {"ammo_bullet", "ammo_shotgun"}
+att.Slot = {cspf.."ammo_bullet", cspf.."ammo_shotgun"}
 
 att.Override_Num = 0
 att.Mult_Num = 0

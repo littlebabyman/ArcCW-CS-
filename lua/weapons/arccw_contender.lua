@@ -131,7 +131,7 @@ SWEP.Attachments = {
     {
         PrintName = "Optic", -- print name
         DefaultAttName = "Iron Sights",
-        Slot = {"optic", "optic_sniper", "optic_lp"}, -- what kind of attachments can fit here, can be string or table
+        Slot = {cspf.."optic", cspf.."optic_sniper", cspf.."optic_lp"}, -- what kind of attachments can fit here, can be string or table
         Bone = "Front", -- relevant bone any attachments will be mostly referring to
         Offset = {
             vpos = Vector(1, -2, 0), -- offset that the attachment will be relative to the bone
@@ -143,7 +143,7 @@ SWEP.Attachments = {
     {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
-        Slot = "muzzle",
+        Slot = cspf.."muzzle",
         Bone = "Front",
         Offset = {
             vpos = Vector(15, -1.3, 0),
@@ -154,7 +154,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Underbarrel",
-        Slot = {"foregrip", "bipod", "style_pistol"},
+        Slot = {cspf.."foregrip", cspf.."bipod", cspf.."style_pistol"},
         Bone = "Front",
         Offset = {
             vpos = Vector(2, 0.25, 0),
@@ -165,7 +165,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Tactical",
-        Slot = "tac",
+        Slot = cspf.."tac",
         Bone = "Front",
         Offset = {
             vpos = Vector(3, -0.75, 0.75), -- offset that the attachment will be relative to the bone
@@ -176,15 +176,15 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Ammo Type",
-        Slot = "ammo_bullet"
+        Slot = cspf.."ammo_bullet"
     },
     {
         PrintName = "Perk",
-        Slot = "perk"
+        Slot = cspf.."perk"
     },
     {
         PrintName = "Charm",
-        Slot = "charm",
+        Slot = cspf.."charm",
         Hidden = true,
         FreeSlot = true,
         Bone = "Gun", -- relevant bone any attachments will be mostly referring to

@@ -10,7 +10,7 @@ att.Desc_Cons = {
     "- 1/6 chance to fire"
 }
 att.Free = true
-att.Slot = "perk_revolver"
+att.Slot = cspf.."perk_revolver"
 
 att.NotForNPC = true
 

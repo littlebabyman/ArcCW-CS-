@@ -7,7 +7,7 @@ att.Desc_Cons = {
     "con.obstruction"
 }
 att.AutoStats = true
-att.Slot = "muzzle_shotgun"
+att.Slot = cspf.."muzzle_shotgun"
 
 att.SortOrder = 85
 

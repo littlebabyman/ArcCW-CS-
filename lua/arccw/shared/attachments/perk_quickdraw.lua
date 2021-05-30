@@ -6,7 +6,7 @@ att.Desc_Pros = {
 att.Desc_Cons = {
 }
 att.AutoStats = true
-att.Slot = "perk"
+att.Slot = cspf.."perk"
 
 att.Mult_DrawTime = 0.5
 att.Mult_HolsterTime = 0.5

@@ -14,7 +14,7 @@ att.Desc_Neutrals = {
     "info.togglesight"
 }
 att.AutoStats = true
-att.Slot = "optic_aug_scope"
+att.Slot = cspf.."optic_aug_scope"
 
 att.Model = "models/weapons/arccw/atts/augscope.mdl"
 

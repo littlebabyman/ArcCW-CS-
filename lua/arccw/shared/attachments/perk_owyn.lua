@@ -10,7 +10,7 @@ att.Desc_Neutrals = {
     "info.perk_owyn"
 }
 att.AutoStats = true
-att.Slot = "perk"
+att.Slot = cspf.."perk"
 
 att.NotForNPC = true
 

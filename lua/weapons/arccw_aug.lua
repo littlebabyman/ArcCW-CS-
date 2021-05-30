@@ -155,7 +155,7 @@ SWEP.Attachments = {
     {
         PrintName = "Optic", -- print name
         DefaultAttName = "Iron Sights",
-        Slot = {"optic_lp", "optic", "optic_sniper"}, -- what kind of attachments can fit here, can be string or table
+        Slot = {cspf.."optic_lp", cspf.."optic", cspf.."optic_sniper"}, -- what kind of attachments can fit here, can be string or table
         MergeSlots = {8},
         Bone = "v_weapon.aug_Parent", -- relevant bone any attachments will be mostly referring to
         Offset = {
@@ -169,7 +169,7 @@ SWEP.Attachments = {
     {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
-        Slot = "muzzle",
+        Slot = cspf.."muzzle",
         Bone = "v_weapon.aug_Parent",
         Offset = {
             vpos = Vector(-0.123, -3.694, -15.587),
@@ -180,7 +180,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Underbarrel",
-        Slot = {"foregrip", "ubgl", "bipod"},
+        Slot = {cspf.."foregrip", cspf.."ubgl", cspf.."bipod"},
         Bone = "v_weapon.aug_Parent",
         Offset = {
             vpos = Vector(0, -2.5, -5.5),
@@ -192,7 +192,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Tactical",
-        Slot = "tac",
+        Slot = cspf.."tac",
         Bone = "v_weapon.aug_Parent",
         Offset = {
             vpos = Vector(1.386, -2.286, -3.787), -- offset that the attachment will be relative to the bone
@@ -203,19 +203,19 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Fire Group",
-        Slot = "fcg",
+        Slot = cspf.."fcg",
         DefaultAttName = "Standard FCG"
     },
     {
         PrintName = "Ammo Type",
-        Slot = "ammo_bullet"
+        Slot = cspf.."ammo_bullet"
     },
     {
         PrintName = "Perk",
-        Slot = "perk"
+        Slot = cspf.."perk"
     },
     {
-        Slot = "optic_aug_scope",
+        Slot = cspf.."optic_aug_scope",
         Bone = "v_weapon.aug_Parent", -- relevant bone any attachments will be mostly referring to
         Offset = {
             vpos = Vector(0, 0, 0), -- offset that the attachment will be relative to the bone
@@ -229,7 +229,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Charm",
-        Slot = "charm",
+        Slot = cspf.."charm",
         Hidden = true,
         FreeSlot = true,
         Bone = "v_weapon.aug_Parent", -- relevant bone any attachments will be mostly referring to

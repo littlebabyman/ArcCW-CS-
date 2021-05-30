@@ -11,4 +11,4 @@ att.Desc_Pros = {
 att.Desc_Cons = {
     "con.fov"
 }
-att.Slot = "irons_alt"
+att.Slot = cspf.."irons_alt"

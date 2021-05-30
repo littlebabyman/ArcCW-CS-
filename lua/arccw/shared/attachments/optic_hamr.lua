@@ -14,7 +14,7 @@ att.Desc_Neutrals = {
     "info.togglesight"
 }
 att.AutoStats = true
-att.Slot = "optic"
+att.Slot = cspf.."optic"
 
 att.Model = "models/weapons/arccw/atts/hamr.mdl"
 

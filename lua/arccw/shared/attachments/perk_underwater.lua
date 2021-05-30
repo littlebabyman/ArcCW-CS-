@@ -7,7 +7,7 @@ att.Desc_Pros = {
 att.Desc_Cons = {
 }
 att.AutoStats = true
-att.Slot = "perk"
+att.Slot = cspf.."perk"
 
 att.Override_CanFireUnderwater = true
 

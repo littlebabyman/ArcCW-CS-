@@ -12,7 +12,7 @@ att.Desc_Neutrals = {
     "info.togglesight"
 }
 att.AutoStats = true
-att.Slot = "backup"
+att.Slot = cspf.."backup"
 
 att.Model = "models/weapons/arccw/atts/backup.mdl"
 

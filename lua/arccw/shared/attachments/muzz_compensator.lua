@@ -6,7 +6,7 @@ att.Desc_Pros = {
 att.Desc_Cons = {
 }
 att.AutoStats = true
-att.Slot = {"muzzle", "muzzle_shotgun"}
+att.Slot = {cspf.."muzzle", cspf.."muzzle_shotgun"}
 
 att.SortOrder = 63
 

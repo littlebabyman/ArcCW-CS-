@@ -7,7 +7,7 @@ att.Desc_Pros = {
 att.Desc_Cons = {
 }
 att.AutoStats = true
-att.Slot = "style_pistol"
+att.Slot = cspf.."style_pistol"
 
 att.Free = true
 

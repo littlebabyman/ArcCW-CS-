@@ -11,7 +11,7 @@ att.SortOrder = 100
 
 att.ActivateElements = {"mp5sd"}
 
-att.Slot = "mp5sd"
+att.Slot = cspf.."mp5sd"
 
 att.Silencer = true
 att.Override_MuzzleEffect = "muzzleflash_suppressed"

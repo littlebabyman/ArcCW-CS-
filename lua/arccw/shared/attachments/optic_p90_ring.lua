@@ -9,7 +9,7 @@ att.Desc_Pros = {
 }
 att.Desc_Cons = {
 }
-att.Slot = "optic_p90_ring"
+att.Slot = cspf.."optic_p90_ring"
 
 att.Model = "models/weapons/arccw/atts/p90_ringsight.mdl"
 

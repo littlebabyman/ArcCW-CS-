@@ -161,7 +161,7 @@ SWEP.Attachments = {
     {
         PrintName = "Optic", -- print name
         DefaultAttName = "Iron Sights",
-        Slot = {"optic_lp", "optic", "optic_sniper"}, -- what kind of attachments can fit here, can be string or table
+        Slot = {cspf.."optic_lp", cspf.."optic", cspf.."optic_sniper"}, -- what kind of attachments can fit here, can be string or table
         Bone = "v_weapon.ump45_Parent", -- relevant bone any attachments will be mostly referring to
         Offset = {
             vpos = Vector(0.373, -8.193, -1.633), -- offset that the attachment will be relative to the bone
@@ -181,7 +181,7 @@ SWEP.Attachments = {
     {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
-        Slot = "muzzle",
+        Slot = cspf.."muzzle",
         Bone = "v_weapon.ump45_Parent",
         Offset = {
             vpos = Vector(0.156, -5.908, -16.004),
@@ -192,7 +192,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Underbarrel",
-        Slot = {"foregrip", "ubgl", "bipod", "style_pistol"},
+        Slot = {cspf.."foregrip", cspf.."ubgl", cspf.."bipod", cspf.."style_pistol"},
         Bone = "v_weapon.ump45_Parent",
         Offset = {
             vpos = Vector(0, -5, -10),
@@ -204,7 +204,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Tactical",
-        Slot = "tac",
+        Slot = cspf.."tac",
         Bone = "v_weapon.ump45_Parent",
         Offset = {
             vpos = Vector(-0.461, -5.827, -12.068), -- offset that the attachment will be relative to the bone
@@ -215,20 +215,20 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Fire Group",
-        Slot = "fcg",
+        Slot = cspf.."fcg",
         DefaultAttName = "Standard FCG"
     },
     {
         PrintName = "Ammo Type",
-        Slot = "ammo_bullet"
+        Slot = cspf.."ammo_bullet"
     },
     {
         PrintName = "Perk",
-        Slot = "perk"
+        Slot = cspf.."perk"
     },
     {
         PrintName = "Charm",
-        Slot = "charm",
+        Slot = cspf.."charm",
         Hidden = true,
         FreeSlot = true,
         Bone = "v_weapon.ump45_Parent",

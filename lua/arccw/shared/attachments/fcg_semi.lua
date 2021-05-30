@@ -7,7 +7,7 @@ att.Desc_Cons = {
     "con.semi"
 }
 att.AutoStats = true
-att.Slot = "fcg"
+att.Slot = cspf.."fcg"
 
 att.Override_Firemodes = {
     {

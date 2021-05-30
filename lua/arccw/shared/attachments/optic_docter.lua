@@ -10,7 +10,7 @@ att.Desc_Pros = {
 att.Desc_Cons = {
 }
 att.AutoStats = true
-att.Slot = "optic_lp"
+att.Slot = cspf.."optic_lp"
 
 att.Model = "models/weapons/arccw/atts/docter.mdl"
 

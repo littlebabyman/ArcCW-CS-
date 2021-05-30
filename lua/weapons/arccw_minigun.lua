@@ -164,11 +164,11 @@ SWEP.ExtraSightDist = 8
 SWEP.Attachments = {
     {
         PrintName = "Ammo Type",
-        Slot = "ammo_bullet"
+        Slot = cspf.."ammo_bullet"
     },
     {
         PrintName = "Perk",
-        Slot = "perk"
+        Slot = cspf.."perk"
     },
 }
 

@@ -10,7 +10,7 @@ att.Desc_Pros = {
 }
 att.Desc_Cons = {
 }
-att.Slot = "optic"
+att.Slot = cspf.."optic"
 
 att.Model = "models/weapons/arccw/atts/acog.mdl"
 

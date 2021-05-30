@@ -8,7 +8,7 @@ att.Desc_Pros = {
 att.Desc_Cons = {
     "- Reduced damage",
 }
-att.Slot = "perk"
+att.Slot = cspf.."perk"
 
 att.Mult_Damage = 0.5
 att.Mult_DamageMin = 0.5

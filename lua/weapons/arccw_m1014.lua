@@ -137,7 +137,7 @@ SWEP.Attachments = {
     {
         PrintName = "Optic", -- print name
         DefaultAttName = "Iron Sights",
-        Slot = {"optic_lp", "optic", "optic_sniper"}, -- what kind of attachments can fit here, can be string or table
+        Slot = {cspf.."optic_lp", cspf.."optic", cspf.."optic_sniper"}, -- what kind of attachments can fit here, can be string or table
         Bone = "v_weapon.xm1014_Parent", -- relevant bone any attachments will be mostly referring to
         Offset = {
             vpos = Vector(0.03, -5.655, -4.597), -- offset that the attachment will be relative to the bone
@@ -151,7 +151,7 @@ SWEP.Attachments = {
     {
         PrintName = "Muzzle",
         DefaultAttName = "Standard Muzzle",
-        Slot = {"muzzle_shotgun", "barrel"},
+        Slot = {cspf.."muzzle_shotgun", cspf.."barrel"},
         Bone = "v_weapon.xm1014_Parent",
         Offset = {
             vpos = Vector(0.071, -4.511, -26.901),
@@ -162,7 +162,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Underbarrel",
-        Slot = {"foregrip"},
+        Slot = {cspf.."foregrip"},
         Bone = "v_weapon.xm1014_Parent",
         Offset = {
             vpos = Vector(0, -2.75, -14),
@@ -173,7 +173,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Tactical",
-        Slot = "tac",
+        Slot = cspf.."tac",
         Bone = "v_weapon.xm1014_Parent",
         Offset = {
             vpos = Vector(0.5, -4.286, -7.787), -- offset that the attachment will be relative to the bone
@@ -184,20 +184,20 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Fire Group",
-        Slot = "fcg",
+        Slot = cspf.."fcg",
         DefaultAttName = "Standard FCG"
     },
     {
         PrintName = "Ammo Type",
-        Slot = "ammo_shotgun"
+        Slot = cspf.."ammo_shotgun"
     },
     {
         PrintName = "Perk",
-        Slot = "perk"
+        Slot = cspf.."perk"
     },
     {
         PrintName = "Charm",
-        Slot = "charm",
+        Slot = cspf.."charm",
         Hidden = true,
         FreeSlot = true,
         Bone = "v_weapon.xm1014_Parent",
