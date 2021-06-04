@@ -27,8 +27,8 @@ SWEP.ViewModel = "models/weapons/arccw/c_type8k.mdl"
 SWEP.WorldModel = "models/weapons/arccw/w_saiga.mdl"
 SWEP.ViewModelFOV = 60
 
-SWEP.Damage = 12
-SWEP.DamageMin = 5 -- damage done at maximum range
+SWEP.Damage = 10
+SWEP.DamageMin = 6 -- damage done at maximum range
 SWEP.Range = 35 -- in METRES
 SWEP.Penetration = 1
 SWEP.DamageType = DMG_BUCKSHOT
@@ -40,12 +40,13 @@ SWEP.Primary.ClipSize = 8 -- DefaultClip is automatically set.
 SWEP.ExtendedClipSize = 12
 SWEP.ReducedClipSize = 4
 
-SWEP.Recoil = 5
+SWEP.Recoil = 4
 SWEP.RecoilSide = 1
 SWEP.MaxRecoilBlowback = 2
+SWEP.RecoilPunch = 1
 
-SWEP.Delay = 60 / 450 -- 60 / RPM.
-SWEP.Num = 8 -- number of shots per trigger pull.
+SWEP.Delay = 60 / 400 -- 60 / RPM.
+SWEP.Num = 6 -- number of shots per trigger pull.
 SWEP.RunawayBurst = false
 SWEP.Firemodes = {
     {
@@ -60,8 +61,8 @@ SWEP.NPCWeaponType = "weapon_shotgun"
 SWEP.NPCWeight = 125
 
 SWEP.AccuracyMOA = 40 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
-SWEP.HipDispersion = 600 -- inaccuracy added by hip firing.
-SWEP.MoveDispersion = 650
+SWEP.HipDispersion = 300 -- inaccuracy added by hip firing.
+SWEP.MoveDispersion = 350
 
 SWEP.Primary.Ammo = "buckshot" -- what ammo type the gun uses
 SWEP.MagID = "type8k" -- the magazine pool this gun draws from

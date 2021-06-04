@@ -246,16 +246,10 @@ SWEP.Animations = {
         Source = "draw",
         Time = 1,
         SoundTable = {{s = "weapons/arccw/m249/m249_draw.wav", t = 0}},
-        LHIK = true,
-        LHIKIn = 0,
-        LHIKOut = 0.25,
     },
     ["ready"] = {
         Source = "draw",
         Time = 2,
-        LHIK = true,
-        LHIKIn = 0,
-        LHIKOut = 0.25,
     },
     ["fire"] = {
         Source = "shoot",

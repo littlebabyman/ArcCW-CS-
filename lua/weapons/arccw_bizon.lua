@@ -64,7 +64,7 @@ SWEP.Firemodes = {
 SWEP.NPCWeaponType = "weapon_smg1"
 SWEP.NPCWeight = 125
 
-SWEP.AccuracyMOA = 21 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
+SWEP.AccuracyMOA = 18 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
 SWEP.HipDispersion = 325 -- inaccuracy added by hip firing.
 SWEP.MoveDispersion = 225
 
@@ -74,8 +74,8 @@ SWEP.MagID = "bizon" -- the magazine pool this gun draws from
 SWEP.ShootVol = 100 -- volume of shoot sound
 SWEP.ShootPitch = 90 -- pitch of shoot sound
 
-SWEP.FirstShootSound = "weapons/arccw/bizon/bizon_01.wav"
-SWEP.ShootSound = "weapons/arccw/bizon/bizon_02.wav"
+SWEP.FirstShootSound = "weapons/arccw/p90/p90_01.wav"
+SWEP.ShootSound = "weapons/arccw/p90/p90_02.wav"
 SWEP.ShootSoundSilenced = "weapons/arccw/mp5/mp5_01.wav"
 SWEP.DistantShootSound = "weapons/arccw/bizon/bizon-1-distant.wav"
 

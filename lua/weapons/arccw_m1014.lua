@@ -43,10 +43,11 @@ SWEP.ReducedClipSize = 4
 SWEP.Recoil = 5
 SWEP.RecoilSide = 1
 SWEP.MaxRecoilBlowback = 2
+SWEP.RecoilPunch = 1
 
 SWEP.ShotgunReload = true
 
-SWEP.Delay = 60 / 400 -- 60 / RPM.
+SWEP.Delay = 60 / 260 -- 60 / RPM.
 SWEP.Num = 8 -- number of shots per trigger pull.
 SWEP.RunawayBurst = false
 SWEP.Firemodes = {
