@@ -26,8 +26,8 @@ SWEP.ViewModel = "models/weapons/arccw/c_bfg.mdl"
 SWEP.WorldModel = "models/weapons/arccw/w_bfg.mdl"
 SWEP.ViewModelFOV = 60
 
-SWEP.Damage = 200
-SWEP.DamageMin = 90 -- damage done at maximum range
+SWEP.Damage = 140
+SWEP.DamageMin = 70 -- damage done at maximum range
 SWEP.Range = 500 -- in METRES
 SWEP.Penetration = 50
 SWEP.DamageType = DMG_BULLET
@@ -42,6 +42,10 @@ SWEP.ReducedClipSize = 3
 SWEP.Recoil = 5
 SWEP.RecoilSide = 2
 SWEP.MaxRecoilBlowback = 1
+SWEP.RecoilRise = -2
+SWEP.RecoilPunchBackMax = 30
+SWEP.VisualRecoilMult = 1
+SWEP.RecoilPunch = 0.7
 
 SWEP.Delay = 60 / 120 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
@@ -105,11 +109,13 @@ SWEP.HoldtypeSights = "rpg"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_RPG
 
-SWEP.ActivePos = Vector(2, 3, -1)
-SWEP.ActiveAng = Angle(0, 0, 0)
+SWEP.ActivePos = Vector(2.5, 3, -0.6)
+SWEP.ActiveAng = Angle(0, 0.5, -3)
 
-SWEP.HolsterPos = Vector(6, 3, 0)
-SWEP.HolsterAng = Angle(-7.036, 30.016, 0)
+-- "no sir i do not wish to take off limbs i wish to be very nic-" FUCK OUTTA HERE WITH THAT SHIT BITCH XD 
+local hp = ArcCW.CSP_Holsters["warlover"]
+SWEP.HolsterPos = hp.pos + Vector(-2, 5, 1)
+SWEP.HolsterAng = hp.ang + Angle(4, -4, 0)
 
 SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)
@@ -225,12 +231,12 @@ SWEP.Animations = {
     },
     ["fire"] = {
         Source = "fire",
-        Time = 1,
+        Time = 2,
         ShellEjectAt = 0,
     },
     ["fire_iron"] = {
         Source = "fire_iron",
-        Time = 1,
+        Time = 2,
         ShellEjectAt = 0,
     },
     ["reload"] = {

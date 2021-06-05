@@ -37,19 +37,16 @@ SWEP.ShootEntity = "arccw_thr_flare"
 SWEP.NPCWeaponType = "weapon_grenade"
 SWEP.NPCWeight = 0
 
-SWEP.ActivePos = Vector(0, 5, 1)
+SWEP.ActivePos = Vector(-1, 5, 1.5)
+SWEP.ActiveAng = Angle(0, 0, 0)
 
-SWEP.CustomizePos = Vector(6, 0, 3)
-SWEP.CustomizeAng = Angle(0, 45, 0)
+SWEP.CustomizePos = Vector(2, 4, 6)
+SWEP.CustomizeAng = Angle(-10, 20, 45)
 
 SWEP.Animations = {
     ["draw"] = {
         Source = "draw",
-        Time = 1,
-    },
-    ["ready"] = {
-        Source = "draw",
-        Time = 1,
+        Time = 0.9,
     },
     ["pre_throw"] = {
         Source = "cook",

@@ -27,9 +27,9 @@ SWEP.ViewModel = "models/weapons/arccw/c_hs338.mdl"
 SWEP.WorldModel = "models/weapons/arccw/w_hs338.mdl"
 SWEP.ViewModelFOV = 60
 
-SWEP.Damage = 95
-SWEP.DamageMin = 150 -- damage done at maximum range
-SWEP.Range = 50 -- in METRES
+SWEP.Damage = 70
+SWEP.DamageMin = 100 -- damage done at maximum range
+SWEP.Range = 100 -- in METRES
 SWEP.Penetration = 35
 SWEP.DamageType = DMG_BULLET
 SWEP.ShootEntity = nil -- entity to fire, if any
@@ -84,7 +84,7 @@ SWEP.ShellScale = 1.5
 SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on
 SWEP.CaseEffectAttachment = 2 -- which attachment to put the case effect on
 
-SWEP.SightTime = 0.35
+SWEP.SightTime = 0.45
 SWEP.SpeedMult = 0.85
 SWEP.SightedSpeedMult = 0.25
 
@@ -110,11 +110,12 @@ SWEP.HoldtypeSights = "rpg"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_RPG
 
-SWEP.ActivePos = Vector(-2, 0, 0)
-SWEP.ActiveAng = Angle(0, 0, 0)
+SWEP.ActivePos = Vector(-2, -2, 0.5)
+SWEP.ActiveAng = Angle(2, 0, -1)
 
-SWEP.HolsterPos = Vector(0.532, -6, 0)
-SWEP.HolsterAng = Angle(-7.036, 30.016, 0)
+local hp = ArcCW.CSP_Holsters["compliant"]
+SWEP.HolsterPos = hp.pos + Vector(2, 2, 0)
+SWEP.HolsterAng = hp.ang + Angle(-10, 9, -10)
 
 SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)

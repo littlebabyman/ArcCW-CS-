@@ -6,7 +6,7 @@ SWEP.AdminOnly = false
 SWEP.PrintName = "Para-9"
 SWEP.TrueNam3 = "AUG Para"
 SWEP.Trivia_Class = "Submachine Gun"
-SWEP.Trivia_Desc = "Bullpup SMG based on the Para-556. Bullpup design enables superior accuracy and range out of a compact SMG package."
+SWEP.Trivia_Desc = "Bullpup SMG based on the Para-556. Bullpup design enables superior accuracy and range out of a compact SMG package, and a lighter trigger is installed."
 SWEP.Trivia_Manufacturer = "Auschen Waffenfabrik"
 SWEP.Trivia_Calibre = "9x19mm Parabellum"
 SWEP.Trivia_Mechanism = "Gas-Operated"
@@ -47,11 +47,15 @@ SWEP.Recoil = 0.15
 SWEP.RecoilSide = 0.16
 SWEP.RecoilRise = 1
 
-SWEP.Delay = 60 / 750 -- 60 / RPM.
+SWEP.Delay = 60 / 800 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
 SWEP.Firemodes = {
     {
         Mode = 2,
+    },
+    {
+        Mode = -3,
+        Mult_RPM = 1.25
     },
     {
         Mode = 1,
@@ -60,6 +64,11 @@ SWEP.Firemodes = {
         Mode = 0
     }
 }
+SWEP.M_Hook_Mult_RPM = function(wep, data)
+    if wep:GetCurrentFiremode().Mode == 2 and wep:GetBurstCount() == 0 and wep:GetState() != ArcCW.STATE_CUSTOMIZE then
+        data.mult = data.mult * 2/3
+    end
+end
 
 SWEP.NPCWeaponType = "weapon_smg1"
 SWEP.NPCWeight = 100
@@ -72,12 +81,12 @@ SWEP.Primary.Ammo = "pistol" -- what ammo type the gun uses
 SWEP.MagID = "para9" -- the magazine pool this gun draws from
 
 SWEP.ShootVol = 110 -- volume of shoot sound
-SWEP.ShootPitch = 100 -- pitch of shoot sound
+SWEP.ShootPitch = 110 -- pitch of shoot sound
 
-SWEP.FirstShootSound = "weapons/arccw/bizon/bizon_02.wav"
-SWEP.ShootSound = "weapons/arccw/bizon/bizon_01.wav"
+SWEP.FirstShootSound = "weapons/arccw/mac10/mac10_01.wav"
+SWEP.ShootSound = "weapons/arccw/mac10/mac10_01.wav"
 SWEP.ShootSoundSilenced = "weapons/arccw/mp5/mp5_01.wav"
-SWEP.DistantShootSound = "weapons/arccw/bizon/bizon-1-distant.wav"
+SWEP.DistantShootSound = "weapons/arccw/mac10/mac10-1-distant.wav"
 
 SWEP.MuzzleEffect = "muzzleflash_mp5"
 SWEP.ShellModel = "models/shells/shell_9mm.mdl"
@@ -113,11 +122,12 @@ SWEP.HoldtypeSights = "rpg"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 
-SWEP.ActivePos = Vector(-2, 0, -2)
-SWEP.ActiveAng = Angle(1.5, -3.3, -10.58)
+SWEP.ActivePos = Vector(-4, -4, 1.5)
+SWEP.ActiveAng = Angle(0, -5, -10)
 
-SWEP.HolsterPos = Vector(0.532, -6, 0)
-SWEP.HolsterAng = Angle(-7.036, 30.016, 0)
+local hp = ArcCW.CSP_Holsters["compliant"]
+SWEP.HolsterPos = hp.pos + Vector(0, 1, -0.5)
+SWEP.HolsterAng = hp.ang + Angle(0, 0, -5)
 
 SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)

@@ -44,8 +44,10 @@ SWEP.ReducedClipSize = 10
 SWEP.Recoil = 0.4
 SWEP.RecoilSide = 0.2
 SWEP.RecoilRise = 0.75
+SWEP.RecoilPunchBackMax = 3
+SWEP.VisualRecoilMult = 1
 
-SWEP.Delay = 60 / 800 -- 60 / RPM.
+SWEP.Delay = 60 / 900 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
 SWEP.Firemodes = {
     {
@@ -72,7 +74,7 @@ SWEP.MagID = "stanag" -- the magazine pool this gun draws from
 SWEP.ShootVol = 110 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
-SWEP.ShootSound = "weapons/arccw/famas/famas-1.wav"
+SWEP.ShootSound = "weapons/arccw/famas/famas_04.wav"
 SWEP.ShootSoundSilenced = "weapons/arccw/m4a1/m4a1_silencer_01.wav"
 SWEP.DistantShootSound = "weapons/arccw/famas/famas_distant_01.wav"
 
@@ -111,11 +113,12 @@ SWEP.HoldtypeSights = "rpg"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 
-SWEP.ActivePos = Vector(-2, 0, 0)
-SWEP.ActiveAng = Angle(0, 0, 0)
+SWEP.ActivePos = Vector(-0.5, -1, 1.2)
+SWEP.ActiveAng = Angle(1, 2, 1)
 
-SWEP.HolsterPos = Vector(0.532, -6, 0)
-SWEP.HolsterAng = Angle(-7.036, 30.016, 0)
+local hp = ArcCW.CSP_Holsters["compliant"]
+SWEP.HolsterPos = hp.pos + Vector(3, 5, -1.5)
+SWEP.HolsterAng = hp.ang
 
 SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)
@@ -234,7 +237,7 @@ SWEP.Animations = {
     },
     ["fire"] = {
         Source = {"shoot1", "shoot2", "shoot3"},
-        Time = 0.4,
+        Time = 0.8,
         ShellEjectAt = 0,
     },
     ["fire_iron"] = {

@@ -37,14 +37,17 @@ SWEP.NPCWeight = 50
 
 SWEP.KillIconAlias = "arccw_nade_flash"
 
+SWEP.ActivePos = Vector(-2, -3, 1)
+SWEP.ActiveAng = Angle(0, 0, 15)
 SWEP.Animations = {
     ["draw"] = {
-        Source = "deploy",
-        Time = 0.5,
+        Source = "idle",
+        Time = 0.25,
+        ProcDraw = true
     },
-    ["ready"] = {
-        Source = "deploy",
-        Time = 0.5,
+    ["idle"] = {
+        Source = "idle",
+        Time = 1
     },
     ["pre_throw"] = {
         Source = {"pullpin", "pullpin2", "pullpin3", "pullpin4"},

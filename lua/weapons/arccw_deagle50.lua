@@ -6,7 +6,7 @@ SWEP.AdminOnly = false
 SWEP.PrintName = "Century Eagle"
 SWEP.TrueNam3 = "Desert Eagle .50"
 SWEP.Trivia_Class = "Pistol"
-SWEP.Trivia_Desc = ".50 Calibre heavy automatic pistol, designed for self-defense against large wild animals such as grizzly bears. A rotating-bolt gas-operated design makes it able to handle the huge round, resembling an assault rifle more than a handgun."
+SWEP.Trivia_Desc = ".50 Calibre heavy automatic pistol, designed for self-defense against large wild animals such as grizzly bears. A rotating-bolt gas-operated design makes it able to handle the huge round, resembling an assault rifle more than a handgun. Geez, painted with a golden finish. Flashy, aren't we?"
 SWEP.Trivia_Manufacturer = "Gryphon Arms"
 SWEP.Trivia_Calibre = ".50 Action Express"
 SWEP.Trivia_Mechanism = "Gas-Operated"
@@ -46,7 +46,8 @@ SWEP.ReducedClipSize = 5
 SWEP.Recoil = 4
 SWEP.RecoilSide = 1
 SWEP.RecoilRise = 1
-SWEP.MaxRecoilBlowback = 2
+SWEP.MaxRecoilBlowback = -3
+SWEP.RecoilPunch = 1
 
 SWEP.Delay = 60 / 250 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
@@ -72,7 +73,7 @@ SWEP.MagID = "gce" -- the magazine pool this gun draws from
 SWEP.ShootVol = 130 -- volume of shoot sound
 SWEP.ShootPitch = 95 -- pitch of shoot sound
 
-SWEP.ShootSound = "weapons/arccw/deagle/deagle_01.wav"
+SWEP.ShootSound = "weapons/arccw/deagle/deagle-1.wav"
 SWEP.ShootSoundSilenced = "weapons/arccw/usp/usp_01.wav"
 SWEP.DistantShootSound = "weapons/arccw/deagle/deagle-1-distant.wav"
 
@@ -102,9 +103,10 @@ SWEP.ProceduralIronFire = false
 SWEP.CaseBones = {}
 
 SWEP.IronSightStruct = {
-    Pos = Vector(-6.356, -9.935, 2.066),
+    Pos = Vector(-6.356, -3, 2.066),
     Ang = Angle(0.416, -0.015, 0),
-    Magnification = 1.1,
+    Magnification = 1.05,
+    ViewModelFOV = 50,
     SwitchToSound = "", -- sound that plays when switching to this sight
 }
 
@@ -114,11 +116,12 @@ SWEP.HoldtypeSights = "revolver"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_REVOLVER
 
-SWEP.ActivePos = Vector(-2, 0, 0)
-SWEP.ActiveAng = Angle(0, 0, 0)
+SWEP.ActivePos = Vector(-1, -3, 1)
+SWEP.ActiveAng = Angle(1, 1, -2)
 
-SWEP.HolsterPos = Vector(-2, -7.145, -11.561)
-SWEP.HolsterAng = Angle(36.533, 0, 0)
+local hp = ArcCW.CSP_Holsters["angrypistola"]
+SWEP.HolsterPos = hp.pos + Vector(0, 0, 0)
+SWEP.HolsterAng = hp.ang + Angle(0, 0, 0)
 
 SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)

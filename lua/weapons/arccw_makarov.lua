@@ -111,11 +111,12 @@ SWEP.HoldtypeSights = "revolver"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_PISTOL
 
-SWEP.ActivePos = Vector(1, 4, -1)
-SWEP.ActiveAng = Angle(0, 0, 0)
+SWEP.ActivePos = Vector(0.7, 3, 0.3)
+SWEP.ActiveAng = Angle(-0.5, 0, -4)
 
-SWEP.HolsterPos = Vector(1, 2, -11.561)
-SWEP.HolsterAng = Angle(36.533, 0, 0)
+local hp = ArcCW.CSP_Holsters["angrypistola"]
+SWEP.HolsterPos = hp.pos + Vector(1.4, 5, -1)
+SWEP.HolsterAng = hp.ang + Angle(0, 0, 0)
 
 SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)

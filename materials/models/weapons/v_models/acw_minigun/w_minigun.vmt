@@ -1,4 +1,14 @@
 VertexLitGeneric
 {
 $baseTexture "models\weapons/v_models/acw_minigun/W_MiniGun"
+$bumpmap "dev/flat_normal"
+$envmap env_cubemap
+$envmaptint "{1 1 1}"
+
+$phong 1
+$phongboost 0
+$phongexponent 0
+$rimlight 1
+$rimlightboost 0.03
+$rimlightexponent 9999999999999999999999999999999
 }

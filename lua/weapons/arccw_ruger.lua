@@ -24,7 +24,7 @@ SWEP.UseHands = true
 
 SWEP.ViewModel = "models/weapons/arccw/c_ruger_new.mdl"
 SWEP.WorldModel = "models/weapons/arccw/w_ruger.mdl"
-SWEP.ViewModelFOV = 65
+SWEP.ViewModelFOV = 60
 
 SWEP.Damage = 15
 SWEP.DamageMin = 5 -- damage done at maximum range
@@ -110,13 +110,13 @@ SWEP.HoldtypeSights = "revolver"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_PISTOL
 
-SWEP.ActivePos = Vector(0, 4, 0)
-SWEP.ActiveAng = Angle(0, 0, 0)
+SWEP.ActivePos = Vector(0, 2, 1)
+SWEP.ActiveAng = Angle(0.5, 0.5, -1)
 
 SWEP.CustomizePos = Vector(8, 3, -4)
 
-SWEP.HolsterPos = Vector(0, 2, -4)
-SWEP.HolsterAng = Angle(-5, 0, 0)
+SWEP.HolsterPos = Vector(0, 2, 2)
+SWEP.HolsterAng = Angle(-5, 5, 0)
 
 SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)

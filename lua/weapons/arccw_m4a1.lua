@@ -43,9 +43,12 @@ SWEP.ReducedClipSize = 15
 
 SWEP.Recoil = 0.5
 SWEP.RecoilSide = 0.35
-SWEP.RecoilRise = 0.75
+SWEP.RecoilRise = 0
+SWEP.RecoilPunchBackMax = 3
+SWEP.VisualRecoilMult = 1
+SWEP.RecoilPunch = 1
 
-SWEP.Delay = 60 / 750 -- 60 / RPM.
+SWEP.Delay = 60 / 667 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
 SWEP.Firemodes = {
     {
@@ -70,10 +73,10 @@ SWEP.Primary.Ammo = "smg1" -- what ammo type the gun uses
 SWEP.MagID = "stanag" -- the magazine pool this gun draws from
 
 SWEP.ShootVol = 110 -- volume of shoot sound
-SWEP.ShootPitch = 95 -- pitch of shoot sound
+SWEP.ShootPitch = 91 -- pitch of shoot sound
 
-SWEP.FirstShootSound = "weapons/arccw/m4a1/m4a1_us_01.wav"
-SWEP.ShootSound = "weapons/arccw/m4a1/m4a1_us_03.wav"
+SWEP.FirstShootSound = "weapons/arccw/m4a1/m4a1_us_04.wav"
+SWEP.ShootSound = "weapons/arccw/m4a1/m4a1_us_01.wav"
 SWEP.ShootSoundSilenced = "weapons/arccw/m4a1/m4a1_silencer_01.wav"
 SWEP.DistantShootSound = "weapons/arccw/m4a1/m4a1_us_distant_03.wav"
 
@@ -112,11 +115,12 @@ SWEP.HoldtypeSights = "rpg"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 
-SWEP.ActivePos = Vector(-1.979, 0, -1.645)
-SWEP.ActiveAng = Angle(2.397, -1, -2.612)
+SWEP.ActivePos = Vector(-2.2, 0, -0.3)
+SWEP.ActiveAng = Angle(3, 0, -3)
 
-SWEP.HolsterPos = Vector(0.532, -6, 0)
-SWEP.HolsterAng = Angle(-7.036, 30.016, 0)
+local hp = ArcCW.CSP_Holsters["compliant"]
+SWEP.HolsterPos = hp.pos + Vector(2, 2, -0.5)
+SWEP.HolsterAng = hp.ang
 
 SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)
@@ -186,8 +190,8 @@ SWEP.Attachments = {
         Slot = cspf.."muzzle",
         Bone = "v_weapon.m4_Parent",
         Offset = {
-            vpos = Vector(0.152, -4.604, -17.313),
-            vang = Angle(-91.613, 0, -90),
+            vpos = Vector(0.18, -4.64, -17.4),
+            vang = Angle(-90, -2, -90),
             wpos = Vector(26.648, 0.782, -8.042),
             wang = Angle(-9.79, 0, 180)
         },

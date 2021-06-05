@@ -6,7 +6,7 @@ SWEP.AdminOnly = false
 SWEP.PrintName = "Defender"
 SWEP.TrueNam3 = "M3 Super 90"
 SWEP.Trivia_Class = "Shotgun"
-SWEP.Trivia_Desc = "12 gauge pistol grip pump shotgun. Designed for maneuverability in confined spaces."
+SWEP.Trivia_Desc = "12 gauge pistol grip pump shotgun. Shortened barrel and sawed stock allow for maneuverability in confined spaces."
 SWEP.Trivia_Manufacturer = "ArmStrike USA"
 SWEP.Trivia_Calibre = "12 Gauge"
 SWEP.Trivia_Mechanism = "Pump-Action"
@@ -40,9 +40,12 @@ SWEP.Primary.ClipSize = 6 -- DefaultClip is automatically set.
 SWEP.ExtendedClipSize = 8
 SWEP.ReducedClipSize = 4
 
-SWEP.Recoil = 6
+SWEP.Recoil = 3
 SWEP.RecoilSide = 1
+SWEP.RecoilRise = -3
 SWEP.MaxRecoilBlowback = 2
+SWEP.RecoilPunch = 2
+SWEP.RecoilPunchBackMax = 3
 
 SWEP.ShotgunReload = true
 SWEP.ManualAction = true
@@ -113,7 +116,7 @@ SWEP.HoldtypeSights = "ar2"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_SHOTGUN
 
-SWEP.ActivePos = Vector(-2, 0, 0)
+SWEP.ActivePos = Vector(-2, -3, 1.5)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
 SWEP.HolsterPos = Vector(0.532, -6, 0)

@@ -35,14 +35,17 @@ SWEP.TTTWeaponType = "weapon_ttt_smokegrenade"
 SWEP.NPCWeaponType = "weapon_grenade"
 SWEP.NPCWeight = 50
 
+SWEP.ActivePos = Vector(0.5, -3, 1)
+SWEP.ActiveAng = Angle(-5, 5, -5)
 SWEP.Animations = {
     ["draw"] = {
         Source = "deploy",
-        Time = 0.5,
+        Time = 1,
+        ProcDraw = true
     },
-    ["ready"] = {
-        Source = "deploy",
-        Time = 0.5,
+    ["idle"] = {
+        Source = "idle",
+        Time = 1
     },
     ["pre_throw"] = {
         Source = "pullpin",

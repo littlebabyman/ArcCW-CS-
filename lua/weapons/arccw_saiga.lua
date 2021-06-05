@@ -111,11 +111,12 @@ SWEP.HoldtypeSights = "rpg"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 
-SWEP.ActivePos = Vector(-2, -6, 0)
-SWEP.ActiveAng = Angle(0, 0, 0)
+SWEP.ActivePos = Vector(-2, -8, 2)
+SWEP.ActiveAng = Angle(1, 0, 0)
 
-SWEP.HolsterPos = Vector(0.532, -6, 0)
-SWEP.HolsterAng = Angle(-7.036, 30.016, 0)
+local hp = ArcCW.CSP_Holsters["warlover"]
+SWEP.HolsterPos = hp.pos
+SWEP.HolsterAng = hp.ang
 
 SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)

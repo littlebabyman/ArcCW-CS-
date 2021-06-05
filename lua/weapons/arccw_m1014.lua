@@ -42,7 +42,10 @@ SWEP.ReducedClipSize = 4
 
 SWEP.Recoil = 5
 SWEP.RecoilSide = 1
-SWEP.MaxRecoilBlowback = 2
+SWEP.MaxRecoilBlowback = 1
+SWEP.RecoilRise = 0
+SWEP.RecoilPunchBackMax = 30
+SWEP.VisualRecoilMult = 2
 SWEP.RecoilPunch = 1
 
 SWEP.ShotgunReload = true
@@ -112,11 +115,12 @@ SWEP.HoldtypeSights = "rpg"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_SHOTGUN
 
-SWEP.ActivePos = Vector(-2, 0, 0)
-SWEP.ActiveAng = Angle(0, 0, 0)
+SWEP.ActivePos = Vector(-2.2, -5, 1.3)
+SWEP.ActiveAng = Angle(2, 1, -2)
 
-SWEP.HolsterPos = Vector(0.532, -6, 0)
-SWEP.HolsterAng = Angle(-7.036, 30.016, 0)
+local hp = ArcCW.CSP_Holsters["warlover"]
+SWEP.HolsterPos = hp.pos + Vector(0.3, 1, 0.5)
+SWEP.HolsterAng = hp.ang + Angle(-3, 3, 0)
 
 SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)

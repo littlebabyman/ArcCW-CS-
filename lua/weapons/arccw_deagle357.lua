@@ -6,7 +6,7 @@ SWEP.AdminOnly = false
 SWEP.PrintName = "Millennium Hawk"
 SWEP.TrueNam3 = "Desert Eagle .357"
 SWEP.Trivia_Class = "Pistol"
-SWEP.Trivia_Desc = ".357 Magnum heavy automatic pistol, designed for self-defense against large wild animals such as grizzly bears. A rotating-bolt gas-operated design makes it able to handle the huge round, resembling an assault rifle more than a handgun. Lighter, higher-capacity version of the Century Eagle."
+SWEP.Trivia_Desc = ".357 Magnum heavy automatic pistol. Lighter and higher-capacity. Not as fit for warlords."
 SWEP.Trivia_Manufacturer = "Gryphon Arms"
 SWEP.Trivia_Calibre = ".357 Magnum"
 SWEP.Trivia_Mechanism = "Gas-Operated"
@@ -25,9 +25,9 @@ SWEP.WorldModel = "models/weapons/w_pist_deagle.mdl"
 
 SWEP.DefaultSkin = 0
 
-SWEP.Damage = 55
+SWEP.Damage = 40
 SWEP.DamageMin = 35 -- damage done at maximum range
-SWEP.Range = 35 -- in METRES
+SWEP.Range = 40 -- in METRES
 SWEP.Penetration = 8
 SWEP.DamageType = DMG_BULLET
 SWEP.ShootEntity = nil -- entity to fire, if any
@@ -41,7 +41,8 @@ SWEP.ReducedClipSize = 7
 SWEP.Recoil = 3
 SWEP.RecoilSide = 1
 SWEP.RecoilRise = 1
-SWEP.MaxRecoilBlowback = 2
+SWEP.MaxRecoilBlowback = 3
+SWEP.RecoilPunch = 1
 
 SWEP.AccuracyMOA = 5 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
 SWEP.HipDispersion = 150 -- inaccuracy added by hip firing.
@@ -51,7 +52,7 @@ SWEP.Primary.Ammo = "357" -- what ammo type the gun uses
 SWEP.MagID = "gce" -- the magazine pool this gun draws from
 
 SWEP.ShootVol = 120 -- volume of shoot sound
-SWEP.ShootPitch = 105 -- pitch of shoot sound
+SWEP.ShootPitch = 90 -- pitch of shoot sound
 
 SWEP.ShootSound = "weapons/arccw/deagle/deagle_02.wav"
 SWEP.ShootSoundSilenced = "weapons/arccw/usp/usp_01.wav"
@@ -97,9 +98,10 @@ SWEP.ProceduralIronFire = false
 SWEP.CaseBones = {}
 
 SWEP.IronSightStruct = {
-    Pos = Vector(-6.356, -9.935, 2.066),
+    Pos = Vector(-6.356, -3, 2.066),
     Ang = Angle(0.416, -0.015, 0),
-    Magnification = 1.1,
+    Magnification = 1.05,
+    ViewModelFOV = 50,
     SwitchToSound = "", -- sound that plays when switching to this sight
 }
 
@@ -109,11 +111,12 @@ SWEP.HoldtypeSights = "revolver"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_REVOLVER
 
-SWEP.ActivePos = Vector(-2, 0, 0)
-SWEP.ActiveAng = Angle(0, 0, 0)
+SWEP.ActivePos = Vector(-1, -3, 1)
+SWEP.ActiveAng = Angle(1, 1, -2)
 
-SWEP.HolsterPos = Vector(-2, -7.145, -11.561)
-SWEP.HolsterAng = Angle(36.533, 0, 0)
+local hp = ArcCW.CSP_Holsters["angrypistola"]
+SWEP.HolsterPos = hp.pos + Vector(0, 0, 0)
+SWEP.HolsterAng = hp.ang + Angle(0, 0, 0)
 
 SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)

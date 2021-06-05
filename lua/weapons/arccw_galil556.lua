@@ -43,7 +43,9 @@ SWEP.ReducedClipSize = 15
 
 SWEP.Recoil = 0.35
 SWEP.RecoilSide = 0.2
-SWEP.RecoilRise = 1
+SWEP.RecoilRise = 0.2
+SWEP.VisualRecoilMult = 1
+SWEP.RecoilPunch = 1
 
 SWEP.Delay = 60 / 725 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
@@ -101,11 +103,12 @@ SWEP.HoldtypeSights = "rpg"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 
-SWEP.ActivePos = Vector(-2, 0, 0)
+SWEP.ActivePos = Vector(-2, -5, 2)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
-SWEP.HolsterPos = Vector(0.532, -6, 0)
-SWEP.HolsterAng = Angle(-7.036, 30.016, 0)
+local hp = ArcCW.CSP_Holsters["compliant"]
+SWEP.HolsterPos = hp.pos + Vector(2, 2, -0.5)
+SWEP.HolsterAng = hp.ang
 
 SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)
@@ -285,12 +288,12 @@ SWEP.Animations = {
     },
     ["fire"] = {
         Source = {"shoot1", "shoot2", "shoot3"},
-        Time = 0.5,
+        Time = 0.8,
         ShellEjectAt = 0,
     },
     ["fire_iron"] = {
         Source = "shoot_iron",
-        Time = 0.5,
+        Time = 0.8,
         ShellEjectAt = 0,
     },
     ["reload"] = {

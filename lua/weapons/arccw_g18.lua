@@ -45,6 +45,7 @@ SWEP.ReducedClipSize = 12
 SWEP.Recoil = 1
 SWEP.RecoilSide = 0.275
 SWEP.RecoilRise = 1.25
+SWEP.RecoilPunch = 0.7
 
 SWEP.Delay = 60 / 800 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
@@ -100,9 +101,10 @@ SWEP.ProceduralIronFire = false
 SWEP.CaseBones = {}
 
 SWEP.IronSightStruct = {
-    Pos = Vector(-5.801, -8.829, 2.726),
+    Pos = Vector(-5.801, -3, 2.726),
     Ang = Angle(0.88, -0.079, 0),
-    Magnification = 1.1,
+    ViewModelFOV = 50,
+    Magnification = 1.05,
     SwitchToSound = "", -- sound that plays when switching to this sight
 }
 
@@ -112,11 +114,12 @@ SWEP.HoldtypeSights = "revolver"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_PISTOL
 
-SWEP.ActivePos = Vector(-2, 0, 0)
-SWEP.ActiveAng = Angle(0, 0, 0)
+SWEP.ActivePos = Vector(-1.4, -3, 0.8)
+SWEP.ActiveAng = Angle(0.9, 0.75, -1)
 
-SWEP.HolsterPos = Vector(-2, -7.145, -11.561)
-SWEP.HolsterAng = Angle(36.533, 0, 0)
+local hp = ArcCW.CSP_Holsters["happypistola"]
+SWEP.HolsterPos = hp.pos + Vector(0, 0, 0)
+SWEP.HolsterAng = hp.ang + Angle(0, 0, 0)
 
 SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)

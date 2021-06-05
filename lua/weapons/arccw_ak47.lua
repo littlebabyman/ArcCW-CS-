@@ -6,7 +6,7 @@ SWEP.AdminOnly = false
 SWEP.PrintName = "Type 2"
 SWEP.TrueNam3 = "AK-47"
 SWEP.Trivia_Class = "Assault Rifle"
-SWEP.Trivia_Desc = "An early assault rifle pattern, designed by a Soviet tank mechanic in response to the need for a more versatile infantry weapon. Poor accuracy, but packs a serious punch."
+SWEP.Trivia_Desc = "An early assault rifle pattern, copied and used all around the world. Designed by a Soviet tank mechanic in response to the need for a more versatile infantry weapon. Poor accuracy, but packs a serious punch."
 SWEP.Trivia_Manufacturer = "Kremen Oruzhiye"
 SWEP.Trivia_Calibre = "7.62x39mm Soviet"
 SWEP.Trivia_Mechanism = "Gas-Operated"
@@ -27,8 +27,8 @@ SWEP.ViewModel = "models/weapons/arccw/c_type2.mdl"
 SWEP.WorldModel = "models/weapons/arccw/w_type2.mdl"
 SWEP.ViewModelFOV = 60
 
-SWEP.Damage = 33
-SWEP.DamageMin = 24 -- damage done at maximum range
+SWEP.Damage = 30
+SWEP.DamageMin = 28 -- damage done at maximum range
 SWEP.Range = 100 -- in METRES
 SWEP.Penetration = 10
 SWEP.DamageType = DMG_BULLET
@@ -44,7 +44,7 @@ SWEP.Recoil = 0.65
 SWEP.RecoilSide = 0.75
 SWEP.RecoilRise = 1
 
-SWEP.Delay = 60 / 600 -- 60 / RPM.
+SWEP.Delay = 60 / 570 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
 SWEP.Firemodes = {
     {
@@ -112,11 +112,12 @@ SWEP.HoldtypeSights = "rpg"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 
-SWEP.ActivePos = Vector(-2, -6, 0)
-SWEP.ActiveAng = Angle(2, 0, 0)
+SWEP.ActivePos = Vector(-2, -8, 2)
+SWEP.ActiveAng = Angle(1, 0, 0)
 
-SWEP.HolsterPos = Vector(0.532, -6, 0)
-SWEP.HolsterAng = Angle(-7.036, 30.016, 0)
+local hp = ArcCW.CSP_Holsters["warlover"]
+SWEP.HolsterPos = hp.pos
+SWEP.HolsterAng = hp.ang
 
 SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)

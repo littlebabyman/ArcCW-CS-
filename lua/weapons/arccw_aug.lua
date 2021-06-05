@@ -4,9 +4,8 @@ SWEP.Category = "ArcCW - CS+" -- edit this if you like
 SWEP.AdminOnly = false
 
 SWEP.PrintName = "Para-556"
-SWEP.TrueNam3 = "AUG A2"
 SWEP.Trivia_Class = "Assault Rifle"
-SWEP.Trivia_Desc = "Bullpup assault rifle, whose design puts the mechanism behind the grip, allowing for a longer barrel without extending the effective length of the weapon. Good magazine capacity, poor recoil characteristics."
+SWEP.Trivia_Desc = "Bullpup assault rifle, whose design puts the mechanism behind the grip, allowing for a longer barrel without extending the effective length of the weapon. Alongside this, it comes equipped with a dual-stage trigger, which some may find to be a downside."
 SWEP.Trivia_Manufacturer = "Auschen Waffenfabrik"
 SWEP.Trivia_Calibre = "5.56x45mm NATO"
 SWEP.Trivia_Mechanism = "Gas-Operated"
@@ -50,6 +49,8 @@ SWEP.Num = 1 -- number of shots per trigger pull.
 SWEP.Firemodes = {
     {
         Mode = 2,
+        CustomBars = "---_-",
+        PrintName = "DUAL-STAGE"
     },
     {
         Mode = 1,
@@ -58,6 +59,11 @@ SWEP.Firemodes = {
         Mode = 0
     }
 }
+SWEP.M_Hook_Mult_RPM = function(wep, data)
+    if wep:GetCurrentFiremode().Mode == 2 and wep:GetBurstCount() == 0 and wep:GetState() != ArcCW.STATE_CUSTOMIZE then
+        data.mult = data.mult * 0.5
+    end
+end
 
 SWEP.NPCWeaponType = "weapon_ar2"
 SWEP.NPCWeight = 100
@@ -70,10 +76,10 @@ SWEP.Primary.Ammo = "smg1" -- what ammo type the gun uses
 SWEP.MagID = "stanag" -- the magazine pool this gun draws from
 
 SWEP.ShootVol = 110 -- volume of shoot sound
-SWEP.ShootPitch = 100 -- pitch of shoot sound
+SWEP.ShootPitch = 130 -- pitch of shoot sound
 
-SWEP.FirstShootSound = "weapons/arccw/aug/aug_01.wav"
-SWEP.ShootSound = "weapons/arccw/aug/aug_03.wav"
+SWEP.FirstShootSound = "weapons/arccw/aug/aug-1.wav"
+SWEP.ShootSound = "weapons/arccw/aug/aug-1.wav"
 SWEP.ShootSoundSilenced = "weapons/arccw/m4a1/m4a1_silencer_01.wav"
 SWEP.DistantShootSound = "weapons/arccw/aug/aug-1-distant.wav"
 
@@ -112,11 +118,12 @@ SWEP.HoldtypeSights = "rpg"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 
-SWEP.ActivePos = Vector(-2, 0, -2)
-SWEP.ActiveAng = Angle(1.5, -3.3, -10.58)
+SWEP.ActivePos = Vector(-4, -4, 1.5)
+SWEP.ActiveAng = Angle(0, -2, -10)
 
-SWEP.HolsterPos = Vector(0.532, -6, 0)
-SWEP.HolsterAng = Angle(-7.036, 30.016, 0)
+local hp = ArcCW.CSP_Holsters["compliant"]
+SWEP.HolsterPos = hp.pos + Vector(0, 1, -0.5)
+SWEP.HolsterAng = hp.ang + Angle(0, 0, -5)
 
 SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)

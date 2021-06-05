@@ -31,14 +31,17 @@ SWEP.Primary.ClipSize = 1
 SWEP.MuzzleVelocity = 1250
 SWEP.ShootEntity = "arccw_thr_impact"
 
+SWEP.ActivePos = Vector(7, -5, 2)
+SWEP.ActiveAng = Angle(-5, 25, 15)
 SWEP.Animations = {
     ["draw"] = {
-        Source = "deploy",
-        Time = 0.5,
+        Source = "idle",
+        Time = 0.25,
+        ProcDraw = true
     },
-    ["ready"] = {
-        Source = "deploy",
-        Time = 0.5,
+    ["idle"] = {
+        Source = "idle",
+        Time = 1
     },
     ["pre_throw"] = {
         Source = {"pullpin", "pullpin2", "pullpin3", "pullpin4"},

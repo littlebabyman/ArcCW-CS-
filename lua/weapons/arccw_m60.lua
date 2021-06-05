@@ -25,9 +25,9 @@ SWEP.WorldModel = "models/weapons/arccw/w_m60.mdl"
 SWEP.ViewModelFOV = 60
 SWEP.DefaultBodygroups = "0000000"
 
-SWEP.Damage = 50
+SWEP.Damage = 36
 SWEP.DamageMin = 29 -- damage done at maximum range
-SWEP.Range = 250 -- in METRES
+SWEP.Range = 100 -- in METRES
 SWEP.Penetration = 22
 SWEP.DamageType = DMG_BULLET
 SWEP.ShootEntity = nil -- entity to fire, if any
@@ -41,12 +41,14 @@ SWEP.Primary.ClipSize = 80 -- DefaultClip is automatically set.
 SWEP.ExtendedClipSize = 110
 SWEP.ReducedClipSize = 35
 
-SWEP.Recoil = 0.75
+SWEP.Recoil = 0.9
 SWEP.RecoilSide = 0.3
-SWEP.RecoilRise = 0.8
-SWEP.Delay = 60 / 600 -- 60 / RPM.
-SWEP.Num = 1 -- number of shots per trigger pull.
+SWEP.RecoilRise = 3
+SWEP.RecoilPunchBackMax = 30
+SWEP.VisualRecoilMult = 2
 
+SWEP.Delay = 60 / 500 -- 60 / RPM.
+SWEP.Num = 1 -- number of shots per trigger pull.
 SWEP.Firemodes = {
     {
         Mode = 2
@@ -66,10 +68,10 @@ SWEP.MoveDispersion = 250
 SWEP.Primary.Ammo = "ar2" -- what ammo type the gun uses
 SWEP.MagID = "m60" -- the magazine pool this gun draws from
 SWEP.ShootVol = 120 -- volume of shoot sound
-SWEP.ShootPitch = 90 -- pitch of shoot sound
-SWEP.ShootSound = "weapons/arccw/negev/negev_03.wav"
+SWEP.ShootPitch = 125 -- pitch of shoot sound
+SWEP.ShootSound = "weapons/arccw/negev/negev-1.wav"
 SWEP.ShootSoundSilenced = "weapons/arccw/m4a1/m4a1_silencer_01.wav"
-SWEP.DistantShootSound = "weapons/arccw/negev/negev-1-distant.wav" --weapons/arccw/m249/m249-1-distant.wav
+SWEP.DistantShootSound = "weapons/arccw/sg556/sg556-1-distant.wav" --weapons/arccw/m249/m249-1-distant.wav
 
 SWEP.MuzzleEffect = "muzzleflash_minimi"
 
@@ -108,14 +110,15 @@ SWEP.HoldtypeSights = "rpg"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 
-SWEP.ActivePos = Vector(0, 2, 1)
+SWEP.ActivePos = Vector(-3, 0, 4)
 SWEP.ActiveAng = Angle(0, 0, 0)
+
+local hp = ArcCW.CSP_Holsters["warlover"]
+SWEP.HolsterPos = hp.pos + Vector(-2, 5, 1)
+SWEP.HolsterAng = hp.ang + Angle(4, -4, 0)
 
 SWEP.CustomizePos = Vector(12, -3, -4)
 SWEP.CustomizeAng = Angle(15, 40, 0)
-
-SWEP.HolsterPos = Vector(0.532, -6, 0)
-SWEP.HolsterAng = Angle(-7.036, 30.016, 0)
 
 SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)

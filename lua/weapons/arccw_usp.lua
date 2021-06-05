@@ -70,7 +70,7 @@ SWEP.MagID = "sp40" -- the magazine pool this gun draws from
 SWEP.ShootVol = 115 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
-SWEP.ShootSound = "weapons/arccw/usp/usp_unsilenced_03.wav"
+SWEP.ShootSound = "weapons/arccw/usp/usp_unsil-1.wav"
 SWEP.ShootSoundSilenced = "weapons/arccw/usp/usp_01.wav"
 SWEP.DistantShootSound = "weapons/arccw/hkp2000/hkp2000-1-distant.wav"
 
@@ -99,9 +99,10 @@ SWEP.ProceduralIronFire = false
 SWEP.CaseBones = {}
 
 SWEP.IronSightStruct = {
-    Pos = Vector(-5.974, -5.643, 2.72),
+    Pos = Vector(-5.974, -3, 2.72),
     Ang = Angle(-0.116, 0.014, 0),
-    Magnification = 1.1,
+    ViewModelFOV = 50,
+    Magnification = 1.05,
     SwitchToSound = "", -- sound that plays when switching to this sight
 }
 
@@ -111,11 +112,12 @@ SWEP.HoldtypeSights = "revolver"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_PISTOL
 
-SWEP.ActivePos = Vector(-2, 0, 0)
-SWEP.ActiveAng = Angle(0, 0, 0)
+SWEP.ActivePos = Vector(-1.4, -3, 0.8)
+SWEP.ActiveAng = Angle(0.9, 0.75, -1)
 
-SWEP.HolsterPos = Vector(-2, -7.145, -11.561)
-SWEP.HolsterAng = Angle(36.533, 0, 0)
+local hp = ArcCW.CSP_Holsters["happypistola"]
+SWEP.HolsterPos = hp.pos + Vector(0, 0, 0)
+SWEP.HolsterAng = hp.ang + Angle(0, 0, 0)
 
 SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)

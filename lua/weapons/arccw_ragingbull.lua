@@ -26,7 +26,7 @@ SWEP.UseHands = true
 
 SWEP.ViewModel = "models/weapons/arccw/c_ragingbull_new.mdl"
 SWEP.WorldModel = "models/weapons/arccw/w_ragingbull.mdl"
-SWEP.ViewModelFOV = 70
+SWEP.ViewModelFOV = 60
 
 SWEP.DefaultSkin = 1
 
@@ -47,7 +47,7 @@ SWEP.ReducedClipSize = 4
 
 SWEP.Recoil = 2.5
 SWEP.RecoilSide = 1
-SWEP.RecoilRise = 1.8
+SWEP.RecoilRise = -20
 SWEP.VisualRecoilMult = 0.5
 
 SWEP.Delay = 60 / 180 -- 60 / RPM.
@@ -138,13 +138,14 @@ SWEP.HoldtypeSights = "revolver"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_REVOLVER
 
-SWEP.ActivePos = Vector(1, 4, -1)
+SWEP.ActivePos = Vector(1, 3, -0.5)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
-SWEP.CustomizePos = Vector(10, 3, -5)
+local hp = ArcCW.CSP_Holsters["happypistola"]
+SWEP.HolsterPos = hp.pos + Vector(0, 0, 0)
+SWEP.HolsterAng = hp.ang + Angle(0, 0, 0)
 
-SWEP.HolsterPos = Vector(2, 0, -10)
-SWEP.HolsterAng = Angle(45, 0, 0)
+SWEP.CustomizePos = Vector(10, 3, -5)
 
 SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)

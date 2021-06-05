@@ -20,7 +20,7 @@ SWEP.UseHands = true
 
 SWEP.ViewModel = "models/weapons/arccw/c_nade_claymore.mdl"
 SWEP.WorldModel = "models/weapons/arccw/w_nade_claymore.mdl"
-SWEP.ViewModelFOV = 60
+SWEP.ViewModelFOV = 70
 
 SWEP.Primary.Ammo = "slam"
 
@@ -35,7 +35,10 @@ SWEP.ShootEntity = "arccw_thr_claymore"
 
 SWEP.HoldtypeActive = "slam"
 
-SWEP.PullPinTime = 0.5
+SWEP.PullPinTime = 1
+
+SWEP.ActivePos = Vector(0, 7, 0)
+SWEP.ActiveAng = Angle(0, 0, 0)
 
 SWEP.CustomizePos = Vector(9.824, 0, -4.897)
 SWEP.CustomizeAng = Angle(36, 35, 0)
@@ -52,7 +55,7 @@ SWEP.Animations = {
     },
     ["pre_throw"] = {
         Source = "pullpin",
-        Time = 0.75,
+        Time = 1,
     },
     ["throw"] = {
         Source = "throw",

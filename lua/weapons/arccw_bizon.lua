@@ -43,9 +43,11 @@ SWEP.Primary.ClipSize = 82 -- DefaultClip is automatically set.
 SWEP.ExtendedClipSize = 82
 SWEP.ReducedClipSize = 44
 
-SWEP.Recoil = 0.1
-SWEP.RecoilSide = 0.1
+SWEP.Recoil = 0.3
+SWEP.RecoilSide = 0.3
 SWEP.VisualRecoilMult = 1
+SWEP.MaxRecoilBlowback = -1
+SWEP.RecoilPunch = 1
 
 SWEP.Delay = 60 / 670 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
@@ -118,11 +120,12 @@ SWEP.HoldtypeSights = "rpg"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_SMG1
 
-SWEP.ActivePos = Vector(0, 4, -1)
+SWEP.ActivePos = Vector(1, 3, 0)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
-SWEP.HolsterPos = Vector(3.5, 2, 0)
-SWEP.HolsterAng = Angle(-7.036, 30.016, 0)
+local hp = ArcCW.CSP_Holsters["warlover"]
+SWEP.HolsterPos = hp.pos + Vector(3, 8, -3)
+SWEP.HolsterAng = hp.ang + Angle(4, -2, 3)
 
 SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)
@@ -227,8 +230,8 @@ SWEP.Animations = {
         SoundTable = {{s = "weapons/arccw/ak47/ak47_draw.wav", t = 0}},
     },
     ["fire"] = {
-        Source = {"fire"},
-        Time = 0.4,
+        Source = "fire",
+        Time = 0.7,
         ShellEjectAt = 0,
     },
     ["fire_iron"] = {

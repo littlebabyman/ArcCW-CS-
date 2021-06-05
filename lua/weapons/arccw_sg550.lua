@@ -69,7 +69,7 @@ SWEP.MagID = "stanag" -- the magazine pool this gun draws from
 SWEP.ShootVol = 110 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
-SWEP.ShootSound = "weapons/arccw/scar20/scar20_03.wav"
+SWEP.ShootSound = "weapons/arccw/scar20/scar20_unsil-1.wav"
 SWEP.ShootSoundSilenced = "weapons/arccw/m4a1/m4a1_silencer_01.wav"
 SWEP.DistantShootSound = "weapons/arccw/scar20/scar20_distant_02.wav"
 
@@ -108,11 +108,11 @@ SWEP.HoldtypeSights = "rpg"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 
-SWEP.ActivePos = Vector(-2, -2, 0)
+SWEP.ActivePos = Vector(-2.4, -3, 2)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
-SWEP.HolsterPos = Vector(0.532, -6, 0)
-SWEP.HolsterAng = Angle(-7.036, 30.016, 0)
+SWEP.HolsterPos = Vector(-2.2, -5, 3)
+SWEP.HolsterAng = Angle(-4, 5, 0)
 
 SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)
@@ -132,6 +132,19 @@ SWEP.AttachmentElements = {
         VMBodygroups = {{ind = 2, bg = 1}},
         WMBodygroups = {},
     },
+    ["mount"] = {
+        VMElements = {
+            {
+                Model = "models/weapons/arccw/atts/mount_rail.mdl",
+                Bone = "v_weapon.sg550_Parent",
+                Scale = Vector(2, 1, 2),
+                Offset = {
+                    pos = Vector(0.1, -6.3, -1.8),
+                    ang = Angle(-90, 0, -90),
+                }
+            }
+        },
+    },
 }
 
 SWEP.ExtraSightDist = 3
@@ -149,11 +162,12 @@ SWEP.Attachments = {
         },
         SlideAmount = { -- how far this attachment can slide in both directions.
             -- overrides Offset.
-            vmin = Vector(0.1, -6.3, -0.5),
-            vmax = Vector(0.1, -6.3, -3),
+            vmin = Vector(0.1, -6.5, 0.5),
+            vmax = Vector(0.1, -6.5, -4),
             wmin = Vector(5, 0.899, -5),
             wmax = Vector(7, 0.899, -5),
         },
+        InstalledEles = {"mount"},
         Installed = "optic_magnus"
     },
     {

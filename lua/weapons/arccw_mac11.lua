@@ -44,7 +44,7 @@ SWEP.ReducedClipSize = 16
 
 SWEP.Recoil = 0.5
 SWEP.RecoilSide = 0.15
-SWEP.RecoilRise = 1
+SWEP.RecoilRise = -1
 
 SWEP.Delay = 60 / 800 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
@@ -71,10 +71,10 @@ SWEP.Primary.Ammo = "pistol" -- what ammo type the gun uses
 SWEP.MagID = "mk201" -- the magazine pool this gun draws from
 
 SWEP.ShootVol = 115 -- volume of shoot sound
-SWEP.ShootPitch = 100 -- pitch of shoot sound
+SWEP.ShootPitch = 150 -- pitch of shoot sound
 
-SWEP.FirstShootSound = "weapons/arccw/mac10/mac10_01.wav"
-SWEP.ShootSound = "weapons/arccw/mac10/mac10_02.wav"
+SWEP.FirstShootSound = "weapons/arccw/mac10/mac10_02.wav"
+SWEP.ShootSound = "weapons/arccw/mac10/mac10_03.wav"
 SWEP.ShootSoundSilenced = "weapons/arccw/usp/usp_01.wav"
 SWEP.DistantShootSound = "weapons/arccw/mac10/mac10-1-distant.wav"
 
@@ -115,11 +115,12 @@ SWEP.HoldtypeSights = "revolver"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 
-SWEP.ActivePos = Vector(-3, -2, -1)
-SWEP.ActiveAng = Angle(0, -5, -7.301)
+SWEP.ActivePos = Vector(-4, -4, 1)
+SWEP.ActiveAng = Angle(2, -4, -7)
 
-SWEP.HolsterPos = Vector(-1.928, -3, -6.228)
-SWEP.HolsterAng = Angle(25, 0, 0)
+local hp = ArcCW.CSP_Holsters["warlover"]
+SWEP.HolsterPos = hp.pos + Vector(0.3, 3, 0)
+SWEP.HolsterAng = hp.ang + Angle(1, -3, 0)
 
 SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)
@@ -293,8 +294,8 @@ SWEP.Animations = {
         },
     },
     ["fire"] = {
-        Source = {"fire1", "fire2", "fire3"},
-        Time = 0.5,
+        Source = "fire2",
+        Time = 0.7,
         ShellEjectAt = 0,
     },
     ["fire_empty"] = {

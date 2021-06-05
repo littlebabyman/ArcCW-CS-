@@ -45,7 +45,7 @@ SWEP.Recoil = 0.35
 SWEP.RecoilSide = 0.25
 SWEP.RecoilRise = 0.75
 
-SWEP.Delay = 60 / 800 -- 60 / RPM.
+SWEP.Delay = 60 / 710 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
 SWEP.Firemodes = {
     {
@@ -72,8 +72,7 @@ SWEP.MagID = "stanag" -- the magazine pool this gun draws from
 SWEP.ShootVol = 110 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
-SWEP.FirstShootSound = "weapons/arccw/sg556/sg556_01.wav"
-SWEP.ShootSound = "weapons/arccw/sg556/sg556_02.wav"
+SWEP.ShootSound = "weapons/arccw/sg556/sg556-1.wav"
 SWEP.ShootSoundSilenced = "weapons/arccw/m4a1/m4a1_silencer_01.wav"
 SWEP.DistantShootSound = "weapons/arccw/sg556/sg556-1-distant.wav"
 
@@ -112,11 +111,11 @@ SWEP.HoldtypeSights = "rpg"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 
-SWEP.ActivePos = Vector(-2, -2, 0)
+SWEP.ActivePos = Vector(-2.4, -6, 2.5)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
-SWEP.HolsterPos = Vector(0.532, -6, 0)
-SWEP.HolsterAng = Angle(-7.036, 30.016, 0)
+SWEP.HolsterPos = Vector(-2.2, -5, 3)
+SWEP.HolsterAng = Angle(-4, 5, 0)
 
 SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)
@@ -132,10 +131,23 @@ SWEP.AttachmentElements = {
         VMBodygroups = {{ind = 1, bg = 2}},
         WMBodygroups = {{ind = 1, bg = 2}},
     },
+    ["mount"] = {
+        VMElements = {
+            {
+                Model = "models/weapons/arccw/atts/mount_rail.mdl",
+                Bone = "v_weapon.sg552_Parent",
+                Scale = Vector(1.6, 1.4, 3),
+                Offset = {
+                    pos = Vector(-0.05, -7, -3.9),
+                    ang = Angle(-90, 0, -90),
+                }
+            }
+        },
+    },  
     ["nors"] = {
         VMBodygroups = {{ind = 2, bg = 1}},
         WMBodygroups = {},
-    },
+    },  
     ["nobrake"] = {
         VMBodygroups = {{ind = 3, bg = 1}},
         WMBodygroups = {},
@@ -148,7 +160,7 @@ SWEP.Attachments = {
     {
         PrintName = "Optic", -- print name
         DefaultAttName = "Iron Sights",
-        Slot = {cspf.."optic_lp", cspf.."optic", cspf.."optic_sniper"}, -- what kind of attachments can fit here, can be string or table
+        Slot = {cspf.."optic", cspf.."optic_sniper"}, -- what kind of attachments can fit here, can be string or table
         Bone = "v_weapon.sg552_Parent", -- relevant bone any attachments will be mostly referring to
         Offset = {
             vang = Angle(-90, 0, -90),
@@ -156,12 +168,13 @@ SWEP.Attachments = {
         },
         SlideAmount = { -- how far this attachment can slide in both directions.
             -- overrides Offset.
-            vmin = Vector(-0.05, -7, -2),
-            vmax = Vector(-0.05, -7, -5.5),
+            vmin = Vector(-0.05, -7.4, -2),
+            vmax = Vector(-0.05, -7.4, -5.5),
             wmin = Vector(5, 0.899, -6),
             wmax = Vector(7, 0.899, -6),
         },
-        InstalledEles = {"nors"},
+        InstalledEles = {"mount"},
+        MergeSlots = {9},
     },
     {
         PrintName = "Muzzle",
@@ -227,6 +240,24 @@ SWEP.Attachments = {
             wpos = Vector(6.099, 1.6, -3.301),
             wang = Angle(171.817, 180-1.17, 0),
         },
+    },
+    {
+        PrintName = "Optic",
+        Slot = cspf.."optic_lp",
+        Bone = "v_weapon.sg552_Parent", -- relevant bone any attachments will be mostly referring to
+        Offset = {
+            vang = Angle(-90, 0, -90),
+            wang = Angle(-10.52, 0, 180)
+        },
+        SlideAmount = { -- how far this attachment can slide in both directions.
+            -- overrides Offset.
+            vmin = Vector(-0.05, -7.4, -2),
+            vmax = Vector(-0.05, -7.4, -5.5),
+            wmin = Vector(5, 0.899, -6),
+            wmax = Vector(7, 0.899, -6),
+        },
+        InstalledEles = {"mount","nors"},
+        Hidden = true,
     },
 }
 

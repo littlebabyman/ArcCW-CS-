@@ -37,11 +37,12 @@ SWEP.Primary.ClipSize = 2 -- DefaultClip is automatically set.
 SWEP.ExtendedClipSize = 2
 SWEP.ReducedClipSize = 1
 
-SWEP.Recoil = 6
+SWEP.Recoil = 9
 SWEP.RecoilSide = 1
 SWEP.MaxRecoilBlowback = 2
+SWEP.RecoilPunch = 1
 
-SWEP.AccuracyMOA = 50 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
+SWEP.AccuracyMOA = 70 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
 SWEP.HipDispersion = 100 -- inaccuracy added by hip firing.
 SWEP.MoveDispersion = 150
 
@@ -57,7 +58,7 @@ SWEP.Firemodes = {
         Mode = -2,
         RunawayBurst = true,
         Override_ShotRecoilTable = {
-            [1] = 0.25
+            [1] = 0
         }
     },
     {
@@ -73,9 +74,9 @@ SWEP.Primary.Ammo = "buckshot" -- what ammo type the gun uses
 SWEP.ShootVol = 120 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
-SWEP.ShootSound = "weapons/arccw/nova/nova-1.wav"
+SWEP.ShootSound = "weapons/arccw/sawedoff/sawedoff-1.wav"
 SWEP.ShootSoundSilenced = "weapons/arccw/m590_suppressed_tp.wav"
-SWEP.DistantShootSound = "weapons/arccw/nova/nova-1-distant.wav"
+SWEP.DistantShootSound = "weapons/arccw/sawedoff/sawedoff-1-distant.wav"
 
 SWEP.MuzzleEffect = "muzzleflash_shotgun"
 SWEP.ShellModel = "models/shells/shell_12gauge.mdl"
@@ -120,11 +121,12 @@ SWEP.HoldtypeSights = "ar2"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_SHOTGUN
 
-SWEP.ActivePos = Vector(1, 12, -2)
+SWEP.ActivePos = Vector(0, 7, 0)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
-SWEP.HolsterPos = Vector(3.5, 2, 0)
-SWEP.HolsterAng = Angle(-7.036, 30.016, 0)
+local hp = ArcCW.CSP_Holsters["warlover"]
+SWEP.HolsterPos = hp.pos + Vector(3, 12, -4)
+SWEP.HolsterAng = hp.ang + Angle(5, 0, -5)
 
 SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)
@@ -248,7 +250,7 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = "ready",
-        Time = 1.5,
+        Time = 1,
         LHIK = true,
         LHIKIn = 0,
         LHIKOut = 0.25,

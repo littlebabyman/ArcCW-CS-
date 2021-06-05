@@ -100,8 +100,8 @@ SWEP.HoldtypeSights = "rpg"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_PISTOL
 
-SWEP.ActivePos = Vector(1, 12, -2)
-SWEP.ActiveAng = Angle(0, 0, 0)
+SWEP.ActivePos = Vector(1, 7, 1)
+SWEP.ActiveAng = Angle(0, 0, -10)
 
 SWEP.HolsterPos = Vector(1, 4, -14)
 SWEP.HolsterAng = Angle(40, 0, 0)
@@ -214,7 +214,7 @@ SWEP.Animations = {
     },
     ["fire"] = {
         Source = "fire",
-        Time = 0.5,
+        Time = 3,
     },
     ["reload"] = {
         Source = "reload",

@@ -55,7 +55,7 @@ SWEP.Firemodes = {
         Mode = -2,
         RunawayBurst = true,
         Override_ShotRecoilTable = {
-            [1] = 0.25
+            [1] = 0
         }
     },
     {
@@ -67,7 +67,7 @@ SWEP.NPCWeaponType = {"weapon_annabelle", "weapon_shotgun"}
 SWEP.NPCWeight = 100
 
 SWEP.AccuracyMOA = 25 -- accuracy in Minutes of Angle. There are 60 MOA in a degree.
-SWEP.HipDispersion = 600 -- inaccuracy added by hip firing.
+SWEP.HipDispersion = 300 -- inaccuracy added by hip firing.
 SWEP.MoveDispersion = 150
 
 SWEP.Primary.Ammo = "buckshot" -- what ammo type the gun uses
@@ -122,11 +122,12 @@ SWEP.HoldtypeSights = "ar2"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_SHOTGUN
 
-SWEP.ActivePos = Vector(1, 12, -2)
+SWEP.ActivePos = Vector(0.5, 7, 0)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
-SWEP.HolsterPos = Vector(3.5, 2, 0)
-SWEP.HolsterAng = Angle(-7.036, 30.016, 0)
+local hp = ArcCW.CSP_Holsters["compliant"]
+SWEP.HolsterPos = hp.pos + Vector(5, 12, -4)
+SWEP.HolsterAng = hp.ang + Angle(0, 0, -5)
 
 SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)
@@ -241,7 +242,7 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = "ready",
-        Time = 1.5,
+        Time = 1.3,
         LHIK = true,
         LHIKIn = 0,
         LHIKOut = 0.25,

@@ -6,7 +6,7 @@ SWEP.AdminOnly = false
 SWEP.PrintName = "MP-S2"
 SWEP.TrueNam3 = "UMP-45"
 SWEP.Trivia_Class = "Submachine Gun"
-SWEP.Trivia_Desc = ".45 calibre version of the MP-K1. Packs a greater punch at short range, but has a worse fire rate."
+SWEP.Trivia_Desc = ".45 calibre version of the MP-K1. Packs a greater punch in short range at a lower fire rate."
 SWEP.Trivia_Manufacturer = "Auschen Waffenfabrik"
 SWEP.Trivia_Calibre = ".45 ACP"
 SWEP.Trivia_Mechanism = "Roller-Delayed Blowback"
@@ -45,18 +45,19 @@ SWEP.RevolverReload = false -- cases all eject on reload
 
 SWEP.OpenBolt = false -- gun fires at the end of 
 
-SWEP.Recoil = 0.4
-SWEP.RecoilSide = 0.2
+SWEP.Recoil = 0.5
+SWEP.RecoilSide = 0.3
+SWEP.RecoilRise = -1
 SWEP.VisualRecoilMult = 1
 
-SWEP.Delay = 60 / 600 -- 60 / RPM.
+SWEP.Delay = 60 / 560 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
 
 SWEP.Primary.Ammo = "pistol" -- what ammo type the gun uses
 SWEP.MagID = "mpk1" -- the magazine pool this gun draws from
 
 SWEP.ShootVol = 100 -- volume of shoot sound
-SWEP.ShootPitch = 100 -- pitch of shoot sound
+SWEP.ShootPitch = 96 -- pitch of shoot sound
 
 SWEP.FirstShootSound = "weapons/arccw/ump45/ump45_04.wav"
 SWEP.ShootSound = "weapons/arccw/ump45/ump45_02.wav"

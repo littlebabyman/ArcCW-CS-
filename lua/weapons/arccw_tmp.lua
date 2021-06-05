@@ -25,7 +25,7 @@ SWEP.UseHands = true
 
 SWEP.ViewModel = "models/weapons/arccw/c_tmp.mdl"
 SWEP.WorldModel = "models/weapons/arccw/w_tmp.mdl"
-SWEP.ViewModelFOV = 55
+SWEP.ViewModelFOV = 60
 
 SWEP.Damage = 25
 SWEP.DamageMin = 9 -- damage done at maximum range
@@ -71,7 +71,7 @@ SWEP.Primary.Ammo = "pistol" -- what ammo type the gun uses
 SWEP.MagID = "tmp" -- the magazine pool this gun draws from
 
 SWEP.ShootVol = 90 -- volume of shoot sound
-SWEP.ShootPitch = 100 -- pitch of shoot sound
+SWEP.ShootPitch = 120 -- pitch of shoot sound
 
 SWEP.FirstShootSound = "weapons/arccw/tec9/tec9_02.wav"
 SWEP.ShootSound = "weapons/arccw/tec9/tec9-1.wav"
@@ -115,11 +115,11 @@ SWEP.HoldtypeSights = "revolver"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_SMG1
 
-SWEP.ActivePos = Vector(-0.5, 0, 2)
+SWEP.ActivePos = Vector(-1.5, -2, 2)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
-SWEP.HolsterPos = Vector(0.532, -6, 0)
-SWEP.HolsterAng = Angle(-7.036, 30.016, 0)
+SWEP.HolsterPos = Vector(-3, -2, 2)
+SWEP.HolsterAng = Angle(-5, 8, -8)
 
 SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)

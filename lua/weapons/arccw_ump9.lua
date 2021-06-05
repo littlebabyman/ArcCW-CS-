@@ -46,9 +46,10 @@ SWEP.OpenBolt = false -- gun fires at the end of
 
 SWEP.Recoil = 0.35
 SWEP.RecoilSide = 0.2
+SWEP.RecoilRise = -1
 SWEP.VisualRecoilMult = 1
 
-SWEP.Delay = 60 / 850 -- 60 / RPM.
+SWEP.Delay = 60 / 680 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
 SWEP.Firemodes = {
     {
@@ -80,10 +81,10 @@ SWEP.Primary.Ammo = "pistol" -- what ammo type the gun uses
 SWEP.MagID = "mpk1" -- the magazine pool this gun draws from
 
 SWEP.ShootVol = 100 -- volume of shoot sound
-SWEP.ShootPitch = 100 -- pitch of shoot sound
+SWEP.ShootPitch = 110 -- pitch of shoot sound
 
-SWEP.FirstShootSound = "weapons/arccw/mp7/mp7_02.wav"
-SWEP.ShootSound = "weapons/arccw/mp7/mp7_04.wav"
+SWEP.FirstShootSound = "weapons/arccw/mp9/mp9_03.wav"
+SWEP.ShootSound = "weapons/arccw/mp9/mp9_01.wav"
 SWEP.ShootSoundSilenced = "weapons/arccw/mp5/mp5_01.wav"
 SWEP.DistantShootSound = "weapons/arccw/mp7/mp7-1-distant.wav"
 
@@ -123,8 +124,8 @@ SWEP.HoldtypeSights = "rpg"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_SMG1
 
-SWEP.ActivePos = Vector(-2, -4, 0)
-SWEP.ActiveAng = Angle(0, 0, 0)
+SWEP.ActivePos = Vector(-2, -4, 2.5)
+SWEP.ActiveAng = Angle(0, 0, -2)
 
 SWEP.HolsterPos = Vector(0.532, -6, 0)
 SWEP.HolsterAng = Angle(-7.036, 30.016, 0)
@@ -272,22 +273,22 @@ SWEP.Animations = {
     },
     ["fire"] = {
         Source = {"shoot1", "shoot2", "shoot3"},
-        Time = 0.25,
+        Time = 0.4,
         ShellEjectAt = 0,
     },
     ["fire_empty"] = {
         Source = "shoot_empty",
-        Time = 0.25,
+        Time = 0.4,
         ShellEjectAt = 0,
     },
     ["fire_iron"] = {
         Source = "shoot_iron",
-        Time = 0.25,
+        Time = 0.4,
         ShellEjectAt = 0,
     },
     ["fire_iron_empty"] = {
         Source = "shoot_iron_empty",
-        Time = 0.25,
+        Time = 0.4,
         ShellEjectAt = 0,
     },
     ["reload"] = {

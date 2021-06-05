@@ -96,14 +96,14 @@ SWEP.Animations = {
 
 SWEP.IronSightStruct = false
 
-SWEP.CustomizePos = Vector(0, -5, -10)
-SWEP.CustomizeAng = Angle(30, 0, 0)
+SWEP.CustomizePos = Vector(3, -10, -5)
+SWEP.CustomizeAng = Angle(30, 30, 0)
 
-SWEP.ActivePos = Vector(0, -5, 0)
-SWEP.ActiveAng = Angle(0, 0, 0)
+SWEP.ActivePos = Vector(0, -5, 3)
+SWEP.ActiveAng = Angle(-7, 1, 3)
 
 SWEP.BashPreparePos = Vector(0, 0, 0)
-SWEP.BashPrepareAng = Angle(0, 5, 0)
+SWEP.BashPrepareAng = Angle(100, 5, -50)
 
 SWEP.BashPos = Vector(0, 0, 0)
 SWEP.BashAng = Angle(10, -10, 0)

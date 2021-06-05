@@ -6,7 +6,7 @@ SWEP.AdminOnly = false
 SWEP.PrintName = "M2000-G"
 SWEP.TrueNam3 = "Minimi Para"
 SWEP.Trivia_Class = "Machine Gun"
-SWEP.Trivia_Desc = "Air-cooled, belt-fed fully automatic squad assault weapon. Capable of laying down sustained suppressive fire. Depleting a belt fully negates the need to remove it before inserting a new one, meaning that reloading when the weapon is totally empty is actually faster."
+SWEP.Trivia_Desc = "Air-cooled, belt-fed, extremely smooth fully automatic squad assault weapon. Capable of laying down sustained suppressive fire. Depleting a belt fully negates the need to remove it before inserting a new one, meaning that reloading when the weapon is totally empty is actually faster."
 SWEP.Trivia_Manufacturer = "Gryphon Arms"
 SWEP.Trivia_Calibre = "5.56x45mm NATO"
 SWEP.Trivia_Mechanism = "Gas-Actuated Open Bolt"
@@ -115,11 +115,11 @@ SWEP.HoldtypeSights = "rpg"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 
-SWEP.ActivePos = Vector(-2, 0, 0)
+SWEP.ActivePos = Vector(-2, -2, 1.5)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
-SWEP.HolsterPos = Vector(0.532, -6, 0)
-SWEP.HolsterAng = Angle(-7.036, 30.016, 0)
+SWEP.HolsterPos = Vector(-2, -2, 0.5)
+SWEP.HolsterAng = Angle(0, 5, -5)
 
 SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)

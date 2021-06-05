@@ -112,7 +112,7 @@ SWEP.HoldtypeSights = "revolver"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_PISTOL
 
-SWEP.ActivePos = Vector(1, 8, -2)
+SWEP.ActivePos = Vector(0, 4, -0.5)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
 SWEP.HolsterPos = Vector(3.5, 6, -2)
@@ -194,7 +194,7 @@ SWEP.Animations = {
     ["idle"] = false,
     ["ready"] = {
         Source = "ready",
-        Time = 1
+        Time = 1.5
     },
     ["draw"] = {
         Source = "draw",
@@ -208,11 +208,12 @@ SWEP.Animations = {
     },
     ["cycle"] = {
         Source = "cycle",
-        Time = 1,
+        Time = 1.2,
+        MinProgress = 0.98,
         ShellEjectAt = 0.5,
         LHIK = true,
         LHIKIn = 0.2,
-        LHIKOut = 0.2,
+        LHIKOut = 0.1,
     },
     ["fire"] = {
         Source = "shoot",
@@ -224,7 +225,7 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload_part",
-        Time = 2.5,
+        Time = 2.2,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         Checkpoints = {},
         FrameRate = 30,
@@ -234,7 +235,7 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload_empty",
-        Time = 3.5,
+        Time = 3.8,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         Checkpoints = {},
         FrameRate = 30,

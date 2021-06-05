@@ -62,14 +62,17 @@ SWEP.Animations = {
     },
     ["bash"] = {
         Source = {"stab", "midslash1", "midslash2", "stab_miss"},
-        Time = 0.75,
+        Time = 1,
     },
 }
 
 SWEP.IronSightStruct = false
 
+SWEP.ActivePos = Vector(-7, 0, 4)
+SWEP.ActiveAng = Angle(-10, -20, 0)
+
 SWEP.BashPreparePos = Vector(0, 0, 0)
-SWEP.BashPrepareAng = Angle(0, 5, 0)
+SWEP.BashPrepareAng = Angle(0, 5, 100)
 
 SWEP.BashPos = Vector(0, 0, 0)
 SWEP.BashAng = Angle(10, -10, 0)

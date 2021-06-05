@@ -5,7 +5,7 @@ SWEP.AdminOnly = true
 SWEP.PrintName = "Minigun"
 SWEP.TrueNam3 = "M134"
 SWEP.Trivia_Class = "Rotary Machine Gun"
-SWEP.Trivia_Desc = "A heavy machine gun capable of firing at an extremely fast fire rate due to its electric fire control system. The ultimate weapon. Carrying it will reduce your movement speed to a halt, and you can forget about sprinting with it. In return, up to 2400 RPM of 7.62 Real Fuckin' NATO is in your hands, if you can control them. Wield it with care."
+SWEP.Trivia_Desc = "A heavy machine gun capable of firing at an extremely fast fire rate due to its electric fire control system. The ultimate weapon. Carrying it will reduce your movement speed to a halt, and you can forget about sprinting with it. In return, up to 1800 RPM of 7.62 Real Fuckin' NATO is in your hands, if you can control them. Wield it with care."
 SWEP.Trivia_Manufacturer = "Gryphon Arms"
 SWEP.Trivia_Calibre = "7.62x51mm NATO"
 SWEP.Trivia_Mechanism = "Electronic Trigger"
@@ -25,7 +25,7 @@ SWEP.WorldModel = "models/weapons/arccw/w_minigun.mdl"
 SWEP.ViewModelFOV = 60
 SWEP.DefaultBodygroups = "0000000"
 
-SWEP.Damage = 65
+SWEP.Damage = 33
 SWEP.DamageMin = 29 -- damage done at maximum range
 SWEP.Range = 250 -- in METRES
 SWEP.Penetration = 22
@@ -41,9 +41,11 @@ SWEP.Primary.ClipSize = 350 -- DefaultClip is automatically set.
 SWEP.ExtendedClipSize = 600
 SWEP.ReducedClipSize = 100
 
-SWEP.Recoil = 0.75
-SWEP.RecoilSide = 0.75
-SWEP.Delay = 60 / 2400 -- 60 / RPM.
+SWEP.Recoil = 0.7
+SWEP.RecoilSide = 0.7
+SWEP.RecoilPunch = 1
+SWEP.RecoilPunchBackMax = 99
+SWEP.Delay = 60 / 600 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
 
 SWEP.BobMult = 2
@@ -51,16 +53,20 @@ SWEP.BobMult = 2
 SWEP.Firemodes = {
     {
         Mode = 2,
-        PrintName = "2400RPM"
+        Mult_RPM = 3,
+        Mult_FireAnimTime = 1.4,
+        PrintName = "1800RPM"
     },
     {
         Mode = 2,
-        Mult_RPM = 1200 / 2400,
+        Mult_RPM = 2,
+        Mult_FireAnimTime = 1.7,
         PrintName = "1200RPM"
     },
     {
         Mode = 2,
-        Mult_RPM = 600 / 2400,
+        Mult_RPM = 1,
+        Mult_FireAnimTime = 3.5,
         PrintName = "600RPM"
     },
     {
@@ -78,15 +84,15 @@ SWEP.MoveDispersion = 100
 SWEP.Primary.Ammo = "ar2" -- what ammo type the gun uses
 SWEP.MagID = "minigun" -- the magazine pool this gun draws from
 SWEP.ShootVol = 130 -- volume of shoot sound
-SWEP.ShootPitch = 100 -- pitch of shoot sound
+SWEP.ShootPitch = 90 -- pitch of shoot sound
 SWEP.ShootSound = "weapons/arccw/minigun/minigun.wav"
 SWEP.ShootSoundSilenced = "weapons/arccw/m4a1/m4a1_silencer_01.wav"
 SWEP.DistantShootSound = "weapons/arccw/negev/negev-1-distant.wav" --weapons/arccw/m249/m249-1-distant.wav
 
-SWEP.MuzzleEffect = "muzzleflash_minimi"
+SWEP.MuzzleEffect = "muzzleflash_4"
 
 SWEP.ShellModel = "models/shells/shell_556.mdl"
-SWEP.ShellPitch = 90
+SWEP.ShellPitch = 70
 SWEP.ShellScale = 2.5
 
 SWEP.MuzzleEffectAttachment = 1 -- which attachment to put the muzzle on
@@ -96,9 +102,10 @@ SWEP.SightedSpeedMult = 0.8
 SWEP.SightTime = 1
 
 SWEP.IronSightStruct = {
-    Pos = Vector(0, -5, -2),
-    Ang = Angle(0, 0, 0),
-    Magnification = 1.1,
+    Pos = Vector(-4.1, -3, 1),
+    Ang = Angle(0, -3, 13),
+    Magnification = 1.0,
+    ViewModelFOV = 60,
     CrosshairInSights = true
 }
 
@@ -108,13 +115,13 @@ SWEP.HoldtypeSights = "rpg"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_SHOTGUN
 
-SWEP.ActivePos = Vector(0, 0, -4)
-SWEP.ActiveAng = Angle(0, 0, 0)
+SWEP.ActivePos = Vector(-3, -3, 2)
+SWEP.ActiveAng = Angle(-5, -2, 0)
 
 SWEP.CustomizePos = Vector(12, -3, -4)
 SWEP.CustomizeAng = Angle(15, 40, 0)
 
-SWEP.HolsterPos = Vector(3, -6, -16)
+SWEP.HolsterPos = Vector(0, -12, -8)
 SWEP.HolsterAng = Angle(40, 0, 0)
 
 SWEP.BarrelOffsetSighted = Vector(5, 0, -10)
@@ -188,8 +195,8 @@ SWEP.Animations = {
         Time = 1.5
     },
     ["fire"] = {
-        Source = {"fire_1", "fire_2", "fire_3"},
-        Time = 0.2,
+        Source = "fire_1",
+        Time = 0.25,
         ShellEjectAt = 0
     },
     ["reload"] = {

@@ -32,17 +32,21 @@ SWEP.TTTWeaponType = "weapon_ttt_confgrenade"
 SWEP.NPCWeaponType = "weapon_grenade"
 SWEP.NPCWeight = 100
 
+
 SWEP.MuzzleVelocity = 1100
 SWEP.ShootEntity = "arccw_thr_flash"
 
+SWEP.ActivePos = Vector(-6, -2, -1)
+SWEP.ActiveAng = Angle(0, 0, -20)
 SWEP.Animations = {
     ["draw"] = {
-        Source = "deploy",
-        Time = 0.5,
+        Source = "idle",
+        Time = 0.25,
+        ProcDraw = true
     },
-    ["ready"] = {
-        Source = "deploy",
-        Time = 0.5,
+    ["idle"] = {
+        Source = "idle",
+        Time = 1
     },
     ["pre_throw"] = {
         Source = {"pullpin", "pullpin2", "pullpin3", "pullpin4"},
