@@ -39,7 +39,7 @@ L["pro.perk_owyn"] = "+ Damage on last round"
 L["info.perk_owyn"] = "Damage bonus at maximum with 60 round capacity"
 L["con.fov"] = "- Field of View"
 L["con.fragile"] = "- Breaks with use"
-L["pro.perk_refund"] = "Chance to refund bullets on hit"
+L["pro.perk_refund"] = "Refund bullets on hit"
 
 L["csp.title"] = "ArcCW: CS:S CONTENT MISSING"
 L["csp.line1"] = "You do not have CS:S mounted, which is required for CS+."

@@ -1,6 +1,6 @@
 att.PrintName = "Never Stop Shooting"
 att.Icon = Material("entities/acwatt_perk_refund.png", "mips smooth")
-att.Description = "Shots which successfully hit have a 50% chance to be refunded to your reserve ammo."
+att.Description = "Shots which successfully hit will refunded to your reserve ammo, guaranteed."
 att.Desc_Pros = {
     "pro.perk_refund"
 }
@@ -11,7 +11,7 @@ att.Slot = cspf.."perk"
 att.Hook_BulletHit = function(wep, data)
     if CLIENT then return end
 
-    if math.Rand(0, 100) > 50 then return end
+    --if math.Rand(0, 100) > 50 then return end
 
     local ent = data.tr.Entity
 
