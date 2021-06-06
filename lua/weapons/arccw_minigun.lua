@@ -82,7 +82,6 @@ SWEP.HipDispersion = 300 -- inaccuracy added by hip firing.
 SWEP.MoveDispersion = 100
 
 SWEP.Primary.Ammo = "ar2" -- what ammo type the gun uses
-SWEP.MagID = "minigun" -- the magazine pool this gun draws from
 SWEP.ShootVol = 130 -- volume of shoot sound
 SWEP.ShootPitch = 90 -- pitch of shoot sound
 SWEP.ShootSound = "weapons/arccw/minigun/minigun.wav"

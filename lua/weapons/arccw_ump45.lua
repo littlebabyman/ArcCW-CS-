@@ -54,7 +54,6 @@ SWEP.Delay = 60 / 560 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
 
 SWEP.Primary.Ammo = "pistol" -- what ammo type the gun uses
-SWEP.MagID = "mpk1" -- the magazine pool this gun draws from
 
 SWEP.ShootVol = 100 -- volume of shoot sound
 SWEP.ShootPitch = 96 -- pitch of shoot sound

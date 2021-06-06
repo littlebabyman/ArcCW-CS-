@@ -58,7 +58,6 @@ SWEP.HipDispersion = 500 -- inaccuracy added by hip firing.
 SWEP.MoveDispersion = 500
 
 SWEP.Primary.Ammo = "RPG_Round" -- what ammo type the gun uses
-SWEP.MagID = "rpg7" -- the magazine pool this gun draws from
 
 SWEP.ShootVol = 130 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
