@@ -22,18 +22,18 @@ att.DroppedModel = "models/Items/BoxSRounds.mdl"
 
 att.AdditionalSights = {
     {
-        Pos = Vector(0.02, 10.064, -6.738),
+        Pos = Vector(0.02, 9, -6.708),
         Ang = Angle(0, -2.842, -10.853),
-        Magnification = 2,
+        Magnification = 1.3,
         ScrollFunc = ArcCW.SCROLL_ZOOM,
         ZoomLevels = 3,
         ZoomSound = "weapons/arccw/fiveseven/fiveseven_slideback.wav",
         HolosightBone = "scope",
         HolosightData = {
             Holosight = true,
-            HolosightReticle = Material("hud/scopes/circle.png"),
+            HolosightReticle = Material("hud/scopes/circle.png", "mips smooth"),
             HolosightNoFlare = true,
-            HolosightSize = 15,
+            HolosightSize = 10,
             HolosightBlackbox = true,
             HolosightMagnification = 3,
             HolosightMagnificationMin = 1.5,
