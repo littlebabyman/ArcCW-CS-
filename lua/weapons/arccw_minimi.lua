@@ -108,6 +108,7 @@ SWEP.IronSightStruct = {
     SwitchToSound = "", -- sound that plays when switching to this sight
 }
 
+SWEP.GuaranteeLaser = true
 SWEP.HoldtypeHolstered = "passive"
 SWEP.HoldtypeActive = "ar2"
 SWEP.HoldtypeSights = "rpg"
@@ -144,6 +145,17 @@ SWEP.AttachmentElements = {
     ["nors"] = {
         VMBodygroups = {{ind = 2, bg = 1}},
         WMBodygroups = {{ind = 3, bg = 2},},
+        VMElements = {
+            {
+                Model = "models/weapons/arccw/atts/mount_rail.mdl",
+                Bone = "v_weapon.receiver",
+                Scale = Vector(1.6, 1.6, 3),
+                Offset = {
+                    pos = Vector(-7.121, 0.07, -0.123),
+                    ang = Angle(0, 0, -177.76),
+                }
+            }
+        },
     }
 }
 
@@ -166,7 +178,7 @@ SWEP.Attachments = {
         Slot = {cspf.."optic_lp", cspf.."optic", cspf.."optic_sniper"}, -- what kind of attachments can fit here, can be string or table
         Bone = "v_weapon.receiver", -- relevant bone any attachments will be mostly referring to
         Offset = {
-            vpos = Vector(-7.421, 0.07, -0.223), -- offset that the attachment will be relative to the bone
+            vpos = Vector(-6.6, 0.07, -0.523), -- offset that the attachment will be relative to the bone
             vang = Angle(0, 0, -177.76),
             wpos = Vector(5.36, 0.9, -7.4),
             wang = Angle(-9.738, -1, 180)

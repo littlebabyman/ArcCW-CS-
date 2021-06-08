@@ -43,7 +43,7 @@ SWEP.ReducedClipSize = 4
 SWEP.Recoil = 5
 SWEP.RecoilSide = 1
 SWEP.MaxRecoilBlowback = 1
-SWEP.RecoilRise = 0
+SWEP.RecoilRise = -9
 SWEP.RecoilPunchBackMax = 30
 SWEP.VisualRecoilMult = 2
 SWEP.RecoilPunch = 1
@@ -109,6 +109,7 @@ SWEP.IronSightStruct = {
 }
 
 
+SWEP.GuaranteeLaser = true
 SWEP.HoldtypeHolstered = "passive"
 SWEP.HoldtypeActive = "ar2"
 SWEP.HoldtypeSights = "rpg"

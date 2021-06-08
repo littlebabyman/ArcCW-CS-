@@ -117,6 +117,7 @@ SWEP.IronSightStruct = {
     AnchorBone = "v_weapon.ump45_Parent"
 }
 
+SWEP.GuaranteeLaser = true
 SWEP.HoldtypeHolstered = "passive"
 SWEP.HoldtypeActive = "smg"
 SWEP.HoldtypeSights = "rpg"

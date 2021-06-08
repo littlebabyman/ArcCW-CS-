@@ -47,8 +47,6 @@ SWEP.OpenBolt = false -- gun fires at the end of
 
 SWEP.Recoil = 0.34
 SWEP.RecoilSide = 0.2
-SWEP.VisualRecoilMult = 1.75
-SWEP.RecoilRise = 3
 
 SWEP.Delay = 60 / 1100 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
@@ -74,9 +72,9 @@ SWEP.MoveDispersion = 150
 SWEP.Primary.Ammo = "smg1" -- what ammo type the gun uses
 
 SWEP.ShootVol = 100 -- volume of shoot sound
-SWEP.ShootPitch = 100 -- pitch of shoot sound
+SWEP.ShootPitch = 90 -- pitch of shoot sound
 
-SWEP.FirstShootSound = "weapons/arccw/p90/p90_01.wav"
+SWEP.FirstShootSound = "weapons/arccw/p90/p90_03.wav"
 SWEP.ShootSound = "weapons/arccw/p90/p90_02.wav"
 SWEP.ShootSoundSilenced = "weapons/arccw/mp5/mp5_01.wav"
 SWEP.DistantShootSound = "weapons/arccw/p90/p90-1-distant.wav"
@@ -110,13 +108,14 @@ SWEP.IronSightStruct = {
     SwitchToSound = "", -- sound that plays when switching to this sight
 }
 
+SWEP.GuaranteeLaser = true
 SWEP.HoldtypeHolstered = "passive"
 SWEP.HoldtypeActive = "smg"
 SWEP.HoldtypeSights = "rpg"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_SMG1
 
-SWEP.ActivePos = Vector(-1.5, -3, 2)
+SWEP.ActivePos = Vector(-1.5, -4, 2.2)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
 SWEP.HolsterPos = Vector(-1.5, -2, 2)
@@ -204,7 +203,7 @@ SWEP.Attachments = {
         Slot = {cspf.."foregrip", cspf.."style_pistol"},
         Bone = "v_weapon.p90_Parent",
         Offset = {
-            vpos = Vector(0, -3, -5),
+            vpos = Vector(0, -3.3, -5),
             vang = Angle(-90, 0, -90),
             wpos = Vector(14.329, 1.102, -4.453),
             wang = Angle(-10.216, 0, 180)

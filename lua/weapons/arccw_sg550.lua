@@ -101,6 +101,7 @@ SWEP.IronSightStruct = {
     SwitchToSound = "", -- sound that plays when switching to this sight
 }
 
+SWEP.GuaranteeLaser = true
 SWEP.HoldtypeHolstered = "passive"
 SWEP.HoldtypeActive = "ar2"
 SWEP.HoldtypeSights = "rpg"
@@ -256,13 +257,13 @@ SWEP.Animations = {
         LHIKOut = 0.25,
     },
     ["fire"] = {
-        Source = {"shoot", "shoot2"},
-        Time = 0.4,
+        Source = "shoot",
+        Time = 1,
         ShellEjectAt = 0,
     },
     ["fire_iron"] = {
         Source = "shoot_iron",
-        Time = 0.4,
+        Time = 1,
         ShellEjectAt = 0,
     },
     ["reload"] = {

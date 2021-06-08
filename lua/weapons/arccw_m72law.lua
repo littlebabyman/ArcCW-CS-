@@ -93,6 +93,7 @@ SWEP.IronSightStruct = {
     CrosshairInSights = true
 }
 
+SWEP.GuaranteeLaser = true
 SWEP.HoldtypeHolstered = "normal"
 SWEP.HoldtypeActive = "ar2"
 SWEP.HoldtypeSights = "rpg"

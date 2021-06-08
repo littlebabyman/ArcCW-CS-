@@ -104,6 +104,7 @@ SWEP.IronSightStruct = {
     Magnification = 1.05,
 }
 
+SWEP.GuaranteeLaser = true
 SWEP.HoldtypeHolstered = "normal"
 SWEP.HoldtypeActive = "pistol"
 SWEP.HoldtypeSights = "revolver"
@@ -266,7 +267,7 @@ SWEP.Animations = {
     },
     ["fire_empty"] = {
         Source = "shoot_empty",
-        Time = 0.7,
+        Time = 0.5,
         ShellEjectAt = 0,
     },
     ["fire_iron"] = {

@@ -67,8 +67,8 @@ SWEP.MoveDispersion = 250
 
 SWEP.Primary.Ammo = "ar2" -- what ammo type the gun uses
 SWEP.ShootVol = 120 -- volume of shoot sound
-SWEP.ShootPitch = 125 -- pitch of shoot sound
-SWEP.ShootSound = "weapons/arccw/negev/negev-1.wav"
+SWEP.ShootPitch = 75 -- pitch of shoot sound
+SWEP.ShootSound = "weapons/arccw/negev/negev_05.wav"
 SWEP.ShootSoundSilenced = "weapons/arccw/m4a1/m4a1_silencer_01.wav"
 SWEP.DistantShootSound = "weapons/arccw/sg556/sg556-1-distant.wav" --weapons/arccw/m249/m249-1-distant.wav
 
@@ -103,6 +103,7 @@ SWEP.IronSightStruct = {
     SwitchToSound = "" -- sound that plays when switching to this sight
 }
 
+SWEP.GuaranteeLaser = true
 SWEP.HoldtypeHolstered = "passive"
 SWEP.HoldtypeActive = "ar2"
 SWEP.HoldtypeSights = "rpg"

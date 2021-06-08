@@ -52,6 +52,7 @@ SWEP.Melee2Time = 0.5
 SWEP.MeleeGesture = ACT_HL2MP_GESTURE_RANGE_ATTACK_FIST
 
 SWEP.HoldtypeActive = "fist"
+SWEP.GuaranteeLaser = true
 SWEP.HoldtypeHolstered = "normal"
 
 SWEP.Primary.ClipSize = -1

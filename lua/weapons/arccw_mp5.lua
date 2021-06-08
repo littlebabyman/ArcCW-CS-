@@ -75,9 +75,9 @@ SWEP.MoveDispersion = 150
 SWEP.Primary.Ammo = "pistol" -- what ammo type the gun uses
 
 SWEP.ShootVol = 100 -- volume of shoot sound
-SWEP.ShootPitch = 100 -- pitch of shoot sound
+SWEP.ShootPitch = 92 -- pitch of shoot sound
 
-SWEP.FirstShootSound = "weapons/arccw/mp9/mp9_04.wav"
+SWEP.FirstShootSound = "weapons/arccw/mp9/mp9_01.wav"
 SWEP.ShootSound = "weapons/arccw/mp9/mp9_02.wav"
 SWEP.ShootSoundSilenced = "weapons/arccw/mp5/mp5_01.wav"
 SWEP.DistantShootSound = "weapons/arccw/mp9/mp9-1-distant.wav"
@@ -113,6 +113,7 @@ SWEP.IronSightStruct = {
     SwitchToSound = "", -- sound that plays when switching to this sight
 }
 
+SWEP.GuaranteeLaser = true
 SWEP.HoldtypeHolstered = "passive"
 SWEP.HoldtypeActive = "smg"
 SWEP.HoldtypeSights = "ar2"

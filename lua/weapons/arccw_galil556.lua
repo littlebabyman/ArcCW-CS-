@@ -47,7 +47,7 @@ SWEP.RecoilRise = 0.2
 SWEP.VisualRecoilMult = 1
 SWEP.RecoilPunch = 1
 
-SWEP.Delay = 60 / 725 -- 60 / RPM.
+SWEP.Delay = 60 / 680 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
 SWEP.Firemodes = {
     {
@@ -73,7 +73,7 @@ SWEP.Primary.Ammo = "smg1" -- what ammo type the gun uses
 SWEP.ShootVol = 115 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
-SWEP.FirstShootSound = "weapons/arccw/galilar/galil_04.wav"
+SWEP.FirstShootSound = "weapons/arccw/galilar/galil_02.wav"
 SWEP.ShootSound = "weapons/arccw/galilar/galil_01.wav"
 SWEP.ShootSoundSilenced = "weapons/arccw/m4a1/m4a1_silencer_01.wav"
 SWEP.DistantShootSound = "weapons/arccw/galilar/galil-1-distant.wav"
@@ -96,6 +96,7 @@ SWEP.IronSightStruct = {
     Magnification = 1.1,
 }
 
+SWEP.GuaranteeLaser = true
 SWEP.HoldtypeHolstered = "passive"
 SWEP.HoldtypeActive = "ar2"
 SWEP.HoldtypeSights = "rpg"

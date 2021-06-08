@@ -46,7 +46,7 @@ SWEP.RecoilSide = 0.35
 SWEP.RecoilRise = 0
 SWEP.RecoilPunchBackMax = 3
 SWEP.VisualRecoilMult = 1
-SWEP.RecoilPunch = 1
+SWEP.RecoilPunchBack = 3
 
 SWEP.Delay = 60 / 667 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
@@ -108,6 +108,7 @@ SWEP.IronSightStruct = {
     SwitchToSound = "", -- sound that plays when switching to this sight
 }
 
+SWEP.GuaranteeLaser = true
 SWEP.HoldtypeHolstered = "passive"
 SWEP.HoldtypeActive = "ar2"
 SWEP.HoldtypeSights = "rpg"
@@ -118,7 +119,7 @@ SWEP.ActivePos = Vector(-2.2, 0, -0.3)
 SWEP.ActiveAng = Angle(3, 0, -3)
 
 local hp = ArcCW.CSP_Holsters["compliant"]
-SWEP.HolsterPos = hp.pos + Vector(2, 2, -0.5)
+SWEP.HolsterPos = hp.pos + Vector(2, 6, -1.8)
 SWEP.HolsterAng = hp.ang
 
 SWEP.BarrelOffsetSighted = Vector(0, 0, -1)

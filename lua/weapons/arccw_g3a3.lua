@@ -42,8 +42,8 @@ SWEP.Primary.ClipSize = 20 -- DefaultClip is automatically set.
 SWEP.ExtendedClipSize = 30
 SWEP.ReducedClipSize = 10
 
-SWEP.Recoil = 0.75
-SWEP.RecoilSide = 0.65
+SWEP.Recoil = 0.8
+SWEP.RecoilSide = 0.8
 SWEP.RecoilRise = 1
 
 SWEP.Delay = 60 / 450 -- 60 / RPM.
@@ -106,6 +106,7 @@ SWEP.IronSightStruct = {
     SwitchToSound = "", -- sound that plays when switching to this sight
 }
 
+SWEP.GuaranteeLaser = true
 SWEP.HoldtypeHolstered = "passive"
 SWEP.HoldtypeActive = "ar2"
 SWEP.HoldtypeSights = "rpg"
