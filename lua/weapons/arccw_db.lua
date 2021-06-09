@@ -116,7 +116,7 @@ SWEP.CaseBones = {
     [2] = "Weapon_Mag"
 }
 
-SWEP.GuaranteeLaser = true
+SWEP.GuaranteeLaser = false
 SWEP.HoldtypeHolstered = "passive"
 SWEP.HoldtypeActive = "shotgun"
 SWEP.HoldtypeSights = "ar2"

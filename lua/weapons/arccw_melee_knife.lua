@@ -45,7 +45,7 @@ SWEP.Firemodes = {
 
 SWEP.MeleeTime = 0.5
 
-SWEP.GuaranteeLaser = true
+SWEP.GuaranteeLaser = false
 SWEP.HoldtypeHolstered = "normal"
 SWEP.HoldtypeActive = "knife"
 

@@ -99,7 +99,7 @@ SWEP.IronSightStruct = {
     Magnification = 1.2,
 }
 
-SWEP.GuaranteeLaser = true
+SWEP.GuaranteeLaser = false
 SWEP.HoldtypeHolstered = "normal"
 SWEP.HoldtypeActive = "pistol"
 SWEP.HoldtypeSights = "revolver"

@@ -93,7 +93,7 @@ SWEP.IronSightStruct = {
     SwitchToSound = "", -- sound that plays when switching to this sight
 }
 
-SWEP.GuaranteeLaser = true
+SWEP.GuaranteeLaser = false
 SWEP.HoldtypeHolstered = "normal"
 SWEP.HoldtypeActive = "smg"
 SWEP.HoldtypeSights = "rpg"
