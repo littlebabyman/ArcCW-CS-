@@ -9,7 +9,7 @@ att.Desc_Pros = {
 att.Desc_Cons = {
 }
 att.AutoStats = true
-att.Slot = {"foregrip"}
+att.Slot = {cspf.."foregrip"}
 
 att.LHIK = true
 

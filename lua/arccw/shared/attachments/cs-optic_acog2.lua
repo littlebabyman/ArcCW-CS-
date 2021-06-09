@@ -14,7 +14,7 @@ att.Desc_Neutrals = {
     "More awesome",
 }
 att.AutoStats = true
-att.Slot = "optic"
+att.Slot = cspf.."optic"
 
 att.Model = "models/weapons/arccw/atts/acog2_5a.mdl"
 

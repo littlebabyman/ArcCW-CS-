@@ -12,7 +12,7 @@ att.Desc_Pros = {
 att.Desc_Cons = {
 }
 att.AutoStats = true
-att.Slot = "optic"
+att.Slot = cspf.."optic"
 
 att.Model 				= "models/weapons/arccw/atts/eompts_4b.mdl"
 att.HolosightPiece 	= "models/weapons/arccw/atts/eompts_hsp_4a.mdl"

@@ -5,17 +5,9 @@ att.Desc_Pros = {
 }
 att.Desc_Neutrals = {
     "Will be with you every step of the way!",
-    "                              Nothing more.",
-	" ",
-	" ",
-    "- I don't understand how you could be so stupid.",
-    "  The flashlights are non functional.",
-    "  You have a flashlight built into the game already.",
-	"  These are purely cosmetic.",
-	"  Press F.",
 }
 att.AutoStats = true
-att.Slot = {"tac_pistol"}
+att.Slot = {cspf.."tac_pistol"}
 
 att.Model = "models/weapons/arccw/atts/flight_l4d2_1.mdl"
 
