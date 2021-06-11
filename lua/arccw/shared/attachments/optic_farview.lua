@@ -15,7 +15,7 @@ att.Slot = cspf.."optic_sniper"
 
 att.GivesFlags = {"hugesight"}
 
-att.Model = "models/weapons/arccw/atts/farview.mdl"
+att.Model = "models/weapons/arccw/atts/farview2.mdl"
 
 att.AdditionalSights = {
     {
@@ -36,7 +36,7 @@ att.HolosightReticle = Material("hud/scopes/mildot.png", "smooth")
 att.HolosightNoFlare = true
 att.HolosightSize = 13
 att.HolosightBone = "holosight"
-att.HolosightPiece = "models/weapons/arccw/atts/farview_hsp.mdl"
+att.HolosightPiece = "models/weapons/arccw/atts/farview2_hsp.mdl"
 att.Colorable = true
 
 att.HolosightMagnification = 4

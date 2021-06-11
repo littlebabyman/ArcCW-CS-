@@ -3,10 +3,9 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - CS+" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "MP-S2"
-SWEP.TrueNam3 = "UMP-45"
+SWEP.PrintName = "K&M MPS-45"
 SWEP.Trivia_Class = "Submachine Gun"
-SWEP.Trivia_Desc = ".45 calibre version of the MP-K1. Packs a greater punch in short range at a lower fire rate."
+SWEP.Trivia_Desc = ".45 calibre version of the MPS. The heavy caliber allows it to pack a greater punch in short range while remaining controllable with a lower fire rate."
 SWEP.Trivia_Manufacturer = "Auschen Waffenfabrik"
 SWEP.Trivia_Calibre = ".45 ACP"
 SWEP.Trivia_Mechanism = "Roller-Delayed Blowback"
@@ -15,20 +14,13 @@ SWEP.Trivia_Year = 1977
 
 SWEP.Slot = 2
 
-if false then
-    SWEP.PrintName = SWEP.TrueNam3
-    string.Replace(SWEP.Trivia_Desc, "MP-K1", "UMP-9")
-    SWEP.Trivia_Manufacturer = "Heckler & Koch"
-    SWEP.Trivia_Country = "Germany"
-end
-
 SWEP.UseHands = true
 
 SWEP.ViewModel = "models/weapons/arccw/c_mps2.mdl"
 SWEP.WorldModel = "models/weapons/arccw/w_mps2.mdl"
 SWEP.ViewModelFOV = 60
 
-SWEP.Damage = 33
+SWEP.Damage = 35
 SWEP.DamageMin = 20 -- damage done at maximum range
 SWEP.Range = 75 -- in METRES
 SWEP.Penetration = 3
@@ -43,10 +35,8 @@ SWEP.ReducedClipSize = 12
 
 SWEP.RevolverReload = false -- cases all eject on reload
 
-SWEP.OpenBolt = false -- gun fires at the end of 
-
 SWEP.Recoil = 0.5
-SWEP.RecoilSide = 0.3
+SWEP.RecoilSide = 0.35
 SWEP.RecoilRise = -1
 SWEP.VisualRecoilMult = 1
 

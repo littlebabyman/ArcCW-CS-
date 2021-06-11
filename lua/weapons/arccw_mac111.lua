@@ -4,9 +4,8 @@ SWEP.Category = "ArcCW - CS+" -- edit this if you like
 SWEP.AdminOnly = false
 
 SWEP.PrintName = "Mk. 211"
-SWEP.TrueNam3 = "MAC-11"
 SWEP.Trivia_Class = "Machine Pistol"
-SWEP.Trivia_Desc = "Smaller, lighter and unfortunately faster version of the Mk. 201 shooting a smaller round."
+SWEP.Trivia_Desc = "Smaller, lighter and unfortunately faster version of the Mk. 201 shooting a smaller round. You're really better off holding this with one hand."
 SWEP.Trivia_Manufacturer = "Gryphon Arms"
 SWEP.Trivia_Calibre = ".380 ACP"
 SWEP.Trivia_Mechanism = "Straight Blowback"
@@ -14,11 +13,6 @@ SWEP.Trivia_Country = "USA"
 SWEP.Trivia_Year = 1972
 
 SWEP.Slot = 2
-
-if false then
-    SWEP.PrintName = SWEP.TrueNam3
-    SWEP.Trivia_Manufacturer = "Military Armament Corporation"
-end
 
 SWEP.DefaultBodygroups = "0200000"
 SWEP.UseHands = true
@@ -42,8 +36,8 @@ SWEP.Primary.ClipSize = 16 -- DefaultClip is automatically set.
 SWEP.ExtendedClipSize = 32
 SWEP.ReducedClipSize = 10
 
-SWEP.Recoil = 0.3
-SWEP.RecoilSide = 0.1
+SWEP.Recoil = 0.4
+SWEP.RecoilSide = 0.15
 SWEP.RecoilRise = -2
 
 SWEP.Delay = 60 / 1200 -- 60 / RPM.
@@ -265,9 +259,6 @@ SWEP.Animations = {
     ["ready"] = {
         Source = "draw",
         Time = 1.5,
-        LHIK = true,
-        LHIKIn = 0,
-        LHIKOut = 0.25,
     },
     ["draw_empty"] = {
         Source = "draw_empty",
@@ -311,18 +302,22 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload_part",
-        Time = 2.5*0.7,
+        Time = 2.5*0.8,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         LHIK = true,
-        LHIKIn = 0.5,
-        LHIKOut = 0.5,
+        LHIKEaseIn = 0.3,
+        LHIKIn = 0.3,
+        LHIKOut = 0.3,
+        LHIKEaseOut = 0.5,
     },
     ["reload_empty"] = {
         Source = "reload",
-        Time = 3*0.7,
+        Time = 3*0.8,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_PISTOL,
         LHIK = true,
-        LHIKIn = 0.5,
-        LHIKOut = 0.25,
+        LHIKEaseIn = 0.3,
+        LHIKIn = 0.3,
+        LHIKOut = 0.3,
+        LHIKEaseOut = 0.5,
     },
 }

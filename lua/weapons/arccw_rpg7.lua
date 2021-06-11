@@ -3,8 +3,7 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - CS+" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "RPG"
-SWEP.TrueNam3 = "RPG-7"
+SWEP.PrintName = "RPG7"
 SWEP.Trivia_Class = "Rocket Launcher"
 SWEP.Trivia_Desc = "A rocket launcher with 4 different payload options; HE, HEAT, Tandem, and Smoke. HE rockets have high splash but low immediate damage. HEAT rounds have good damage and splash. Tandem rounds have very little splash, but massive damage. Smoke rounds do no damage, but create an obscuring smokescreen."
 SWEP.Trivia_Manufacturer = "Kremen Oruzhiye"
@@ -14,11 +13,6 @@ SWEP.Trivia_Country = "Russia"
 SWEP.Trivia_Year = 1961
 
 SWEP.Slot = 4
-
-if false then
-    SWEP.PrintName = SWEP.TrueNam3
-    SWEP.Trivia_Manufacturer = "Degtyarev Plant"
-end
 
 SWEP.UseHands = true
 

@@ -3,10 +3,9 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - CS+" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "NXS"
-SWEP.TrueNam3 = "Five-seveN"
+SWEP.PrintName = "ES NXs"
 SWEP.Trivia_Class = "Pistol"
-SWEP.Trivia_Desc = "5.7mm self loading pistol, designed as a handgun counterpart to the "
+SWEP.Trivia_Desc = "5.7mm self-loading pistol, designed as a handgun counterpart to the PDW-57. 'NXS' stands for 'New eXperimental Sidearm'."
 SWEP.Trivia_Manufacturer = "Auschen Waffenfabrik"
 SWEP.Trivia_Calibre = "5.7mm PDW"
 SWEP.Trivia_Mechanism = "Gas-Operated"
@@ -14,16 +13,6 @@ SWEP.Trivia_Country = "Austria"
 SWEP.Trivia_Year = 1989
 
 SWEP.Slot = 1
-
-if false then
-    SWEP.PrintName = SWEP.TrueNam3
-    SWEP.Trivia_Manufacturer = "FN Herstal"
-    SWEP.Trivia_Calibre = "5.7x28mm FN"
-    SWEP.Trivia_Country = "Belgium"
-    SWEP.Trivia_Desc = SWEP.Trivia_Desc .. "P90."
-else
-    SWEP.Trivia_Desc = SWEP.Trivia_Desc .. "PDW-57. 'NXS' stands for 'New eXperimental Sidearm'."
-end
 
 SWEP.UseHands = true
 
@@ -144,8 +133,6 @@ SWEP.AttachmentElements = {
         }
     }
 }
--- ["name"] = {ind = 1, bg = 1}
--- same as ACT3
 
 SWEP.ExtraSightDist = 5
 

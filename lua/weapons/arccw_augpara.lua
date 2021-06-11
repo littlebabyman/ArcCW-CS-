@@ -3,10 +3,9 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - CS+" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "Para-9"
-SWEP.TrueNam3 = "AUG Para"
+SWEP.PrintName = "Schmidt Subcompact"
 SWEP.Trivia_Class = "Submachine Gun"
-SWEP.Trivia_Desc = "Bullpup SMG based on the Para-556. Bullpup design enables superior accuracy and range out of a compact SMG package, and a lighter trigger is installed."
+SWEP.Trivia_Desc = "Bullpup SMG based on the Bullpup. Bullpup design enables superior accuracy and range out of a compact SMG package, and a lighter trigger is installed. Using it one-handed ain't half bad."
 SWEP.Trivia_Manufacturer = "Auschen Waffenfabrik"
 SWEP.Trivia_Calibre = "9x19mm Parabellum"
 SWEP.Trivia_Mechanism = "Gas-Operated"
@@ -14,11 +13,6 @@ SWEP.Trivia_Country = "Austria"
 SWEP.Trivia_Year = 1978
 
 SWEP.Slot = 2
-
-if false then
-    SWEP.PrintName = SWEP.TrueNam3
-    SWEP.Trivia_Manufacturer = "Steyr Mannlicher"
-end
 
 SWEP.UseHands = true
 
@@ -43,8 +37,8 @@ SWEP.ReducedClipSize = 15
 
 SWEP.Mult_ReloadTime = 0.8
 
-SWEP.Recoil = 0.15
-SWEP.RecoilSide = 0.16
+SWEP.Recoil = 0.25
+SWEP.RecoilSide = 0.2
 SWEP.RecoilRise = 1
 
 SWEP.Delay = 60 / 800 -- 60 / RPM.
@@ -52,6 +46,13 @@ SWEP.Num = 1 -- number of shots per trigger pull.
 SWEP.Firemodes = {
     {
         Mode = 2,
+        CustomBars = "---_-",
+        PrintName = "DUAL-STAGE",
+        M_Hook_Mult_RPM = function(wep, data)
+            if wep:GetBurstCount() == 0 and wep:GetState() != ArcCW.STATE_CUSTOMIZE then
+                data.mult = data.mult * (2/3)
+            end
+        end,
     },
     {
         Mode = -3,
@@ -64,11 +65,6 @@ SWEP.Firemodes = {
         Mode = 0
     }
 }
-SWEP.M_Hook_Mult_RPM = function(wep, data)
-    if wep:GetCurrentFiremode().Mode == 2 and wep:GetBurstCount() == 0 and wep:GetState() != ArcCW.STATE_CUSTOMIZE then
-        data.mult = data.mult * 2/3
-    end
-end
 
 SWEP.NPCWeaponType = "weapon_smg1"
 SWEP.NPCWeight = 100

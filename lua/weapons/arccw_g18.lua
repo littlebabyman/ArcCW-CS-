@@ -3,23 +3,16 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - CS+" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "PP-A9"
-SWEP.TrueNam3 = "Glock 18"
+SWEP.PrintName = "VI Sidearm"
 SWEP.Trivia_Class = "Machine Pistol"
-SWEP.Trivia_Desc = "9mm fully automatic police machine pistol. Low damage, but a sophisticated recoil control system allows for excellent automatic performance."
+SWEP.Trivia_Desc = "9mm fully-automatic machine pistol made for police forces. Sophisticated recoil control system allows for excellent automatic performance."
 SWEP.Trivia_Manufacturer = "Auschen Waffenfabrik"
-SWEP.Trivia_Calibre = "9x19mm Para"
+SWEP.Trivia_Calibre = "9x19mm Parabellum"
 SWEP.Trivia_Mechanism = "Short Recoil"
 SWEP.Trivia_Country = "Austria"
 SWEP.Trivia_Year = 1989
 
 SWEP.Slot = 1
-
-if false then
-    SWEP.PrintName = SWEP.TrueNam3
-    SWEP.Trivia_Manufacturer = "Glock Ges.m.b.H."
-    SWEP.Trivia_Country = "Germany"
-end
 
 SWEP.UseHands = true
 
@@ -149,8 +142,7 @@ SWEP.AttachmentElements = {
         }
     },
     ["fcg_semi"] = {
-        TrueNam3Change = "Glock 17",
-        NameChange = "PP-S9",
+        --NameChange = "PP-S9",
     }
 }
 

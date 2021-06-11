@@ -4,7 +4,6 @@ SWEP.Category = "ArcCW - CS+" -- edit this if you like
 SWEP.AdminOnly = false
 
 SWEP.PrintName = "Competitor"
-SWEP.TrueNam3 = "G2 Contender"
 SWEP.Trivia_Class = "Pistol"
 SWEP.Trivia_Desc = "Break action pistol in a full-sized rifle round. Offers incredible power, but at the cost of poor range due to an insufficiently sized barrel for the cartridge."
 SWEP.Trivia_Manufacturer = "Jonathan/Kruger"
@@ -14,11 +13,6 @@ SWEP.Trivia_Country = "USA"
 SWEP.Trivia_Year = 1967
 
 SWEP.Slot = 1
-
-if false then
-    SWEP.PrintName = SWEP.TrueNam3
-    SWEP.Trivia_Manufacturer = "Thompson/Center"
-end
 
 SWEP.UseHands = true
 

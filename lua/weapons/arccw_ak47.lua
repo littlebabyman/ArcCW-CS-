@@ -4,7 +4,6 @@ SWEP.Category = "ArcCW - CS+" -- edit this if you like
 SWEP.AdminOnly = false
 
 SWEP.PrintName = "Type 2"
-SWEP.TrueNam3 = "AK-47"
 SWEP.Trivia_Class = "Assault Rifle"
 SWEP.Trivia_Desc = "An early assault rifle pattern, copied and used all around the world. Designed by a Soviet tank mechanic in response to the need for a more versatile infantry weapon. Poor accuracy, but packs a serious punch."
 SWEP.Trivia_Manufacturer = "Kremen Oruzhiye"
@@ -14,12 +13,6 @@ SWEP.Trivia_Country = "USSR"
 SWEP.Trivia_Year = 1946
 
 SWEP.Slot = 2
-
-if false then
-    SWEP.PrintName = SWEP.TrueNam3
-    SWEP.Trivia_Manufacturer = "Kalashnikov Concern"
-    SWEP.Trivia_Country = "Russia"
-end
 
 SWEP.UseHands = true
 
@@ -157,7 +150,6 @@ SWEP.AttachmentElements = {
         },
     },
     ["fcg_semi"] = {
-        TrueNam3Change = "Vepr-KM",
         NameChange = "Wasp-2",
     }
 }

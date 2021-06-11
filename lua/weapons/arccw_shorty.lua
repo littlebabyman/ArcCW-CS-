@@ -3,8 +3,7 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - CS+" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "Defender"
-SWEP.TrueNam3 = "M3 Super 90"
+SWEP.PrintName = "Leone Defender"
 SWEP.Trivia_Class = "Shotgun"
 SWEP.Trivia_Desc = "12 gauge pistol grip pump shotgun. Shortened barrel and sawed stock allow for maneuverability in confined spaces."
 SWEP.Trivia_Manufacturer = "ArmStrike USA"
@@ -14,12 +13,6 @@ SWEP.Trivia_Country = "USA"
 SWEP.Trivia_Year = 1989
 
 SWEP.Slot = 2
-
-if false then
-    SWEP.PrintName = SWEP.TrueNam3
-    SWEP.Trivia_Manufacturer = "Fabbrica d'Armi Pietro Beretta"
-    SWEP.Trivia_Country = "Italy"
-end
 
 SWEP.UseHands = true
 

@@ -3,23 +3,16 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - CS+" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "MP-K1"
-SWEP.TrueNam3 = "UMP-9"
+SWEP.PrintName = "K&M MPS-9"
 SWEP.Trivia_Class = "Submachine Gun"
 SWEP.Trivia_Desc = "Ubiquitous 9mm SMG. Created as a response to the need for a faster-firing and more reliable submachine gun than existing options at the time."
 SWEP.Trivia_Manufacturer = "Auschen Waffenfabrik"
-SWEP.Trivia_Calibre = "9x19mm Para"
+SWEP.Trivia_Calibre = "9x19mm Parabellum"
 SWEP.Trivia_Mechanism = "Roller-Delayed Blowback"
 SWEP.Trivia_Country = "Austria"
 SWEP.Trivia_Year = 1968
 
 SWEP.Slot = 2
-
-if false then
-    SWEP.PrintName = SWEP.TrueNam3
-    SWEP.Trivia_Manufacturer = "Heckler & Koch"
-    SWEP.Trivia_Country = "Germany"
-end
 
 SWEP.UseHands = true
 
@@ -27,7 +20,7 @@ SWEP.ViewModel = "models/weapons/arccw/c_mpk1.mdl"
 SWEP.WorldModel = "models/weapons/arccw/w_mpk1.mdl"
 SWEP.ViewModelFOV = 60
 
-SWEP.Damage = 26
+SWEP.Damage = 30
 SWEP.DamageMin = 19 -- damage done at maximum range
 SWEP.Range = 65 -- in METRES
 SWEP.Penetration = 4
@@ -42,9 +35,7 @@ SWEP.ReducedClipSize = 15
 
 SWEP.RevolverReload = false -- cases all eject on reload
 
-SWEP.OpenBolt = false -- gun fires at the end of 
-
-SWEP.Recoil = 0.35
+SWEP.Recoil = 0.4
 SWEP.RecoilSide = 0.2
 SWEP.RecoilRise = -1
 SWEP.VisualRecoilMult = 1
@@ -132,10 +123,6 @@ SWEP.HolsterAng = Angle(-7.036, 30.016, 0)
 
 SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)
-
-SWEP.AttachmentBodygroups = {}
--- ["name"] = {ind = 1, bg = 1}
--- same as ACT3
 
 SWEP.AttachmentElements = {
     ["extendedmag"] = {

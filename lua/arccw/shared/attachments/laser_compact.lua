@@ -15,6 +15,6 @@ att.Laser = true
 att.LaserStrength = 0.5
 att.LaserBone = "laser"
 
-att.ColorOptionsTable = {Color(255, 50, 50)}
+att.ColorOptionsTable = {Color(255, 70, 50)}
 
-att.Mult_HipDispersion = 0.7
+att.Mult_HipDispersion = 0.8

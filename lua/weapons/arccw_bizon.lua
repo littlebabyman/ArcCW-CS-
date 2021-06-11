@@ -3,8 +3,7 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - CS+" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "Kraken"
-SWEP.TrueNam3 = "PP-19-02 Bizon"
+SWEP.PrintName = "Type .02"
 SWEP.Trivia_Class = "Submachine Gun"
 SWEP.Trivia_Desc = "Submachine gun with huge helical magazine. Fires relatively weak rounds, slowly, but at a reliable pace. Developed for FSB-Spetsnaz units in the Russian Federation, and employed in combat against militants in the Caucasus region, its straight-blowback design reduces manufacturing costs while sharing components with other common weapons."
 SWEP.Trivia_Manufacturer = "Kremen Oruzhiye"
@@ -14,13 +13,6 @@ SWEP.Trivia_Country = "Russia"
 SWEP.Trivia_Year = 1996
 
 SWEP.Slot = 2
-
-if false then
-    SWEP.PrintName = SWEP.TrueNam3
-    SWEP.Trivia_Manufacturer = "Izhmash"
-    SWEP.Trivia_Country = "Russia"
-    SWEP.Trivia_Calibre = "9x18mm Makarov"
-end
 
 SWEP.UseHands = true
 

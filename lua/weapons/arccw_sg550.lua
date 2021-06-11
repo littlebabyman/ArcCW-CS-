@@ -3,8 +3,7 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - CS+" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "ROLAND SS-X"
-SWEP.TrueNam3 = "SG550-1"
+SWEP.PrintName = "ROLAND 50-1"
 SWEP.Trivia_Class = "DMR"
 SWEP.Trivia_Desc = "Swiss police marksman rifle in 5.56. Designed for use at closer ranges than most sniper rifles."
 SWEP.Trivia_Manufacturer = "ROLAND SIS"
@@ -14,11 +13,6 @@ SWEP.Trivia_Country = "Switzerland"
 SWEP.Trivia_Year = 1992
 
 SWEP.Slot = 2
-
-if false then
-    SWEP.PrintName = SWEP.TrueNam3
-    SWEP.Trivia_Manufacturer = "Swiss Arms AG"
-end
 
 SWEP.UseHands = true
 

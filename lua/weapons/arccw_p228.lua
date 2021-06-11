@@ -3,23 +3,16 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - CS+" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "Sigma"
-SWEP.TrueNam3 = "P228"
+SWEP.PrintName = "ROLAND 228"
 SWEP.Trivia_Class = "Pistol"
-SWEP.Trivia_Desc = "9mm self-loading pistol with reliable mechanism. "
+SWEP.Trivia_Desc = ".357 self-loading compact pistol with reliable mechanism."
 SWEP.Trivia_Manufacturer = "Gryphon Arms"
-SWEP.Trivia_Calibre = "9x19mm Parabellum"
+SWEP.Trivia_Calibre = ".357 SIG"
 SWEP.Trivia_Mechanism = "Recoil-Operated"
 SWEP.Trivia_Country = "USA"
 SWEP.Trivia_Year = 1983
 
 SWEP.Slot = 1
-
-if false then
-    SWEP.PrintName = SWEP.TrueNam3
-    SWEP.Trivia_Manufacturer = "SIG Sauer"
-    SWEP.Trivia_Country = "Germany"
-end
 
 SWEP.UseHands = true
 
@@ -69,7 +62,7 @@ SWEP.Primary.Ammo = "pistol" -- what ammo type the gun uses
 SWEP.ShootVol = 110 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
-SWEP.ShootSound = "weapons/arccw/p250/p250_01.wav"
+SWEP.ShootSound = "weapons/arccw/p250/p250-1.wav"
 SWEP.ShootSoundSilenced = "weapons/arccw/usp/usp_01.wav"
 SWEP.DistantShootSound = "weapons/arccw/p250/p250-1-distant.wav"
 
@@ -85,7 +78,7 @@ SWEP.SightTime = 0.2
 SWEP.SpeedMult = 1
 SWEP.SightedSpeedMult = 0.75
 
-SWEP.BarrelLength = 18
+SWEP.BarrelLength = 16
 
 SWEP.BulletBones = { -- the bone that represents bullets in gun/mag
     -- [0] = "bulletchamber",

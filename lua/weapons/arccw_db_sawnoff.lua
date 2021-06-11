@@ -3,8 +3,7 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - CS+" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "Partner Sawn-Off"
-SWEP.TrueNam3 = "Sawn-Off"
+SWEP.PrintName = "Partner Shorty"
 SWEP.Trivia_Class = "Shotgun"
 SWEP.Trivia_Desc = "Sawn-off version of the Partner, improving agility at the cost of spread and range."
 SWEP.Trivia_Manufacturer = "Gryphon Arms"
@@ -14,11 +13,6 @@ SWEP.Trivia_Country = "USA"
 SWEP.Trivia_Year = 1972
 
 SWEP.Slot = 1
-
-if false then
-    SWEP.PrintName = SWEP.TrueNam3
-    SWEP.Trivia_Manufacturer = "Remington Arms"
-end
 
 SWEP.UseHands = true
 
@@ -273,8 +267,8 @@ SWEP.Animations = {
         Checkpoints = {28, 64, 102},
         FrameRate = 30,
         LHIK = true,
-        LHIKIn = 0.5,
-        LHIKOut = 0.5,
+        LHIKIn = 0.3,
+        LHIKOut = 0.3,
         LastClip1OutTime = 0.4,
     },
     ["reload_empty"] = {
@@ -284,8 +278,8 @@ SWEP.Animations = {
         Checkpoints = {28, 64, 102},
         FrameRate = 30,
         LHIK = true,
-        LHIKIn = 0.5,
-        LHIKOut = 0.5,
+        LHIKIn = 0.3,
+        LHIKOut = 0.3,
         LastClip1OutTime = 0.4,
     },
 }

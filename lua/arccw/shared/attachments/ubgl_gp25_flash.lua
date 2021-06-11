@@ -20,6 +20,7 @@ att.MountPositionOverride = 0
 
 att.Model = "models/weapons/arccw/atts/ubgl_gp25.mdl"
 att.ModelBodygroups = "00"
+att.ModelOffset = Vector(-1, 0, 0)
 
 att.UBGL = true
 

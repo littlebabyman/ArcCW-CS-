@@ -4,7 +4,6 @@ SWEP.Category = "ArcCW - CS+" -- edit this if you like
 SWEP.AdminOnly = false
 
 SWEP.PrintName = "Fury Magnum"
-SWEP.TrueNam3 = "Raging Bull"
 SWEP.Trivia_Class = "Revolver"
 SWEP.Trivia_Desc = "Popular, reliable double-action revolver, able to switch to single-action for improved precision. While semi-automatics may hold more rounds and be no less reliable, a cylinder full of magnum rounds is still an intimidating sight. Did you fire six shots, or only five?"
 SWEP.Trivia_Manufacturer = "Gryphon Arms"
@@ -14,13 +13,6 @@ SWEP.Trivia_Country = "USA"
 SWEP.Trivia_Year = 1997
 
 SWEP.Slot = 1
-
-if false then
-    SWEP.PrintName = SWEP.TrueNam3
-    SWEP.Trivia_Manufacturer = "Taurus International"
-    SWEP.Trivia_Country = "Brazil"
-end
-
 
 SWEP.UseHands = true
 
@@ -173,7 +165,20 @@ SWEP.AttachmentElements = {
                 }
             }
         }
-    }
+    },
+    ["mount"] = {
+        VMElements = {
+            {
+                Model = "models/weapons/arccw/atts/mount_rail.mdl",
+                Bone = "Body",
+                Scale = Vector(1.5, 0.8, 1.5),
+                Offset = {
+                    pos = Vector(0, -1.8, -4.2),
+                    ang = Angle(-90, 0, -90),
+                }
+            }
+        },
+    },
 }
 
 SWEP.Attachments = {
@@ -183,18 +188,12 @@ SWEP.Attachments = {
         Slot = {cspf.."optic_lp", cspf.."optic", cspf.."optic_sniper"},
         Bone = "Body",
         Offset = {
-            vpos = Vector(0.032, -4.029, -3.604),
+            vpos = Vector(0, -2, -2),
             vang = Angle(-90, 0, -90),
             wpos = Vector(8.873, 1.927, -4.648),
             wang = Angle(0, 0, 180)
         },
-        SlideAmount = {
-            vmin = Vector(0.032, -2, -2),
-            vmax = Vector(0.032, -2, -6),
-            wmin = Vector(9, 1, -4.648),
-            wmax = Vector(12, 1, -4.648),
-        },
-        CorrectiveAng = nil --Angle(90, 0, -90)
+        InstalledEles = {"mount"},
     },
     {
         PrintName = "Muzzle",
@@ -210,10 +209,10 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Underbarrel",
-        Slot = {cspf.."foregrip", cspf.."style_pistol"},
+        Slot = {cspf.."foregrip_pistol", cspf.."style_pistol"},
         Bone = "Body",
         Offset = {
-            vpos = Vector(0, -0.5, -6),
+            vpos = Vector(0, 0.2, -2),
             vang = Angle(-90, 0, -90),
             wpos = Vector(11, 1, -3.4),
             wang = Angle(180, 0, 0)
@@ -236,7 +235,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Perk",
-        Slot = {"perk", "perk_revolver"}
+        Slot = {cspf.."perk", cspf.."perk_revolver"}
     },
     {
         PrintName = "Charm",
@@ -315,7 +314,7 @@ SWEP.Animations = {
         FrameRate = 30,
         LHIK = true,
         LHIKIn = 1,
-        LHIKOut = 1,
+        LHIKOut = 0.5,
         LastClip1OutTime = 1,
     },
     ["reload_sact"] = {
@@ -325,7 +324,7 @@ SWEP.Animations = {
         FrameRate = 30,
         LHIK = true,
         LHIKIn = 1,
-        LHIKOut = 1,
+        LHIKOut = 0.5,
         LastClip1OutTime = 1,
     },
     ["bash"] = {

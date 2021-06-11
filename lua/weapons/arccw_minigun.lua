@@ -2,8 +2,8 @@ SWEP.Base = "arccw_base"
 SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - CS+" -- edit this if you like
 SWEP.AdminOnly = true
-SWEP.PrintName = "Minigun"
-SWEP.TrueNam3 = "M134"
+
+SWEP.PrintName = "GE M134"
 SWEP.Trivia_Class = "Rotary Machine Gun"
 SWEP.Trivia_Desc = "A heavy machine gun capable of firing at an extremely fast fire rate due to its electric fire control system. The ultimate weapon. Carrying it will reduce your movement speed to a halt, and you can forget about sprinting with it. In return, up to 1800 RPM of 7.62 Real Fuckin' NATO is in your hands, if you can control them. Wield it with care."
 SWEP.Trivia_Manufacturer = "Gryphon Arms"
@@ -13,11 +13,6 @@ SWEP.Trivia_Country = "USA"
 SWEP.Trivia_Year = 1957
 
 SWEP.Slot = 2
-
-if false then
-    SWEP.PrintName = SWEP.TrueNam3
-    SWEP.Trivia_Manufacturer = "General Electric"
-end
 
 SWEP.UseHands = true
 SWEP.ViewModel = "models/weapons/arccw/c_minigun.mdl"

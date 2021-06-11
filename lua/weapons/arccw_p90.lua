@@ -3,10 +3,9 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - CS+" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "PDW-57"
-SWEP.TrueNam3 = "P90"
+SWEP.PrintName = "ES NXm"
 SWEP.Trivia_Class = "Personal Defense Weapon"
-SWEP.Trivia_Desc = "5.7mm PDW developed to arm rear-line soldiers in need of a more effective weapon to combat enemy paratroopers wearing body armor. Offers high fire rate with excellent damage characteristics retained at long range."
+SWEP.Trivia_Desc = "5.7mm PDW developed to arm rear-line soldiers in need of a more effective weapon to combat enemy paratroopers wearing body armor. Offers high fire rate with excellent damage characteristics retained at long range. 'NXM' stands for 'New eXperimental sub Machine gun'."
 SWEP.Trivia_Manufacturer = "Auschen Waffenfabrik"
 SWEP.Trivia_Calibre = "5.7mm PDW"
 SWEP.Trivia_Mechanism = "Straight Blowback"
@@ -14,13 +13,6 @@ SWEP.Trivia_Country = "Austria"
 SWEP.Trivia_Year = 1989
 
 SWEP.Slot = 2
-
-if false then
-    SWEP.PrintName = SWEP.TrueNam3
-    SWEP.Trivia_Manufacturer = "FN Herstal"
-    SWEP.Trivia_Calibre = "5.7x28mm FN"
-    SWEP.Trivia_Country = "Belgium"
-end
 
 SWEP.UseHands = true
 
@@ -42,8 +34,6 @@ SWEP.ExtendedClipSize = 75
 SWEP.ReducedClipSize = 25
 
 SWEP.RevolverReload = false -- cases all eject on reload
-
-SWEP.OpenBolt = false -- gun fires at the end of 
 
 SWEP.Recoil = 0.34
 SWEP.RecoilSide = 0.2
@@ -124,10 +114,6 @@ SWEP.HolsterAng = Angle(-5, 5, 0)
 SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)
 
-SWEP.AttachmentBodygroups = {}
--- ["name"] = {ind = 1, bg = 1}
--- same as ACT3
-
 SWEP.AttachmentElements = {
     ["extendedmag"] = {
         VMBodygroups = {{ind = 1, bg = 1}},
@@ -154,8 +140,7 @@ SWEP.AttachmentElements = {
         WMBodygroups = {},
     },
     ["fcg_semi"] = {
-        TrueNam3Change = "PS90",
-        NameChange = "M57 Carbine",
+        NameChange = "ES NXmc",
         VMBodygroups = {
             {ind = 6, bg = 1},
             {ind = 2, bg = 1}

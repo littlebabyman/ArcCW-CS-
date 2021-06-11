@@ -3,10 +3,9 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - CS+" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "ROLAND CX-R"
-SWEP.TrueNam3 = "SG552"
+SWEP.PrintName = "ROLAND 52"
 SWEP.Trivia_Class = "Assault Rifle"
-SWEP.Trivia_Desc = "Lightweight assault rifle, with compact 24-round magazine as default. Controllable fire rate. Great accuracy."
+SWEP.Trivia_Desc = "Lightweight assault rifle originating from Switzerland. Comes with a compact 24-round magazine by default. Controllable fire rate. Great accuracy."
 SWEP.Trivia_Manufacturer = "ROLAND SIS"
 SWEP.Trivia_Calibre = "5.56x45mm NATO"
 SWEP.Trivia_Mechanism = "Gas-Operated"
@@ -14,11 +13,6 @@ SWEP.Trivia_Country = "Switzerland"
 SWEP.Trivia_Year = 1990
 
 SWEP.Slot = 2
-
-if false then
-    SWEP.PrintName = SWEP.TrueNam3
-    SWEP.Trivia_Manufacturer = "Swiss Arms AG"
-end
 
 SWEP.UseHands = true
 

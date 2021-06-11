@@ -1,6 +1,6 @@
 att.PrintName = "Bipod"
 att.Icon = Material("entities/acwatt_bipod.png", "mips smooth")
-att.Description = "Bipod can be deployed by pressing +USE while in an eligible spot. While deployed, the user's aiming angle is limited and recoil is reduced to near-zero. Moving will release bipod. While not in use, the bipod negatively impacts weapon maneuverability."
+att.Description = "Bipod can be deployed by pressing USE while in an eligible spot. While deployed, the user's aiming angle is limited and recoil is reduced to near-zero. While not in use, the bipod negatively impacts weapon maneuverability."
 
 att.SortOrder = 10
 
@@ -19,8 +19,8 @@ att.MountPositionOverride = 1
 att.Model = "models/weapons/arccw/atts/bipod.mdl"
 
 att.Bipod = true
-att.Mult_BipodRecoil = 0.25
-att.Mult_BipodDispersion = 0.1
+att.Mult_BipodRecoil = 0.5
+att.Mult_BipodDispersion = 0.5
 
 att.Mult_SightTime = 1.2
 att.Mult_HipDispersion = 1.2

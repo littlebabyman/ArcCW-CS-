@@ -4,7 +4,6 @@ SWEP.Category = "ArcCW - CS+" -- edit this if you like
 SWEP.AdminOnly = false
 
 SWEP.PrintName = "LAWS"
-SWEP.TrueNam3 = "M72 LAW"
 SWEP.Trivia_Class = "Rocket Launcher"
 SWEP.Trivia_Desc = "A single-shot lightweight disposable rocket launcher. Only one shot can be carried.\n\n\"I fought the LAW and the LAW won.\""
 SWEP.Trivia_Manufacturer = "Gryphon Arms"
@@ -14,8 +13,6 @@ SWEP.Trivia_Country = "USA"
 SWEP.Trivia_Year = 1963
 
 SWEP.Slot = 4
-
-if false then SWEP.PrintName = SWEP.TrueNam3 end
 
 SWEP.UseHands = true
 

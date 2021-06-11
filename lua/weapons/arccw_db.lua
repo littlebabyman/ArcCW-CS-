@@ -3,8 +3,7 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - CS+" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "Partner DB"
-SWEP.TrueNam3 = "DB"
+SWEP.PrintName = "Partner"
 SWEP.Trivia_Class = "Shotgun"
 SWEP.Trivia_Desc = "Basic double-barrel shotgun manufactured as an entry-level hunting weapon. Long barrel makes for great spread and extra range, at the cost of poor hip fire characteristics. Switch to BOTH firemode to fire both barrels in quick succession."
 SWEP.Trivia_Manufacturer = "Gryphon Arms"
@@ -14,11 +13,6 @@ SWEP.Trivia_Country = "USA"
 SWEP.Trivia_Year = 1972
 
 SWEP.Slot = 2
-
-if false then
-    SWEP.PrintName = SWEP.TrueNam3
-    SWEP.Trivia_Manufacturer = "Remington Arms"
-end
 
 SWEP.UseHands = true
 
@@ -264,8 +258,8 @@ SWEP.Animations = {
         Checkpoints = {28, 64, 102},
         FrameRate = 30,
         LHIK = true,
-        LHIKIn = 0.5,
-        LHIKOut = 0.5,
+        LHIKIn = 0.3,
+        LHIKOut = 0.3,
         LastClip1OutTime = 1,
     },
     ["reload_empty"] = {
@@ -275,8 +269,8 @@ SWEP.Animations = {
         Checkpoints = {28, 64, 102},
         FrameRate = 30,
         LHIK = true,
-        LHIKIn = 0.5,
-        LHIKOut = 0.5,
+        LHIKIn = 0.3,
+        LHIKOut = 0.3,
         LastClip1OutTime = 1,
     },
 }

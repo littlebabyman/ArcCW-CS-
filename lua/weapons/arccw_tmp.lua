@@ -3,23 +3,16 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - CS+" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "MPC-9"
-SWEP.TrueNam3 = "MP9"
+SWEP.PrintName = "Schmidt TMP"
 SWEP.Trivia_Class = "Machine Pistol"
 SWEP.Trivia_Desc = "A machine pistol with extremely high fire rate. In order to control this, it has been limited to three-round burst mode."
 SWEP.Trivia_Manufacturer = "Auschen Waffenfabrik"
-SWEP.Trivia_Calibre = "9x19mm Para"
+SWEP.Trivia_Calibre = "9x19mm Parabellum"
 SWEP.Trivia_Mechanism = "Roller-Delayed Blowback"
 SWEP.Trivia_Country = "Austria"
 SWEP.Trivia_Year = 1992
 
 SWEP.Slot = 2
-
-if false then
-    SWEP.PrintName = SWEP.TrueNam3
-    SWEP.Trivia_Manufacturer = "Brügger & Thomet"
-    SWEP.Trivia_Country = "Switzerland"
-end
 
 SWEP.UseHands = true
 

@@ -3,8 +3,7 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - CS+" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "BFG"
-SWEP.TrueNam3 = "M107"
+SWEP.PrintName = "Barrett BFG"
 SWEP.Trivia_Class = "Antimateriel Rifle"
 SWEP.Trivia_Desc = "High caliber semi automatic rifle designed to take out light armored vehicles and military equipment. BFG stands for 'Big Fucking Gun'. Deals great damage at all ranges. Extremely heavy and cumbersome."
 SWEP.Trivia_Manufacturer = "Gryphon Arms"
@@ -14,11 +13,6 @@ SWEP.Trivia_Country = "USA"
 SWEP.Trivia_Year = 1989
 
 SWEP.Slot = 2
-
-if false then
-    SWEP.PrintName = SWEP.TrueNam3
-    SWEP.Trivia_Manufacturer = "Barrett Firearms Manufacturing"
-end
 
 SWEP.UseHands = true
 

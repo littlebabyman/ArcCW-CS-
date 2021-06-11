@@ -3,23 +3,16 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - CS+" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "AS-1217"
-SWEP.TrueNam3 = "M1014"
+SWEP.PrintName = "Leone YG1265"
 SWEP.Trivia_Class = "Shotgun"
-SWEP.Trivia_Desc = "12 gauge automatic tube-fed shotgun. Excellent fire rate, but takes a long time to reload."
+SWEP.Trivia_Desc = "12 gauge semi-automatic tube-fed shotgun. Weapon of the pointman. Adopted by the United States in 1999. Used by the British Armed Forces as the L128A1."
 SWEP.Trivia_Manufacturer = "Gryphon Arms"
 SWEP.Trivia_Calibre = "12 Gauge"
-SWEP.Trivia_Mechanism = "Gas-Operated"
+SWEP.Trivia_Mechanism = "Auto-Regulating Gas-Operated"
 SWEP.Trivia_Country = "USA"
-SWEP.Trivia_Year = 1994
+SWEP.Trivia_Year = 1998
 
 SWEP.Slot = 2
-
-if false then
-    SWEP.PrintName = SWEP.TrueNam3
-    SWEP.Trivia_Manufacturer = "Fabbrica d'Armi Pietro Beretta"
-    SWEP.Trivia_Country = "Italy"
-end
 
 SWEP.UseHands = true
 
@@ -37,8 +30,8 @@ SWEP.MuzzleVelocity = 150 -- projectile or phys bullet muzzle velocity
 -- IN M/S
 SWEP.ChamberSize = 1 -- how many rounds can be chambered.
 SWEP.Primary.ClipSize = 7 -- DefaultClip is automatically set.
-SWEP.ExtendedClipSize = 10
-SWEP.ReducedClipSize = 4
+SWEP.ExtendedClipSize = 9
+SWEP.ReducedClipSize = 5
 
 SWEP.Recoil = 5
 SWEP.RecoilSide = 1

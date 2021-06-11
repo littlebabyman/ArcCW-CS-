@@ -4,7 +4,6 @@ SWEP.Category = "ArcCW - CS+" -- edit this if you like
 SWEP.AdminOnly = false
 
 SWEP.PrintName = "Mk. 201"
-SWEP.TrueNam3 = "MAC-10"
 SWEP.Trivia_Class = "Machine Pistol"
 SWEP.Trivia_Desc = "An often handcrafted submachine gun. Known for its incredibly low price at the cost of almost all else. It shoots, and that's about the best thing going for it."
 SWEP.Trivia_Manufacturer = "Gryphon Arms"
@@ -14,12 +13,6 @@ SWEP.Trivia_Country = "USA"
 SWEP.Trivia_Year = 1972
 
 SWEP.Slot = 2
-
-if false then
-    SWEP.PrintName = SWEP.TrueNam3
-    SWEP.Trivia_Manufacturer = "Military Armament Corporation"
-end
-
 
 SWEP.UseHands = true
 
@@ -270,8 +263,6 @@ SWEP.Animations = {
         Source = "draw",
         Time = 1.5,
         LHIK = true,
-        LHIKIn = 0,
-        LHIKOut = 0.25,
     },
     ["draw_empty"] = {
         Source = "draw_empty",
@@ -320,8 +311,10 @@ SWEP.Animations = {
         Checkpoints = {36, 57, 77},
         FrameRate = 40,
         LHIK = true,
-        LHIKIn = 0.5,
-        LHIKOut = 0.5,
+        LHIKEaseIn = 0.3,
+        LHIKIn = 0.3,
+        LHIKOut = 0.4,
+        LHIKEaseOut = 0.7,
     },
     ["reload_empty"] = {
         Source = "reload",
@@ -330,7 +323,9 @@ SWEP.Animations = {
         Checkpoints = {36, 57, 77, 88},
         FrameRate = 40,
         LHIK = true,
-        LHIKIn = 0.5,
-        LHIKOut = 0.25,
+        LHIKEaseIn = 0.3,
+        LHIKIn = 0.3,
+        LHIKOut = 0.4,
+        LHIKEaseOut = 0.7,
     },
 }

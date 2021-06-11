@@ -3,8 +3,7 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - CS+" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "Type 8-K"
-SWEP.TrueNam3 = "Saiga-12"
+SWEP.PrintName = "Type 8k"
 SWEP.Trivia_Class = "Shotgun"
 SWEP.Trivia_Desc = "A magazine fed 12 gauge shotgun. Designed for hunting use as well as for police forces."
 SWEP.Trivia_Manufacturer = "Kremen Oruzhiye"
@@ -14,12 +13,6 @@ SWEP.Trivia_Country = "USSR"
 SWEP.Trivia_Year = 1997
 
 SWEP.Slot = 2
-
-if false then
-    SWEP.PrintName = SWEP.TrueNam3
-    SWEP.Trivia_Manufacturer = "Kalashnikov Concern"
-    SWEP.Trivia_Country = "Russia"
-end
 
 SWEP.UseHands = true
 

@@ -3,10 +3,9 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - CS+" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "Mk. 4"
-SWEP.TrueNam3 = "M4A1"
+SWEP.PrintName = "Cobra Mk. 4"
 SWEP.Trivia_Class = "Assault Carbine"
-SWEP.Trivia_Desc = "Shortened carbine-length version of the M16 rifle, designed for use in situations where a shorter or lighter weapon is required. After the turn of the millennium, many armies began adopting carbines as their main infantry weapons."
+SWEP.Trivia_Desc = "America's pride and joy. Shortened carbine-length version of the M16 rifle, designed for use in situations where a shorter or lighter weapon is required. After the turn of the millennium, many armies began adopting carbines as their main infantry weapons."
 SWEP.Trivia_Manufacturer = "Gryphon Arms"
 SWEP.Trivia_Calibre = "5.56x45mm NATO"
 SWEP.Trivia_Mechanism = "Gas-Operated"
@@ -14,11 +13,6 @@ SWEP.Trivia_Country = "USA"
 SWEP.Trivia_Year = 1994
 
 SWEP.Slot = 2
-
-if false then
-    SWEP.PrintName = SWEP.TrueNam3
-    SWEP.Trivia_Manufacturer = "Armalite"
-end
 
 SWEP.UseHands = true
 
@@ -48,7 +42,7 @@ SWEP.RecoilPunchBackMax = 3
 SWEP.VisualRecoilMult = 1
 SWEP.RecoilPunchBack = 3
 
-SWEP.Delay = 60 / 667 -- 60 / RPM.
+SWEP.Delay = 60 / 670 -- 60 / RPM.
 SWEP.Num = 1 -- number of shots per trigger pull.
 SWEP.Firemodes = {
     {
@@ -154,8 +148,7 @@ SWEP.AttachmentElements = {
         },
     },
     ["fcg_semi"] = {
-        TrueNam3Change = "AR-15",
-        NameChange = "Gryphon Patriot",
+        NameChange = "Cobra Patriot",
     }
 }
 

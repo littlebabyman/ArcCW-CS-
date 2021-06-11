@@ -18,6 +18,7 @@ att.LHIK_Animation = true
 att.MountPositionOverride = 0
 
 att.Model = "models/weapons/arccw/atts/ubgl_mass.mdl"
+att.ModelOffset = Vector(-1, 0, 0)
 
 att.UBGL = true
 
@@ -79,28 +80,29 @@ att.UBGL_Reload = function(wep, ubgl)
     if wep:Clip2() >= 4 then return end
     if Ammo(wep) <= 0 then return end
 
+    local mu = 0.8
     if wep:Clip2() == 0 then
 
-        wep:DoLHIKAnimation("reload", 3.5)
+        wep:DoLHIKAnimation("reload", 3.5*mu)
 
-        wep:SetNextSecondaryFire(CurTime() + 3.5)
+        wep:SetNextSecondaryFire(CurTime() + 3.5*mu)
 
         wep:PlaySoundTable({
-            {s = "weapons/arccw/mag7/mag7_clipout.wav", t = 0.5},
-            {s = "weapons/arccw/mag7/mag7_clipin.wav", t = 1.5},
-            {s = "weapons/arccw/mag7/mag7_pump_back.wav", t = 2.5},
-            {s = "weapons/arccw/mag7/mag7_pump_forward.wav", t = 2.75},
+            {s = "weapons/arccw/mag7/mag7_clipout.wav", t = 0.5*mu},
+            {s = "weapons/arccw/mag7/mag7_clipin.wav", t = 1.5*mu},
+            {s = "weapons/arccw/mag7/mag7_pump_back.wav", t = 2.5*mu},
+            {s = "weapons/arccw/mag7/mag7_pump_forward.wav", t = 2.75*mu},
         })
 
     else
 
-        wep:DoLHIKAnimation("reload_part", 2.75)
+        wep:DoLHIKAnimation("reload_part", 2.75*mu)
 
-        wep:SetNextSecondaryFire(CurTime() + 2.75)
+        wep:SetNextSecondaryFire(CurTime() + 2.75*mu)
 
         wep:PlaySoundTable({
-            {s = "weapons/arccw/mag7/mag7_clipout.wav", t = 0.5},
-            {s = "weapons/arccw/mag7/mag7_clipin.wav", t = 1.5},
+            {s = "weapons/arccw/mag7/mag7_clipout.wav", t = 0.5*mu},
+            {s = "weapons/arccw/mag7/mag7_clipin.wav", t = 1.5*mu},
         })
 
     end

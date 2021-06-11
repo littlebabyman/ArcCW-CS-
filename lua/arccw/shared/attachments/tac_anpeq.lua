@@ -19,4 +19,4 @@ att.ColorOptionsTable = {Color(255, 50, 50)}
 
 att.Mult_SightTime = 1.15
 
-att.Mult_HipDispersion = 0.4
+att.Mult_HipDispersion = 0.6

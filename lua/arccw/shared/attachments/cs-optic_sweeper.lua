@@ -1,5 +1,5 @@
 att.PrintName = "Sweeper (4-7x)"
-att.Icon = Material("entities/acwatt_optic_sweeper.png")
+att.Icon = Material("entities/acwatt_cs-optic_sweeper.png", "mips smooth")
 att.Description = "Common police rifle optic that can adjusted between medium and medium-long range magnification. Large claw mount allows space for a backup sight."
 
 att.SortOrder = 5
@@ -17,9 +17,9 @@ att.Model = "models/weapons/arccw/atts/sweeper_3.mdl"
 
 att.AdditionalSights = {
     {
-        Pos = Vector(0, 20, -2.06),
+        Pos = Vector(0, 12, -2.06),
         Ang = Angle(0, 0, 0),
-        Magnification = 2.25,
+        Magnification = 1.3,
         ScrollFunc = ArcCW.SCROLL_ZOOM,
         ZoomLevels = 6,
         ZoomSound = "weapons/arccw/fiveseven/fiveseven_slideback.wav",

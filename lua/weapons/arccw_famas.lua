@@ -4,9 +4,8 @@ SWEP.Category = "ArcCW - CS+" -- edit this if you like
 SWEP.AdminOnly = false
 
 SWEP.PrintName = "CANIN C6"
-SWEP.TrueNam3 = "FAMAS"
 SWEP.Trivia_Class = "Assault Rifle"
-SWEP.Trivia_Desc = "Bullpup 3 round burst assault rifle. Reliable, well-rounded option for medium to long range battle."
+SWEP.Trivia_Desc = "Bullpup 3 round burst assault rifle. Bullpup configuration allows for manuverability in close range, while remaining a well-rounded option for medium to long range battle."
 SWEP.Trivia_Manufacturer = "Arsenal Nationale"
 SWEP.Trivia_Calibre = "5.56x45mm NATO"
 SWEP.Trivia_Mechanism = "Gas-Operated"
@@ -14,11 +13,6 @@ SWEP.Trivia_Country = "France"
 SWEP.Trivia_Year = 1971
 
 SWEP.Slot = 2
-
-if false then
-    SWEP.PrintName = SWEP.TrueNam3
-    SWEP.Trivia_Manufacturer = "GIAT Industries"
-end
 
 SWEP.UseHands = true
 
@@ -28,10 +22,10 @@ SWEP.ViewModelFOV = 60
 
 SWEP.DefaultBodygroups = "0"
 
-SWEP.Damage = 36
-SWEP.DamageMin = 25 -- damage done at maximum range
-SWEP.Range = 130 -- in METRES
-SWEP.Penetration = 8
+SWEP.Damage = 29
+SWEP.DamageMin = 22 -- damage done at maximum range
+SWEP.Range = 110 -- in METRES
+SWEP.Penetration = 7
 SWEP.DamageType = DMG_BULLET
 SWEP.ShootEntity = nil -- entity to fire, if any
 SWEP.MuzzleVelocity = 1050 -- projectile or phys bullet muzzle velocity
@@ -123,7 +117,7 @@ SWEP.HolsterAng = hp.ang
 SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)
 
-SWEP.BarrelLength = 27
+SWEP.BarrelLength = 22
 
 SWEP.AttachmentElements = {
     ["extendedmag"] = {

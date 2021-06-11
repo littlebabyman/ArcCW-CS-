@@ -3,8 +3,7 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - CS+" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "Target 2/22"
-SWEP.TrueNam3 = "Mk. 2"
+SWEP.PrintName = "Ruger 00/22"
 SWEP.Trivia_Class = "Pistol"
 SWEP.Trivia_Desc = "A small caliber plinking weapon. Its cartridge is hardly lethal, but sports high precision and minimal recoil."
 SWEP.Trivia_Manufacturer = "ArmStrike USA"
@@ -14,11 +13,6 @@ SWEP.Trivia_Country = "United States"
 SWEP.Trivia_Year = 2004
 
 SWEP.Slot = 1
-
-if false then
-    SWEP.PrintName = SWEP.TrueNam3
-    SWEP.Trivia_Manufacturer = "Sturm, Ruger & Company"
-end
 
 SWEP.UseHands = true
 

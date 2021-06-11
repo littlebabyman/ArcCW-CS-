@@ -3,8 +3,7 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - CS+" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "AG63"
-SWEP.TrueNam3 = "G3A3"
+SWEP.PrintName = "K&M AG63"
 SWEP.Trivia_Class = "Battle Rifle"
 SWEP.Trivia_Desc = "Heavy 7.62mm battle rifle. Fully automatic, with punishing recoil. Effective at long range. Slow fire rate."
 SWEP.Trivia_Manufacturer = "Nordland"
@@ -14,12 +13,6 @@ SWEP.Trivia_Country = "Norway"
 SWEP.Trivia_Year = 1963
 
 SWEP.Slot = 2
-
-if false then
-    SWEP.PrintName = SWEP.TrueNam3
-    SWEP.Trivia_Manufacturer = "Heckler & Koch"
-    SWEP.Trivia_Country = "Germany"
- end
 
 SWEP.UseHands = true
 
@@ -43,7 +36,7 @@ SWEP.ExtendedClipSize = 30
 SWEP.ReducedClipSize = 10
 
 SWEP.Recoil = 0.8
-SWEP.RecoilSide = 0.8
+SWEP.RecoilSide = 0.5
 SWEP.RecoilRise = 1
 
 SWEP.Delay = 60 / 450 -- 60 / RPM.

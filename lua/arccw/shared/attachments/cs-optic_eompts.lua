@@ -1,5 +1,5 @@
 att.PrintName = "EOMPTS (FLIR)"
-att.Icon = Material("entities/acwatt_optic_eompts.png")
+att.Icon = Material("entities/acwatt_cs-optic_eompts.png", "mips smooth")
 att.Description = "Light infrared thermal vision scope. EOMPTS stands for 'EOTech Miniature Prototype Thermal Sight'. Quite heavy."
 
 att.SortOrder = 40
@@ -19,9 +19,9 @@ att.HolosightPiece 	= "models/weapons/arccw/atts/eompts_hsp_4a.mdl"
 
 att.AdditionalSights = {
     {
-        Pos = Vector(-0.01, 15, -1.52),
+        Pos = Vector(-0.01, 7, -1.52),
         Ang = Angle(0, 0, 0),
-        Magnification = 1.75,
+        Magnification = 1.3,
         ScrollFunc = ArcCW.SCROLL_ZOOM,
         ZoomSound = "weapons/arccw/fiveseven/fiveseven_slideback.wav",
         Thermal = true,
@@ -32,16 +32,14 @@ att.AdditionalSights = {
 att.ScopeGlint = true
 
 att.Holosight = true
-att.HolosightReticle = Material("hud/scopes/eompts.png")
+att.HolosightReticle = Material("hud/scopes/eompts.png", "smooth")
 att.Colorable = false
 att.HolosightNoFlare = true
-att.HolosightSize = 14
+att.HolosightSize = 17
 att.HolosightBone = "holosight"
 
-att.HolosightMagnification = 1.1
+att.HolosightMagnification = 1.3
 att.HolosightBlackbox = false
-
-att.HolosightConstDist = 42
 
 att.Mult_SightTime = 1.4
 att.Mult_SightedSpeedMult = 0.75

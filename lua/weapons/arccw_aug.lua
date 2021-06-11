@@ -3,7 +3,7 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - CS+" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "Para-556"
+SWEP.PrintName = "Schmidt Bullpup"
 SWEP.Trivia_Class = "Assault Rifle"
 SWEP.Trivia_Desc = "Bullpup assault rifle, whose design puts the mechanism behind the grip, allowing for a longer barrel without extending the effective length of the weapon. Alongside this, it comes equipped with a dual-stage trigger, which some may find to be a downside."
 SWEP.Trivia_Manufacturer = "Auschen Waffenfabrik"
@@ -13,11 +13,6 @@ SWEP.Trivia_Country = "Austria"
 SWEP.Trivia_Year = 1978
 
 SWEP.Slot = 2
-
-if false then
-    SWEP.PrintName = SWEP.TrueNam3
-    SWEP.Trivia_Manufacturer = "Steyr Mannlicher"
-end
 
 SWEP.UseHands = true
 
@@ -51,7 +46,12 @@ SWEP.Firemodes = {
     {
         Mode = 2,
         CustomBars = "---_-",
-        PrintName = "DUAL-STAGE"
+        PrintName = "DUAL-STAGE",
+        M_Hook_Mult_RPM = function(wep, data)
+            if wep:GetBurstCount() == 0 and wep:GetState() != ArcCW.STATE_CUSTOMIZE then
+                data.mult = data.mult * (1/2)
+            end
+        end,
     },
     {
         Mode = 1,
@@ -60,11 +60,6 @@ SWEP.Firemodes = {
         Mode = 0
     }
 }
-SWEP.M_Hook_Mult_RPM = function(wep, data)
-    if wep:GetCurrentFiremode().Mode == 2 and wep:GetBurstCount() == 0 and wep:GetState() != ArcCW.STATE_CUSTOMIZE then
-        data.mult = data.mult * 0.5
-    end
-end
 
 SWEP.NPCWeaponType = "weapon_ar2"
 SWEP.NPCWeight = 100
@@ -152,9 +147,6 @@ SWEP.AttachmentElements = {
         VMBodygroups = {{ind = 4, bg = 1}},
         WMBodygroups = {},
     },
-    ["optic_aug_scope"] = {
-        TrueNam3Change = "AUG A1"
-    }
 }
 
 SWEP.ExtraSightDist = 3

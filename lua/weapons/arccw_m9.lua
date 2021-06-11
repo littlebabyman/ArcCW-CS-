@@ -3,22 +3,16 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - CS+" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "Knox"
-SWEP.TrueNam3 = "M92FS"
+SWEP.PrintName = "B92"
 SWEP.Trivia_Class = "Pistol"
-SWEP.Trivia_Desc = "9mm self-loading pistol. Cheap firearm popular among gangsters. Reliable, but not overall very special."
+SWEP.Trivia_Desc = "9mm self-loading pistol. Service sidearm of the United States before being replaced by the P320 in 2017."
 SWEP.Trivia_Manufacturer = "ArmItalia"
-SWEP.Trivia_Calibre = "9x19mm Para"
+SWEP.Trivia_Calibre = "9x19mm Parabellum"
 SWEP.Trivia_Mechanism = "Locking Block"
 SWEP.Trivia_Country = "Italy"
 SWEP.Trivia_Year = 1975
 
 SWEP.Slot = 1
-
-if false then
-    SWEP.PrintName = SWEP.TrueNam3
-    SWEP.Trivia_Manufacturer = "Fabbrica d'Armi Pietro Beretta"
-end
 
 SWEP.UseHands = true
 
@@ -147,8 +141,7 @@ SWEP.AttachmentElements = {
         }
     },
     ["fcg_burst"] = {
-        TrueNam3Change = "M93R",
-        NameChange = "Ratto",
+        NameChange = "B93R",
     }
 }
 

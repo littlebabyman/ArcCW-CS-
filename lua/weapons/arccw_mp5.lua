@@ -3,23 +3,16 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - CS+" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "Swordfish 9mm"
-SWEP.TrueNam3 = "MP5A3"
+SWEP.PrintName = "K&M SF5"
 SWEP.Trivia_Class = "Submachine Gun"
-SWEP.Trivia_Desc = "Light SMG predating the MP-K1. Less precise, with slightly more recoil, but is lighter in weight."
+SWEP.Trivia_Desc = "Light 9mm SMG predating the MPS. The unyielding reliablity still proves appealing to many."
 SWEP.Trivia_Manufacturer = "Auschen Waffenfabrik"
-SWEP.Trivia_Calibre = "9x19mm Para"
+SWEP.Trivia_Calibre = "9x19mm Parabellum"
 SWEP.Trivia_Mechanism = "Roller-Delayed Blowback"
 SWEP.Trivia_Country = "Austria"
 SWEP.Trivia_Year = 1956
 
 SWEP.Slot = 2
-
-if false then
-    SWEP.PrintName = SWEP.TrueNam3
-    SWEP.Trivia_Manufacturer = "Heckler & Koch"
-    SWEP.Trivia_Country = "Germany"
- end
 
 SWEP.UseHands = true
 
@@ -27,9 +20,9 @@ SWEP.ViewModel = "models/weapons/arccw/c_mp5.mdl"
 SWEP.WorldModel = "models/weapons/arccw/w_mp5.mdl"
 SWEP.ViewModelFOV = 60
 
-SWEP.Damage = 30
-SWEP.DamageMin = 19 -- damage done at maximum range
-SWEP.Range = 65 -- in METRES
+SWEP.Damage = 28
+SWEP.DamageMin = 20 -- damage done at maximum range
+SWEP.Range = 60 -- in METRES
 SWEP.Penetration = 4
 SWEP.DamageType = DMG_BULLET
 SWEP.ShootEntity = nil -- entity to fire, if any
@@ -139,24 +132,36 @@ SWEP.AttachmentElements = {
         WMBodygroups = {{ind = 1, bg = 2}},
     },
     ["nors"] = {
-        VMBodygroups = {{ind = 2, bg = 1}},
+        --VMBodygroups = {{ind = 2, bg = 1}},
         WMBodygroups = {},
     },
     ["mp5sd"] = {
         VMBodygroups = {{ind = 3, bg = 1}},
         WMBodygroups = {},
-        TrueNam3Change = "MP5SD",
-        NameChange = "Pirate 9mm"
+        NameChange = "K&M SF5SD"
     },
     ["mount"] = {
         VMElements = {
             {
                 Model = "models/weapons/arccw/atts/mount_rail.mdl",
                 Bone = "v_weapon.mp5_Parent",
-                Scale = Vector(1, 1, 1),
+                Scale = Vector(1.5, 1.5, 2.5),
                 Offset = {
-                    pos = Vector(0.15, -5.41, -4.6),
+                    pos = Vector(0.15, -5.28, -5.6),
                     ang = Angle(-90, 0, -90)
+                }
+            }
+        },
+    },
+    ["rail"] = {
+        VMElements = {
+            {
+                Model = "models/weapons/arccw/atts/mount_rail.mdl",
+                Bone = "v_weapon.mp5_Parent",
+                Scale = Vector(1.5, 1.5, 2.5),
+                Offset = {
+                    pos = Vector(0, -2.93, -11.848),
+                    ang = Angle(-90, 0, 90),
                 }
             }
         },
@@ -177,8 +182,8 @@ SWEP.Attachments = {
         },
         SlideAmount = { -- how far this attachment can slide in both directions.
             -- overrides Offset
-            vmin = Vector(0.12, -5.593, -3.520),
-            vmax = Vector(0.12, -5.593, -6.437),
+            vmin = Vector(0.15, -5.6, -3.520),
+            vmax = Vector(0.15, -5.6, -6.437),
             wmin = Vector(4.762, 0.832, -7.302),
             wmax = Vector(9.09, 0.832, -7.879),
         },
@@ -207,11 +212,12 @@ SWEP.Attachments = {
             wang = Angle(-10.216, 0, 180)
         },
         SlideAmount = {
-            vmin = Vector(0, -3.03, -9.848),
-            vmax = Vector(0, -3.63, -12.561),
+            vmin = Vector(0, -2.93, -9.348),
+            vmax = Vector(0, -2.93, -13.561),
             wmin = Vector(14.329, 1, -7),
             wmax = Vector(14.329, 1, -7),
         },
+        InstalledEles = {"rail"},
     },
     {
         PrintName = "Tactical",

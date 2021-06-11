@@ -2,8 +2,8 @@ SWEP.Base = "arccw_base"
 SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - CS+" -- edit this if you like
 SWEP.AdminOnly = false
+
 SWEP.PrintName = "Avenger MG-06"
-SWEP.TrueNam3 = "M60"
 SWEP.Trivia_Class = "Machine Gun"
 SWEP.Trivia_Desc = "General purpose machine gun firing full length cartridges. Nicknamed \"The Pig\" for its bulky shape, it is nevertheless a capable beast, and a favorite among action heroes."
 SWEP.Trivia_Manufacturer = "Gryphon Arms"
@@ -13,11 +13,6 @@ SWEP.Trivia_Country = "USA"
 SWEP.Trivia_Year = 1957
 
 SWEP.Slot = 2
-
-if false then
-    SWEP.PrintName = SWEP.TrueNam3
-    SWEP.Trivia_Manufacturer = "Saco Defense"
-end
 
 SWEP.UseHands = true
 SWEP.ViewModel = "models/weapons/arccw/c_m60.mdl"

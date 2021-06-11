@@ -1,5 +1,5 @@
 att.PrintName = "LT-TLP Taclight"
-att.Icon = Material("entities/acwatt_tac_flight_l4d2.png")
+att.Icon = Material("entities/acwatt_cs-tac_flight_l4d2.png", "mips smooth")
 att.Description = "A powerful yet cosmetic flashlight."
 att.Desc_Pros = {
 }

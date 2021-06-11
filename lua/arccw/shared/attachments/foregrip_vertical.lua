@@ -15,7 +15,7 @@ att.LHIK = true
 
 att.Model = "models/weapons/arccw/atts/foregrip_vertical.mdl"
 
-att.Mult_Recoil = 0.75
+att.Mult_Recoil = 0.8
 
 att.Mult_SightTime = 1.2
 att.Mult_HipDispersion = 1.2

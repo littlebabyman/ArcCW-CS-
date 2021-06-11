@@ -3,23 +3,16 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - CS+" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "HS-338"
-SWEP.TrueNam3 = "AWM"
+SWEP.PrintName = "AW HS-338"
 SWEP.Trivia_Class = "Sniper Rifle"
-SWEP.Trivia_Desc = "A high-caliber sniper rifle designed for cold-weather police and military units. Heavy rounds pack an extreme punch and are designed for maximum precision."
-SWEP.Trivia_Manufacturer = "Nordland"
-SWEP.Trivia_Calibre = ".338 Lapua"
+SWEP.Trivia_Desc = "British-made high-caliber sniper rifle designed for cold-weather police and military units. Heavy rounds pack an extreme punch and are designed for maximum precision."
+SWEP.Trivia_Manufacturer = "Accuracy International"
+SWEP.Trivia_Calibre = ".338 Lapua Magnum"
 SWEP.Trivia_Mechanism = "Bolt-Action"
-SWEP.Trivia_Country = "Norway"
+SWEP.Trivia_Country = "United Kingdom"
 SWEP.Trivia_Year = 1995
 
 SWEP.Slot = 2
-
-if false then
-    SWEP.PrintName = SWEP.TrueNam3
-    SWEP.Trivia_Manufacturer = "Accuracy International"
-    SWEP.Trivia_Country = "United Kingdom"
-end
 
 SWEP.UseHands = true
 
@@ -241,12 +234,12 @@ SWEP.Animations = {
     },
     ["fire"] = {
         Source = "shoot",
-        Time = 1,
-        MinProgress = 0.2,
+        Time = 0.5,
+        MinProgress = 0.33,
     },
     ["cycle"] = {
         Source = "cycle",
-        Time = 1.25,
+        Time = 1.33,
         ShellEjectAt = 0.75,
         LHIK = true,
         LHIKIn = 0.15,

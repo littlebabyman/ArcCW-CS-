@@ -4,7 +4,6 @@ SWEP.Category = "ArcCW - CS+" -- edit this if you like
 SWEP.AdminOnly = false
 
 SWEP.PrintName = "Infiltrator"
-SWEP.TrueNam3 = "Welrod"
 SWEP.Trivia_Class = "Pistol"
 SWEP.Trivia_Desc = ".45 caliber pistol designed to be as silent as absolutely possible. A bolt action allows it to reduce its report by eliminating bolt carrier noise."
 SWEP.Trivia_Manufacturer = "Inter-Services Research Bureau"
@@ -14,11 +13,6 @@ SWEP.Trivia_Country = "Great Britain"
 SWEP.Trivia_Year = 1942
 
 SWEP.Slot = 1
-
-if false then
-    SWEP.PrintName = SWEP.TrueNam3
-    SWEP.Trivia_Manufacturer = "Birmingham Small Arms Company"
-end
 
 SWEP.UseHands = true
 
@@ -121,10 +115,6 @@ SWEP.HolsterAng = Angle(-7.036, 30.016, 0)
 SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)
 
-SWEP.AttachmentBodygroups = {}
--- ["name"] = {ind = 1, bg = 1}
--- same as ACT3
-
 SWEP.ExtraSightDist = 9
 
 SWEP.Attachments = {
@@ -199,12 +189,7 @@ SWEP.Animations = {
     ["draw"] = {
         Source = "draw",
         Time = 0.75,
-        SoundTable = {
-            {
-            s = "weapons/arccw/hkp2000/hkp2000_draw.wav",
-            t = 0
-            }
-        }
+        SoundTable = {{ s = "weapons/arccw/hkp2000/hkp2000_draw.wav", t = 0 }}
     },
     ["cycle"] = {
         Source = "cycle",

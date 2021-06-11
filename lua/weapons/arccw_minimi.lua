@@ -3,8 +3,7 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - CS+" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "M2000-G"
-SWEP.TrueNam3 = "Minimi Para"
+SWEP.PrintName = "ES M2000"
 SWEP.Trivia_Class = "Machine Gun"
 SWEP.Trivia_Desc = "Air-cooled, belt-fed, extremely smooth fully automatic squad assault weapon. Capable of laying down sustained suppressive fire. Depleting a belt fully negates the need to remove it before inserting a new one, meaning that reloading when the weapon is totally empty is actually faster."
 SWEP.Trivia_Manufacturer = "Gryphon Arms"
@@ -14,12 +13,6 @@ SWEP.Trivia_Country = "USA"
 SWEP.Trivia_Year = 1984
 
 SWEP.Slot = 2
-
-if false then
-    SWEP.PrintName = SWEP.TrueNam3
-    SWEP.Trivia_Manufacturer = "FN Herstal"
-    SWEP.Trivia_Country = "Belgium"
-end
 
 SWEP.UseHands = true
 

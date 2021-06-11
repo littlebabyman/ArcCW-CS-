@@ -3,8 +3,7 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - CS+" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "PSRS"
-SWEP.TrueNam3 = "Scout"
+SWEP.PrintName = "Schmidt PSRS"
 SWEP.Trivia_Class = "Sniper Rifle"
 SWEP.Trivia_Desc = "The Precision Sharpshooter Rifle System is a high-spec bolt-action rifle, tailored to the needs of Police snipers. It is also marketed to civilian competition shooters."
 SWEP.Trivia_Manufacturer = "First Strike Tactical"
@@ -14,12 +13,6 @@ SWEP.Trivia_Country = "USA"
 SWEP.Trivia_Year = 1991
 
 SWEP.Slot = 2
-
-if false then
-    SWEP.PrintName = SWEP.TrueNam3
-    SWEP.Trivia_Manufacturer = "Steyr Mannlicher"
-    SWEP.Trivia_Country = "Austria"
-end
 
 SWEP.UseHands = true
 

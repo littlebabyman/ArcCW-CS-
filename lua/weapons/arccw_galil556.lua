@@ -4,9 +4,8 @@ SWEP.Category = "ArcCW - CS+" -- edit this if you like
 SWEP.AdminOnly = false
 
 SWEP.PrintName = "Lior 556AR"
-SWEP.TrueNam3 = "Galil ARM"
 SWEP.Trivia_Class = "Assault Rifle"
-SWEP.Trivia_Desc = "Very low recoil assault rifle. Highly controllable. Has a bottle opener in the front handguard."
+SWEP.Trivia_Desc = "Low recoil assault rifle, very controllable. Two sets of ironsights. Has a bottle opener in the front handguard."
 SWEP.Trivia_Manufacturer = "Gryphon Arms"
 SWEP.Trivia_Calibre = "5.56x45mm NATO"
 SWEP.Trivia_Mechanism = "Gas-Operated"
@@ -14,11 +13,6 @@ SWEP.Trivia_Country = "Israel"
 SWEP.Trivia_Year = 1972
 
 SWEP.Slot = 2
-
-if false then
-    SWEP.PrintName = SWEP.TrueNam3
-    SWEP.Trivia_Manufacturer = "Israeli Military Industries"
-end
 
 SWEP.UseHands = true
 

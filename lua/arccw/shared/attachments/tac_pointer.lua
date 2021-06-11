@@ -12,11 +12,9 @@ att.Slot = {cspf.."tac_pistol", cspf.."tac"}
 att.Model = "models/weapons/arccw/atts/laser_pointer.mdl"
 
 att.Laser = true
-att.LaserStrength = 1
+att.LaserStrength = 0.6
 att.LaserBone = "laser"
 
 att.ColorOptionsTable = {Color(50, 50, 255)}
 
-att.Mult_HipDispersion = 0.85
 att.Mult_MoveDispersion = 0.5
---att.Mult_SightTime = 0.9

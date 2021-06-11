@@ -3,8 +3,7 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - CS+" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "Millennium Hawk"
-SWEP.TrueNam3 = "Desert Eagle .357"
+SWEP.PrintName = "Gavel .357"
 SWEP.Trivia_Class = "Pistol"
 SWEP.Trivia_Desc = ".357 Magnum heavy automatic pistol. Lighter and higher-capacity. Not as fit for warlords."
 SWEP.Trivia_Manufacturer = "Gryphon Arms"
@@ -14,11 +13,6 @@ SWEP.Trivia_Country = "USA/Israel"
 SWEP.Trivia_Year = 1991
 
 SWEP.Slot = 1
-
-if false then
-    SWEP.PrintName = SWEP.TrueNam3
-    SWEP.Trivia_Manufacturer = "Israeli Military Industries"
-end
 
 SWEP.ViewModel = "models/weapons/arccw/c_gce.mdl"
 SWEP.WorldModel = "models/weapons/w_pist_deagle.mdl"

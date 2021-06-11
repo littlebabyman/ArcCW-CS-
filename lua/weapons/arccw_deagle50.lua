@@ -3,8 +3,7 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - CS+" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "Century Eagle"
-SWEP.TrueNam3 = "Desert Eagle .50"
+SWEP.PrintName = "Gavel .50AE"
 SWEP.Trivia_Class = "Pistol"
 SWEP.Trivia_Desc = ".50 Calibre heavy automatic pistol, designed for self-defense against large wild animals such as grizzly bears. A rotating-bolt gas-operated design makes it able to handle the huge round, resembling an assault rifle more than a handgun. Geez, painted with a golden finish. Flashy, aren't we?"
 SWEP.Trivia_Manufacturer = "Gryphon Arms"
@@ -14,11 +13,6 @@ SWEP.Trivia_Country = "USA/Israel"
 SWEP.Trivia_Year = 1991
 
 SWEP.Slot = 1
-
-if false then
-    SWEP.PrintName = SWEP.TrueNam3
-    SWEP.Trivia_Manufacturer = "Israeli Military Industries"
-end
 
 SWEP.UseHands = true
 

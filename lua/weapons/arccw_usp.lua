@@ -3,10 +3,9 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - CS+" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "SP40"
-SWEP.TrueNam3 = "USP-40"
+SWEP.PrintName = "K&M SP40"
 SWEP.Trivia_Class = "Pistol"
-SWEP.Trivia_Desc = ".40 Caliber semi automatic pistol. Commonly used among police and popular with civilians for its reliability."
+SWEP.Trivia_Desc = ".40 caliber semi-automatic pistol. Commonly used among police and popular with civilians for its reliability."
 SWEP.Trivia_Manufacturer = "Auschen Waffenfabrik"
 SWEP.Trivia_Calibre = ".40 S&W"
 SWEP.Trivia_Mechanism = "Short Recoil"
@@ -14,12 +13,6 @@ SWEP.Trivia_Country = "Austria"
 SWEP.Trivia_Year = 1993
 
 SWEP.Slot = 1
-
-if false then
-    SWEP.PrintName = SWEP.TrueNam3
-    SWEP.Trivia_Manufacturer = "Heckler & Koch"
-    SWEP.Trivia_Country = "Germany"
- end
 
 SWEP.UseHands = true
 
