@@ -108,8 +108,8 @@ SWEP.ActiveAng = Angle(0, 0.5, -3)
 
 -- "no sir i do not wish to take off limbs i wish to be very nic-" FUCK OUTTA HERE WITH THAT SHIT BITCH XD 
 local hp = ArcCW.CSP_Holsters["warlover"]
-SWEP.HolsterPos = hp.pos + Vector(-2, 5, 1)
-SWEP.HolsterAng = hp.ang + Angle(4, -4, 0)
+SWEP.HolsterPos = hp.pos + Vector(4, 7, -4)
+SWEP.HolsterAng = hp.ang + Angle(5, -4, 0)
 
 SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)

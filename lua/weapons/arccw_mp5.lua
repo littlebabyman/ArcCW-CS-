@@ -3,7 +3,7 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - CS+" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "K&M SF5"
+SWEP.PrintName = "K&M NP5"
 SWEP.Trivia_Class = "Submachine Gun"
 SWEP.Trivia_Desc = "Light 9mm SMG predating the MPS. The unyielding reliablity still proves appealing to many."
 SWEP.Trivia_Manufacturer = "Auschen Waffenfabrik"
@@ -290,8 +290,9 @@ SWEP.Animations = {
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_SMG1,
         FrameRate = 30,
         LHIK = true,
-        LHIKIn = 0.8,
-        LHIKOut = 0.6,
+        LHIKIn = 0.6,
+        LHIKOut = 0.4,
+        LHIKEaseOut = 0.2,
     },
     ["reload"] = {
         Source = "reload_part",
@@ -299,7 +300,8 @@ SWEP.Animations = {
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_SMG1,
         FrameRate = 30,
         LHIK = true,
-        LHIKIn = 0.8,
+        LHIKIn = 0.6,
         LHIKOut = 0.6,
+        LHIKEaseOut = 0.4,
     },
 }

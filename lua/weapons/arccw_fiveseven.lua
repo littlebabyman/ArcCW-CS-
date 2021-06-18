@@ -5,7 +5,7 @@ SWEP.AdminOnly = false
 
 SWEP.PrintName = "ES NXs"
 SWEP.Trivia_Class = "Pistol"
-SWEP.Trivia_Desc = "5.7mm self-loading pistol, designed as a handgun counterpart to the PDW-57. 'NXS' stands for 'New eXperimental Sidearm'."
+SWEP.Trivia_Desc = "5.7x28mm self-loading pistol, designed as a handgun counterpart to the PDW-57. 'NXS' stands for 'New eXperimental Sidearm'."
 SWEP.Trivia_Manufacturer = "Auschen Waffenfabrik"
 SWEP.Trivia_Calibre = "5.7mm PDW"
 SWEP.Trivia_Mechanism = "Gas-Operated"

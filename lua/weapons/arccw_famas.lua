@@ -8,7 +8,7 @@ SWEP.Trivia_Class = "Assault Rifle"
 SWEP.Trivia_Desc = "Bullpup 3 round burst assault rifle. Bullpup configuration allows for manuverability in close range, while remaining a well-rounded option for medium to long range battle."
 SWEP.Trivia_Manufacturer = "Arsenal Nationale"
 SWEP.Trivia_Calibre = "5.56x45mm NATO"
-SWEP.Trivia_Mechanism = "Gas-Operated"
+SWEP.Trivia_Mechanism = "Lever-Delayed Blowback"
 SWEP.Trivia_Country = "France"
 SWEP.Trivia_Year = 1971
 

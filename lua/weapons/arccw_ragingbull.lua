@@ -134,7 +134,7 @@ SWEP.ActivePos = Vector(1, 3, -0.5)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
 local hp = ArcCW.CSP_Holsters["happypistola"]
-SWEP.HolsterPos = hp.pos + Vector(0, 0, 0)
+SWEP.HolsterPos = hp.pos + Vector(2, 5, -2)
 SWEP.HolsterAng = hp.ang + Angle(0, 0, 0)
 
 SWEP.CustomizePos = Vector(10, 3, -5)
