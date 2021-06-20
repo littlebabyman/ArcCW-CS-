@@ -18,7 +18,7 @@ att.Model = "models/weapons/arccw/atts/vampire.mdl"
 
 att.AdditionalSights = {
     {
-        Pos = Vector(0, 11, -1.55),
+        Pos = Vector(0, 10, -1.55),
         Ang = Angle(0, 0, 0),
         Magnification = 1.4,
         ScopeMagnification = 1.75,
@@ -31,6 +31,7 @@ att.AdditionalSights = {
 }
 
 att.ScopeGlint = true
+att.Colorable = false
 
 att.Holosight = true
 att.HolosightReticle = Material("hud/scopes/thermal.png", "smooth")

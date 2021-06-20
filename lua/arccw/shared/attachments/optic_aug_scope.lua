@@ -22,7 +22,7 @@ att.DroppedModel = "models/Items/BoxSRounds.mdl"
 
 att.AdditionalSights = {
     {
-        Pos = Vector(0.02, 9, -6.708),
+        Pos = Vector(0.02, 10, -6.708),
         Ang = Angle(0, -2.842, -10.853),
         Magnification = 1.3,
         ScrollFunc = ArcCW.SCROLL_ZOOM,
@@ -33,7 +33,7 @@ att.AdditionalSights = {
             Holosight = true,
             HolosightReticle = Material("hud/scopes/circle.png", "mips smooth"),
             HolosightNoFlare = true,
-            HolosightSize = 10,
+            HolosightSize = 8,
             HolosightBlackbox = true,
             HolosightMagnification = 3,
             HolosightMagnificationMin = 1.5,
@@ -44,7 +44,7 @@ att.AdditionalSights = {
         IgnoreExtra = true,
     },
     {
-        Pos = Vector(0.05, 10.064, -7.4),
+        Pos = Vector(0.05, 15, -7.4),
         Ang = Angle(0.5, -3.1, -10.853),
         Magnification = 1.1,
     },

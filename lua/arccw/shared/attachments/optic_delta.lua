@@ -16,7 +16,7 @@ att.Model = "models/weapons/arccw/atts/delta.mdl"
 
 att.AdditionalSights = {
     {
-        Pos = Vector(0, 7, -0.7),
+        Pos = Vector(0, 10, -0.7),
         Ang = Angle(0, -0.1, 0),
         Magnification = 1.1,
         ScrollFunc = ArcCW.SCROLL_NONE

@@ -17,8 +17,8 @@ att.Model = "models/weapons/arccw/atts/sweeper_3.mdl"
 
 att.AdditionalSights = {
     {
-        Pos = Vector(0, 12, -2.06),
-        Ang = Angle(0, 0, 0),
+        Pos = Vector(0, 11, -2.06),
+        Ang = Angle(-0.11, -0.13, 0),
         Magnification = 1.3,
         ScrollFunc = ArcCW.SCROLL_ZOOM,
         ZoomLevels = 6,
@@ -32,7 +32,7 @@ att.ScopeGlint = true
 att.Holosight = true
 att.HolosightReticle = Material("hud/scopes/g3.png")
 att.HolosightNoFlare = true
-att.HolosightSize = 12
+att.HolosightSize = 13
 att.HolosightBone = "holosight"
 att.HolosightPiece = "models/weapons/arccw/atts/sweeper_hsp_3.mdl"
 att.Colorable = true

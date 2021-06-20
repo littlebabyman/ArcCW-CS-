@@ -16,7 +16,7 @@ att.Model = "models/weapons/arccw/atts/reflex.mdl"
 
 att.AdditionalSights = {
     {
-        Pos = Vector(0, 5, -1.208),
+        Pos = Vector(0, 10, -1.208),
         Ang = Angle(0, 0, 0),
         Magnification = 1.1,
         ScrollFunc = ArcCW.SCROLL_NONE

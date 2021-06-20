@@ -5,7 +5,7 @@ SWEP.AdminOnly = false
 
 SWEP.PrintName = "Schmidt Subcompact"
 SWEP.Trivia_Class = "Submachine Gun"
-SWEP.Trivia_Desc = "Bullpup SMG based on the Bullpup. Bullpup design enables superior accuracy and range out of a compact SMG package, and a lighter trigger is installed. Using it one-handed ain't half bad."
+SWEP.Trivia_Desc = "Bullpup SMG based on the... Bullpup. Bullpup design enables superior accuracy and range out of a compact SMG package, and a lighter dual-stage trigger is installed. Using it one-handed ain't half bad."
 SWEP.Trivia_Manufacturer = "Auschen Waffenfabrik"
 SWEP.Trivia_Calibre = "9x19mm Parabellum"
 SWEP.Trivia_Mechanism = "Gas-Operated"

@@ -19,7 +19,7 @@ att.HolosightPiece 	= "models/weapons/arccw/atts/eompts_hsp_4a.mdl"
 
 att.AdditionalSights = {
     {
-        Pos = Vector(-0.01, 7, -1.52),
+        Pos = Vector(-0.01, 6.6, -1.52),
         Ang = Angle(0, 0, 0),
         Magnification = 1.3,
         ScrollFunc = ArcCW.SCROLL_ZOOM,

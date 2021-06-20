@@ -18,7 +18,7 @@ att.Model = "models/weapons/arccw/atts/kobra.mdl"
 
 att.AdditionalSights = {
     {
-        Pos = Vector(0, 7, -1.011),
+        Pos = Vector(0, 10, -1.011),
         Ang = Angle(0, 0, 0),
         Magnification = 1.25,
         ScrollFunc = ArcCW.SCROLL_NONE

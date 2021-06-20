@@ -19,8 +19,8 @@ att.Model = "models/weapons/arccw/atts/farview2.mdl"
 
 att.AdditionalSights = {
     {
-        Pos = Vector(0, 15, -1.5),
-        Ang = Angle(0, 0, 0),
+        Pos = Vector(0, 14, -1.5),
+        Ang = Angle(-0.2, -0.2, 0),
         Magnification = 1.3,
         ScrollFunc = ArcCW.SCROLL_ZOOM,
         ZoomLevels = 6,

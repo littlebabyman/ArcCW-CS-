@@ -17,8 +17,8 @@ att.Model = "models/weapons/arccw/atts/micro.mdl"
 
 att.AdditionalSights = {
     {
-        Pos = Vector(0, 7, -1.499),
-        Ang = Angle(0, 0, 0),
+        Pos = Vector(0, 9, -1.499),
+        Ang = Angle(-0.2, -0.2, 0),
         Magnification = 1.3,
         ScopeMagnification = 2
     }
@@ -27,7 +27,7 @@ att.AdditionalSights = {
 att.Holosight = true
 att.HolosightReticle = Material("hud/scopes/circle.png", "mips smooth")
 att.HolosightNoFlare = true
-att.HolosightSize = 9
+att.HolosightSize = 10.5
 att.HolosightBone = "holosight"
 att.HolosightPiece = "models/weapons/arccw/atts/micro_hsp.mdl"
 

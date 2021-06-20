@@ -22,7 +22,7 @@ att.Model = "models/weapons/arccw/atts/acog2_5a.mdl"
 
 att.AdditionalSights = {
     {
-        Pos = Vector(0, 10, -1.119),
+        Pos = Vector(0, 5, -1.119),
         Ang = Angle(-0.4, -0.4, 0),
         Magnification = 1.2,
         ScrollFunc = ArcCW.SCROLL_ZOOM,
@@ -31,7 +31,7 @@ att.AdditionalSights = {
         IgnoreExtra = true
     },
     {
-        Pos = Vector(0, 11.418, -2.41),
+        Pos = Vector(0, 5, -2.41),
         Ang = Angle(-3.25, 0, 0),
         Magnification = 1.2,
         IgnoreExtra = true
