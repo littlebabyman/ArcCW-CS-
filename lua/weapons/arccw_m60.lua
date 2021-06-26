@@ -112,7 +112,7 @@ local hp = ArcCW.CSP_Holsters["warlover"]
 SWEP.HolsterPos = hp.pos + Vector(-2, 5, 1)
 SWEP.HolsterAng = hp.ang + Angle(4, -4, 0)
 
-SWEP.CustomizePos = Vector(12, -3, -4)
+SWEP.CustomizePos = Vector(12, -3, -1)
 SWEP.CustomizeAng = Angle(15, 40, 0)
 
 SWEP.BarrelOffsetSighted = Vector(0, 0, -1)

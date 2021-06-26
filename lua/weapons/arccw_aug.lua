@@ -102,7 +102,7 @@ SWEP.CaseBones = {}
 
 SWEP.IronSightStruct = {
     Pos = Vector(-7.843, -11.933, 1.738),
-    Ang = Angle(4.2, -3.875, -10.58),
+    Ang = Angle(4.0, -3.875, -10.58),
     Magnification = 1.1,
     SwitchToSound = "", -- sound that plays when switching to this sight
 }
@@ -173,7 +173,7 @@ SWEP.Attachments = {
         Bone = "v_weapon.aug_Parent",
         Offset = {
             vpos = Vector(-0.123, -3.694, -15.587),
-            vang = Angle(-93.5, -1, -90),
+            vang = Angle(-93, 0, -90),
             wpos = Vector(22, 1, -7),
             wang = Angle(-9.79, 0, 180)
         },

@@ -21,7 +21,7 @@ att.AdditionalSights = {
         Ang = Angle(-0.33, -0.22, 0),
         Magnification = 1.2,
         ScrollFunc = ArcCW.SCROLL_ZOOM,
-        ZoomLevels = 6,
+        ZoomLevels = 3,
         ZoomSound = "weapons/arccw/fiveseven/fiveseven_slideback.wav",
         IgnoreExtra = true
     },
@@ -47,7 +47,7 @@ att.HolosightMagnification = 3
 att.HolosightBlackbox = true
 
 
-att.HolosightMagnificationMin = 1.01 -- im hitler :)
+att.HolosightMagnificationMin = 2
 att.HolosightMagnificationMax = 3
 
 att.Mult_SightTime = 1.12
