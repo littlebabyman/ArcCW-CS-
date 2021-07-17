@@ -41,18 +41,20 @@ end
 
 function ENT:PhysicsCollide(data, physobj)
     if SERVER then
+        if !util.QuickTrace(data.HitPos, data.HitNormal, self).HitSky then
         self:EmitSound("weapons/arccw/c4/c4_plant.wav")
 
         self:SetCollisionGroup(COLLISION_GROUP_DEBRIS)
         self:SetPos(data.HitPos)
+        data.PhysObject:Sleep()
 
         if data.HitEntity:IsWorld() then
             self:SetMoveType(MOVETYPE_NONE)
-            self:SetPos(data.HitPos - (data.HitNormal * 2))
+            self:SetPos(data.HitPos - (data.HitNormal * (self:GetModelRadius() / 2)))
         else
             self:SetParent(data.HitEntity)
         end
-
+        end
     end
 end
 
