@@ -50,7 +50,7 @@ function ENT:PhysicsCollide(data, physobj)
 
         if data.HitEntity:IsWorld() then
             self:SetMoveType(MOVETYPE_NONE)
-            self:SetPos(data.HitPos - (data.HitNormal * (self:GetModelRadius() / 2)))
+            self:SetPos(data.HitPos - (data.HitNormal *2 ))
         else
             self:SetParent(data.HitEntity)
         end
