@@ -19,3 +19,6 @@ att.Override_DamageType = DMG_BURN
 att.MagReducer = true
 
 att.ActivateElements = {"reducedmag"}
+
+-- Fire is stupid
+att.Ignore = true

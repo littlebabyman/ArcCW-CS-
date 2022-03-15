@@ -20,7 +20,7 @@ SWEP.ViewModel = "models/weapons/arccw/c_lior556.mdl"
 SWEP.WorldModel = "models/weapons/arccw/w_lior556.mdl"
 SWEP.ViewModelFOV = 60
 
-SWEP.DefaultBodygroups = "000000"
+SWEP.DefaultBodygroups = "010000"
 
 SWEP.Damage = 26
 SWEP.DamageMin = 19 -- damage done at maximum range
@@ -31,7 +31,7 @@ SWEP.ShootEntity = nil -- entity to fire, if any
 SWEP.MuzzleVelocity = 1100 -- projectile or phys bullet muzzle velocity
 -- IN M/S
 SWEP.ChamberSize = 1 -- how many rounds can be chambered.
-SWEP.Primary.ClipSize = 30 -- DefaultClip is automatically set.
+SWEP.Primary.ClipSize = 35 -- DefaultClip is automatically set.
 SWEP.ExtendedClipSize = 50
 SWEP.ReducedClipSize = 15
 
@@ -111,8 +111,8 @@ SWEP.BarrelLength = 27
 
 SWEP.AttachmentElements = {
     ["extendedmag"] = {
-        VMBodygroups = {{ind = 1, bg = 1}},
-        WMBodygroups = {{ind = 1, bg = 1}},
+        VMBodygroups = {{ind = 1, bg = 0}},
+        WMBodygroups = {{ind = 1, bg = 0}},
     },
     ["reducedmag"] = {
         VMBodygroups = {{ind = 1, bg = 2}},

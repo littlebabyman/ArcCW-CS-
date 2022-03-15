@@ -4,4 +4,6 @@
 	"$envmap" "env_cubemap"
 	"$envmapmask" "models\weapons\arcticcw\atts\eotech_s"
     "$translucent" "1"
+	$envmaptint "[1 1 1]"
+	$color2 "[2 2 2]"
 }

@@ -28,7 +28,8 @@ att.AdditionalSights = {
 att.InvAtt = "optic_mrs"
 
 att.Holosight = true
-att.HolosightReticle = Material("holosights/dot.png")
+att.HolosightReticle = Material("holosights/dot.png", "mips smooth")
+att.HolosightFlare = Material("holosights/dot_flare.png", "mips smooth")
 att.HolosightSize = 0.3
 att.HolosightBone = "holosight"
 

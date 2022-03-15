@@ -3,4 +3,6 @@
 	"$basetexture"	"models\weapons\arcticcw\atts\laser_pointer_d"
 	"$envmap" "env_cubemap"
 	"$envmapmask" "models\weapons\arcticcw\atts\laser_pointer_s"
+	$envmaptint "[.5 .5 .5]"
+	$color2 "[2 2 2]"
 }

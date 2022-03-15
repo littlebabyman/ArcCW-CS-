@@ -42,14 +42,15 @@ att.AdditionalSights = {
         IgnoreExtra = true
     },
     {
-        Pos = Vector(0, 5, -3.05),
+        Pos = Vector(0, 7.5, -3.05),
         Ang = Angle(0, 0, 0),
         Magnification = 1.2,
         HolosightBone = "holosight",
         HolosightData = {
             Holosight = true,
-            HolosightReticle =  Material("holosights/dot.png"),
-            HolosightSize = 0.5,
+            HolosightReticle = Material("holosights/dot.png", "mips smooth"),
+            HolosightFlare = Material("holosights/dot_flare.png", "mips smooth"),
+            HolosightSize = 0.4,
             Colorable = true,
             HolosightNoHSP = true
         }
