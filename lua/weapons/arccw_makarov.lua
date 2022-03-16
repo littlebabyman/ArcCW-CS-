@@ -3,7 +3,7 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - CS+" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "norinco pm"
+SWEP.PrintName = "Norinco PM"
 SWEP.Trivia_Class = "Pistol"
 SWEP.Trivia_Desc = "Soviet self-loading pistol. Incredibly widespread in Ex-Soviet areas. Distributed to military officers and police units. Low damage, but low recoil and fast to reload."
 SWEP.Trivia_Manufacturer = "Kremen Oruzhiye"
