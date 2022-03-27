@@ -3,7 +3,7 @@ SWEP.Spawnable = true -- this obviously has to be set to true
 SWEP.Category = "ArcCW - CS+" -- edit this if you like
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "K&M NP5"
+SWEP.PrintName = "K&M SF5"
 SWEP.Trivia_Class = "Submachine Gun"
 SWEP.Trivia_Desc = "Light 9mm SMG predating the MPS. The unyielding reliablity still proves appealing to many."
 SWEP.Trivia_Manufacturer = "Auschen Waffenfabrik"
