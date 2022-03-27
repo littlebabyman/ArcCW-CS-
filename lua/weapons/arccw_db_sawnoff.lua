@@ -20,10 +20,12 @@ SWEP.ViewModel = "models/weapons/arccw/c_db_sawnoff.mdl"
 SWEP.WorldModel = "models/weapons/arccw/w_sawnoff.mdl"
 SWEP.ViewModelFOV = 60
 
+SWEP.BodyDamageMults = CSX_BodyDamageMults
 SWEP.Damage = 15
 SWEP.DamageMin = 8 -- damage done at maximum range
+SWEP.RangeMin = 10
 SWEP.Range = 20 -- in METRES
-SWEP.Penetration = 1
+SWEP.Penetration = 5
 SWEP.DamageType = DMG_BUCKSHOT
 
 SWEP.ChamberSize = 0 -- how many rounds can be chambered.

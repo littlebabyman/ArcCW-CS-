@@ -20,8 +20,10 @@ SWEP.WorldModel = "models/weapons/arccw/w_minigun.mdl"
 SWEP.ViewModelFOV = 60
 SWEP.DefaultBodygroups = "0000000"
 
+SWEP.BodyDamageMults = CSX_BodyDamageMults
 SWEP.Damage = 33
 SWEP.DamageMin = 29 -- damage done at maximum range
+SWEP.RangeMin = 10
 SWEP.Range = 250 -- in METRES
 SWEP.Penetration = 22
 SWEP.DamageType = DMG_BULLET

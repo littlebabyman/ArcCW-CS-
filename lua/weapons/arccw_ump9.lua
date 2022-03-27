@@ -20,10 +20,12 @@ SWEP.ViewModel = "models/weapons/arccw/c_mpk1.mdl"
 SWEP.WorldModel = "models/weapons/arccw/w_mpk1.mdl"
 SWEP.ViewModelFOV = 60
 
+SWEP.BodyDamageMults = CSX_BodyDamageMults
 SWEP.Damage = 30
 SWEP.DamageMin = 19 -- damage done at maximum range
+SWEP.RangeMin = 10
 SWEP.Range = 65 -- in METRES
-SWEP.Penetration = 4
+SWEP.Penetration = 7
 SWEP.DamageType = DMG_BULLET
 SWEP.ShootEntity = nil -- entity to fire, if any
 SWEP.MuzzleVelocity = 400 -- projectile or phys bullet muzzle velocity

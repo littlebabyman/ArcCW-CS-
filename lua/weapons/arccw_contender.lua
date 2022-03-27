@@ -20,8 +20,10 @@ SWEP.ViewModel = "models/weapons/arccw/c_contender.mdl"
 SWEP.WorldModel = "models/weapons/arccw/w_contender.mdl"
 SWEP.ViewModelFOV = 60
 
+SWEP.BodyDamageMults = CSX_BodyDamageMults
 SWEP.Damage = 105
 SWEP.DamageMin = 50 -- damage done at maximum range
+SWEP.RangeMin = 10
 SWEP.Range = 35 -- in METRES
 SWEP.Penetration = 12
 SWEP.DamageType = DMG_BULLET

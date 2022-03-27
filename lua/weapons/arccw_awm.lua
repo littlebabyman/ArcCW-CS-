@@ -20,8 +20,10 @@ SWEP.ViewModel = "models/weapons/arccw/c_hs338.mdl"
 SWEP.WorldModel = "models/weapons/arccw/w_hs338.mdl"
 SWEP.ViewModelFOV = 60
 
+SWEP.BodyDamageMults = CSX_BodyDamageMults
 SWEP.Damage = 70
 SWEP.DamageMin = 100 -- damage done at maximum range
+SWEP.RangeMin = 10
 SWEP.Range = 100 -- in METRES
 SWEP.Penetration = 35
 SWEP.DamageType = DMG_BULLET

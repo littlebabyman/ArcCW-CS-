@@ -20,10 +20,12 @@ SWEP.ViewModel = "models/weapons/arccw/c_knox.mdl"
 SWEP.WorldModel = "models/weapons/w_pist_elite_single.mdl"
 SWEP.ViewModelFOV = 60
 
+SWEP.BodyDamageMults = CSX_BodyDamageMults
 SWEP.Damage = 27
 SWEP.DamageMin = 19 -- damage done at maximum range
+SWEP.RangeMin = 10
 SWEP.Range = 30 -- in METRES
-SWEP.Penetration = 4
+SWEP.Penetration = 6
 SWEP.DamageType = DMG_BULLET
 SWEP.ShootEntity = nil -- entity to fire, if any
 SWEP.MuzzleVelocity = 350 -- projectile or phys bullet muzzle velocity

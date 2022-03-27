@@ -19,10 +19,12 @@ SWEP.WorldModel = "models/weapons/w_pist_deagle.mdl"
 
 SWEP.DefaultSkin = 0
 
+SWEP.BodyDamageMults = CSX_BodyDamageMults
 SWEP.Damage = 40
 SWEP.DamageMin = 35 -- damage done at maximum range
+SWEP.RangeMin = 10
 SWEP.Range = 40 -- in METRES
-SWEP.Penetration = 8
+SWEP.Penetration = 10
 SWEP.DamageType = DMG_BULLET
 SWEP.ShootEntity = nil -- entity to fire, if any
 SWEP.MuzzleVelocity = 500 -- projectile or phys bullet muzzle velocity

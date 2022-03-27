@@ -22,8 +22,10 @@ SWEP.ViewModelFOV = 60
 
 SWEP.DefaultSkin = 1
 
+SWEP.BodyDamageMults = CSX_BodyDamageMults
 SWEP.Damage = 81
 SWEP.DamageMin = 40 -- damage done at maximum range
+SWEP.RangeMin = 10
 SWEP.Range = 45 -- in METRES
 SWEP.Penetration = 12
 SWEP.DamageType = DMG_BULLET

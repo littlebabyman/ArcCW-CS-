@@ -20,10 +20,12 @@ SWEP.ViewModel = "models/weapons/arccw/c_type8k.mdl"
 SWEP.WorldModel = "models/weapons/arccw/w_saiga.mdl"
 SWEP.ViewModelFOV = 60
 
+SWEP.BodyDamageMults = CSX_BodyDamageMults
 SWEP.Damage = 10
 SWEP.DamageMin = 6 -- damage done at maximum range
+SWEP.RangeMin = 10
 SWEP.Range = 35 -- in METRES
-SWEP.Penetration = 1
+SWEP.Penetration = 5
 SWEP.DamageType = DMG_BUCKSHOT
 SWEP.ShootEntity = nil -- entity to fire, if any
 SWEP.MuzzleVelocity = 150 -- projectile or phys bullet muzzle velocity

@@ -22,10 +22,12 @@ SWEP.ViewModelFOV = 60
 
 SWEP.DefaultBodygroups = "00000"
 
+SWEP.BodyDamageMults = CSX_BodyDamageMults
 SWEP.Damage = 26
 SWEP.DamageMin = 18 -- damage done at maximum range
+SWEP.RangeMin = 10
 SWEP.Range = 85 -- in METRES
-SWEP.Penetration = 4
+SWEP.Penetration = 7
 SWEP.DamageType = DMG_BULLET
 SWEP.ShootEntity = nil -- entity to fire, if any
 SWEP.MuzzleVelocity = 400 -- projectile or phys bullet muzzle velocity
