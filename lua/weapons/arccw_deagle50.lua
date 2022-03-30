@@ -131,7 +131,7 @@ SWEP.AttachmentElements = {
                 Model = "models/weapons/arccw/atts/stock_fab.mdl",
                 Bone = "v_weapon.Deagle_Parent",
                 Offset = {
-                    pos = Vector(0.1, 2, -0.35),
+                    pos = Vector(0.1, 2, 3.7),
                     ang = Angle(-90, 0, -90)
                 }
             }
